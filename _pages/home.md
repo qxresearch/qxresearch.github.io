@@ -34,6 +34,8 @@ In past couple of years, computing has expanded as a field and grown in its impo
   Developer Map
 </p>
 
+<br>
+
 <p>
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
     <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/map%20qx.png" alt="Logo" width="622" height="386">
