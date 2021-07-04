@@ -17,7 +17,10 @@ Cras adipiscing enim eu turpis. Imperdiet massa tincidunt nunc pulvinar sapien e
   qxresearch AI Map
 </p>
  
- We're helping developers from all over the world ⚡
+ 
+ <p align="center">
+   We're helping developers from all over the world ⚡
+</p>
 
 <br>
 
@@ -26,3 +29,6 @@ Cras adipiscing enim eu turpis. Imperdiet massa tincidunt nunc pulvinar sapien e
     <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/map%20qx.png" alt="Logo" width="622" height="386">
   </a>
 </p>
+
+<br>
+<br>
