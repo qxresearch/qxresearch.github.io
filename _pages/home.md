@@ -22,11 +22,12 @@ In past couple of years, computing has expanded as a field and grown in its impo
   Languages and Tools
 </p>
 
+<br>
+
  * 📐 Languages: `Python` `C++` `MATLAB`
  * 🕸 Machine Learning: `TensorFlow` `scikit‑learn` `Keras`
  * 🚀 Computer Vision: `cv2` `mediapipe` `YOLO`
 
-<br>
 <br>
 
 <p align="center">
