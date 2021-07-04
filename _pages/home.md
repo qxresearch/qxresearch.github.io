@@ -16,6 +16,13 @@ As an organization, we maintain a portfolio of research projects and research pa
 
 In past couple of years, computing has expanded as a field and grown in its importance to society. Similarly, our research has become more convoluted and with more accuracy. Our approach to research has always been flexible, some of our projects are going beyond the horizon of formal defination of research like some of the projects are done for fun. 
 
+#### Languages and Tools:
+
+ * 📐 Languages: `Python` `C++` `MATLAB`
+ * 🕸 Machine Learning: `Supervised` `Unsupervised` `Reinforcement Learning`
+ * 🚀 Computer Vision: `cv2` `mediapipe` `YOLO`
+
+
 <br>
 <br>
 
