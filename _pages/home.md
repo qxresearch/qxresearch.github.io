@@ -15,6 +15,6 @@ Cras adipiscing enim eu turpis. Imperdiet massa tincidunt nunc pulvinar sapien e
 
 <p>
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
-    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/slider/clean%20map.png" alt="Logo" width="642" height="308">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/map%20qx.png" alt="Logo" width="642" height="406">
   </a>
 </p>
