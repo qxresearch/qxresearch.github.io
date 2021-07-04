@@ -25,8 +25,6 @@ Cras adipiscing enim eu turpis. Imperdiet massa tincidunt nunc pulvinar sapien e
    We're helping developers from all over the world ⚡
 </p>
 
-<br>
-
 <p>
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
     <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/map%20qx.png" alt="Logo" width="622" height="386">
