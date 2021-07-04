@@ -2,7 +2,7 @@
 title: "Vacancies"
 layout: default
 excerpt: "Openings"
-sitemap: true
+sitemap: false
 permalink: /vacancies
 ---
 
