@@ -8,6 +8,33 @@ permalink: /
 
 ### qxresearchAI
 
+  <h3 align="center">AI Keyboard</h3>
+  <p align="center">
+    First Generation AI Powered Keyboard
+  </p>
+
+<p align="center">
+  <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
+    <img src="https://github.com/qxresearch/qxresearch.github.io/blob/main/images/Delete/keyf.png" alt="Logo"  width="700" height="103">
+  </a>
+</p>
+
+
 Mauris qwqerqwerqwerqwerqwrqewrqwerqwerqwerqwerqwerqwer vitae ultricies leo integer malesuada. Vulputate ut pharetra sit amet aliquam id diam maecenas. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Et tortor at risus viverra adipiscing at in. Urna nunc id cursus metus aliquam eleifend. Massa tincidunt dui ut ornare lectus. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Enim diam vulputate ut pharetra sit. Facilisi cras fermentum odio eu feugiat pretium. Commodo elit at imperdiet dui accumsan sit amet nulla. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Vivamus at augue eget arcu dictum varius duis. Faucibus pulvinar elementum integer enim neque volutpat. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
 
+<p align="center">
+  <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
+    <img src="https://github.com/qxresearch/qxresearch.github.io/blob/main/images/Delete/key2.png" alt="Logo" >
+  </a>
+  </p>
+</p>
+
 Cras adipiscing enim eu turpis. Imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper. Sed lectus vestibulum mattis ullamcorper velit. Ut faucibus pulvinar elementum integer. Mattis nunc sed blandit libero volutpat sed cras ornare. Diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Risus nullam eget felis eget nunc lobortis mattis. In tellus integer feugiat scelerisque varius morbi enim. Eget nunc lobortis mattis aliquam faucibus purus in. Ut pharetra sit amet aliquam id diam maecenas ultricies mi. Augue neque gravida in fermentum et sollicitudin ac orci. Id donec ultrices tincidunt arcu non. Pharetra et ultrices neque ornare aenean euismod. Purus faucibus ornare suspendisse sed. Nibh tellus molestie nunc non blandit massa enim. Non diam phasellus vestibulum lorem sed risus. Vel eros donec ac odio tempor orci dapibus ultrices in. Libero id faucibus nisl tincidunt.
+
+<p align="center">
+  <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
+    <img src="https://github.com/qxresearch/qxresearch.github.io/blob/main/images/Delete/keyl.png" alt="Logo" width="570" height="103">
+  </a>
+  </p>
+</p>
+
