@@ -14,7 +14,7 @@ qxresearch AI is an open-source `Machine Learning` `Deep Learning` `Computer Vis
 
 As an organization, we maintain a portfolio of research projects and research papers driven by fundamental research, real-life application and infrastructure goals, while providing individuals and teams the freedom to emphasize specific types of research. We're influencing many different types of research across many different fields like App and Web development.
 
-In past couple of years, computing has expanded as a field and grown in its importance to society. Similarly, our research has become more convoluted and with more accuracy. Our approach to research has always been flexible, some of our projects are going beyond the horizon of formal defination of research like some of the projects are done for fun. 
+In past couple of years, computing has expanded as a field and grown in its importance to society. Similarly, our research has become more convoluted and with more accuracy. Our approach to research has always been flexible, some of our projects are going beyond the horizon of formal defination of research like some of the projects are done for fun. We're helping developers and researchers from all over the world ⚡
 
 <br>
 
@@ -31,11 +31,7 @@ In past couple of years, computing has expanded as a field and grown in its impo
 <br>
 
 <p align="center">
-  qxresearch AI Map
-</p>
- 
- <p align="center">
-   We're helping developers from all over the world ⚡
+  Developer Map
 </p>
 
 <p>
