@@ -3,6 +3,17 @@
   tags:
     - machine-learning
     - research
-  content: If you are interested in `Machine Learning` research and project developement, 
-    then you are welcome to our research team. To join - 1. Send an mail to `qxresearch20@gmail.com` 
+  content: If you are interested in Machine Learning research and project developement, 
+    then you are welcome to our research team. Requirements TensorFlow Keras scikit‑learn
+    To join - 1. Send an mail to `qxresearch20@gmail.com` 
+    with your CV and GitHub id.
+    
+ - date: 05/07/21
+  title: "Machine Learning Research Opportunity"
+  tags:
+    - computer-vision
+    - research
+  content: If you are interested in Computer Vision research and project developement, 
+    then you are welcome to our research team. Requirements openCV YOLO mediapipe
+    To join - 1. Send an mail to qxresearch20@gmail.com
     with your CV and GitHub id.
