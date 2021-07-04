@@ -6,10 +6,8 @@ sitemap: false
 permalink: /
 ---
 
-
-  <h3 align="center">AI Keyboard</h3>
   <p align="center">
-    First Generation AI Powered Keyboard
+    Artificial Intelligence Research Organization
   </p>
 
 <p align="center">
