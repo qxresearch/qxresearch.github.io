@@ -19,7 +19,7 @@ In past couple of years, computing has expanded as a field and grown in its impo
 #### Languages and Tools:
 
  * 📐 Languages: `Python` `C++` `MATLAB`
- * 🕸 Machine Learning: `Supervised` `Unsupervised` `Reinforcement Learning`
+ * 🕸 Machine Learning: `TensorFlow` `scikit‑learn` `Keras`
  * 🚀 Computer Vision: `cv2` `mediapipe` `YOLO`
 
 
