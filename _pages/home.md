@@ -13,14 +13,9 @@ Cras adipiscing enim eu turpis. Imperdiet massa tincidunt nunc pulvinar sapien e
 
 ### qxresearch AI Map
 
-<div>
-  <img src="{{ site.url }}{{ site.baseurl }}/images/slider/clean%20map.png" alt="Slide 2" />
-</div>
-
-     
 <p align="center">
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
-    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/slider/clean%20map.png" alt="Logo">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/slider/clean%20map.png" alt="Logo" width="1200" height="500">
   </a>
 </p>
 
