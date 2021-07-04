@@ -22,7 +22,7 @@ Mauris qwqerqwerqwerqwerqwrqewrqwerqwerqwerqwerqwerqwer vitae ultricies leo inte
 
 <p align="center">
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
-    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/key2.png" alt="Logo" >
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/key2.png" alt="Logo" width="750" height="414">
   </a>
 </p>
 
