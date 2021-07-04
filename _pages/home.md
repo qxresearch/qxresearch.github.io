@@ -18,12 +18,11 @@ permalink: /
   </a>
 </p>
 
-
 Mauris qwqerqwerqwerqwerqwrqewrqwerqwerqwerqwerqwerqwer vitae ultricies leo integer malesuada. Vulputate ut pharetra sit amet aliquam id diam maecenas. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus. Et tortor at risus viverra adipiscing at in. Urna nunc id cursus metus aliquam eleifend. Massa tincidunt dui ut ornare lectus. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Enim diam vulputate ut pharetra sit. Facilisi cras fermentum odio eu feugiat pretium. Commodo elit at imperdiet dui accumsan sit amet nulla. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Vivamus at augue eget arcu dictum varius duis. Faucibus pulvinar elementum integer enim neque volutpat. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi.
 
 <p align="center">
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
-    <img src="https://github.com/qxresearch/qxresearch.github.io/blob/main/images/Delete/key2.png" alt="Logo" >
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/key2.png" alt="Logo" >
   </a>
   </p>
 </p>
@@ -32,7 +31,7 @@ Cras adipiscing enim eu turpis. Imperdiet massa tincidunt nunc pulvinar sapien e
 
 <p align="center">
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
-    <img src="https://github.com/qxresearch/qxresearch.github.io/blob/main/images/Delete/keyl.png" alt="Logo" width="570" height="103">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/keyl.png" alt="Logo" width="570" height="103">
   </a>
   </p>
 </p>
