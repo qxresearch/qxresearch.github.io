@@ -6,7 +6,6 @@ sitemap: false
 permalink: /
 ---
 
-### qxresearchAI
 
   <h3 align="center">AI Keyboard</h3>
   <p align="center">
@@ -15,7 +14,7 @@ permalink: /
 
 <p align="center">
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
-    <img src="https://github.com/qxresearch/qxresearch.github.io/blob/main/images/Delete/keyf.png" alt="Logo"  width="700" height="103">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/keyf.png" alt="Logo"  width="700" height="103">
   </a>
 </p>
 
