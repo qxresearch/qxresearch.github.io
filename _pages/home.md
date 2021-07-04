@@ -5,10 +5,7 @@ excerpt: "qxresearch AI"
 sitemap: false
 permalink: /
 ---
-
-  <p align="center">
-    Artificial Intelligence Research Organization
-  </p>
+#### About
 
 <p align="center">
   <a href="https://www.youtube.com/channel/UCX7oe66V8zyFpAJyMfPL9VA">
