@@ -12,6 +12,13 @@ permalink: /research/
 
 qxresearch AI is at the forefront of innovation in Machine Intelligence, with active research exploring virtually all aspects of `Machine Learning`, including `Deep Learning` and `Computer Vision`. Exploring theory as well as application, much of our work on language, speech, translation, visual processing, ranking and prediction relies on Machine Intelligence. In all of those tasks and many others, we gather large volumes of direct or indirect evidence of relationships of interest, applying learning algorithms to understand and generalize.
 
+
+<p align="center">
+  <a href="https://qxresearch.github.io">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/giphy.gif" alt="Logo">
+  </a>
+</p>
+
 <p align="center">
   Computer Vision
 </p>
@@ -31,3 +38,9 @@ Project : [GitHub]()
 Live Demo : [See Your Face Mesh]()
 
 Tags : `mediapipe` `face-mesh` `python` `facial-landmark-detection`
+
+<p align="center">
+  <a href="https://qxresearch.github.io">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/giphy.gif" alt="Logo">
+  </a>
+</p>
