@@ -15,9 +15,3 @@ qxresearch AI is at the forefront of innovation in Machine Intelligence, with ac
 <p align="center">
   Computer Vision
 </p>
-
-|             | `cpu` | `cu101` | `cu102` | `cu111` |
-|-------------|-------|---------|---------|---------|
-| **Linux**   | ✅    | ✅      | ✅      | ✅      |
-| **Windows** | ✅    | ✅      | ✅      | ✅      |
-| **macOS**   | ✅    |         |         |         |
