@@ -15,3 +15,7 @@ qxresearch AI is at the forefront of innovation in Machine Intelligence, with ac
 <p align="center">
   Computer Vision
 </p>
+
+MediaPipe Face Mesh is a face geometry solution that estimates 468 3D face landmarks in real-time even on mobile devices. It employs machine learning (ML) to infer the 3D surface geometry, requiring only a single camera input without the need for a dedicated depth sensor. Utilizing lightweight model architectures together with GPU acceleration throughout the pipeline, the solution delivers real-time performance critical for live experiences.
+
+Tags : `mediapipe` `face-mesh` `python`
