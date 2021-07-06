@@ -37,6 +37,8 @@ Using mediapipe we will estimate 468 face landmarks in live video, which could b
 
 Project : [GitHub]()
 <br>
+YouTube : [@qxresearchAI/mediapipe]()
+<br>
 Live Demo : [See Your Face Mesh]()
 
 Tags : `mediapipe` `face-mesh` `python` `facial-landmark-detection`
