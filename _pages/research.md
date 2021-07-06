@@ -28,7 +28,7 @@ qxresearch AI is at the forefront of innovation in Machine Intelligence, with ac
 MediaPipe Face Mesh is a face geometry solution that estimates 468 3D face landmarks in real-time even on mobile devices. It employs machine learning (ML) to infer the 3D surface geometry, requiring only a single camera input without the need for a dedicated depth sensor. Utilizing lightweight model architectures together with GPU acceleration throughout the pipeline, the solution delivers real-time performance critical for live experiences.
 
 <p align="center">
-  <a href="https://qxresearch.github.io/qxresearch-event-1">
+  <a href="https://mediapipe.dev">
     <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/face_mesh_ar_effects.gif" alt="Logo">
   </a>
 </p>
@@ -37,11 +37,11 @@ Using mediapipe we will estimate 468 face landmarks in live video, which could b
 
 Project : [GitHub]()
 <br>
-YouTube : [@qxresearchAI/mediapipe]()
+YouTube : [@qxresearch/mediapipe-face-mesh]()
 <br>
-Live Demo : [See Your Face Mesh]()
+Live Demo : [@qxresearchAI/your-face-mesh]()
 
-Tags : `mediapipe` `face-mesh` `python` `facial-landmark-detection`
+Tags : `mediapipe` `face-mesh` `openCV` `python` `facial-landmark-detection`
 
 <p align="center">
   <a href="https://qxresearch.github.io">
