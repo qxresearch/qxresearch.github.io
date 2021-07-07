@@ -61,6 +61,12 @@ Tags : `mediapipe` `face-mesh` `openCV` `python` `facial-landmark-detection`
 
 In this project we will develope some `Python` projects with only 10 lines of code to solve real life probelms. With the word `problems` I mean problems we face each day : like merge multiple pdf offline, protech your pdf with a curstom password, windows notificitation etc which will help you `developers` make your own unique project.
 
+<p align="center">
+  <a href="https://mediapipe.dev">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/notif.gif" alt="Logo" width="430" hight="310">
+  </a>
+</p>
+
 1. [Voice Recorder](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Voice%20Recorder)
 2. [Password Protech PDF](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Password%20Protech%20PDF)
 3. [Merge Multiple PDF](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Merge%20Multiple%20PDF)
