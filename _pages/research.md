@@ -67,6 +67,9 @@ In this project we will develope some `Python` projects with only 10 lines of co
   </a>
 </p>
 
+All the project link given comes with : `source-code` `video-explanation`. We're working on Machine Learning related projects using Python soon those programs will be added to
+`10-lines-of-code`.
+
 1. [Voice Recorder](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Voice%20Recorder)
 2. [Password Protech PDF](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Password%20Protech%20PDF)
 3. [Merge Multiple PDF](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Merge%20Multiple%20PDF)
@@ -76,8 +79,7 @@ In this project we will develope some `Python` projects with only 10 lines of co
 7. [Extrat mp3 from mp4](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Extract%20mp3%20from%20mp4)
 8. [Link Shortner](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Link%20Shortener)
 9. [Terminal Tricks](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Terminal%20Tricks)
-10. [Birthday Reminder](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Birthday%20Reminder)
-
+10. [Birthday Reminder](https://github.com/qxresearch/qxresearch-event-1/tree/master/Applications/Birthday%20Reminder) 
 
 Project : [GitHub @qxresearchAI](https://github.com/qxresearch/qxresearch-event-1)
 <br>
