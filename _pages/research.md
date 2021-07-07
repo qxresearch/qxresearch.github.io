@@ -85,3 +85,11 @@ YouTube : [@qxresearch/10-lines-of-code](https://www.youtube.com/watch?v=B0_0gK_
 <br>
 
 Tags : `automation` `windows-notification` `voice-recorder` `python` `gui`
+
+
+
+<p align="center">
+  <a href="https://qxresearch.github.io">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/giphy.gif" alt="Logo">
+  </a>
+</p>
