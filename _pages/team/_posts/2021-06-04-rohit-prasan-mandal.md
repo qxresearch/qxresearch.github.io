@@ -21,6 +21,10 @@ education:
 I am currently in my third year pursuing Bachelors of Technology in Computer Science @UEMKolkata. I found Machine Learning and Computer Vision really intriguing because it gives computer brain and eye(sort of). Now, I'm in a internship as Machine Learning researcher @NLP AI Automation.
 
 I'm the founder of this ML project based organization @qxresearch, where we're working on new problem statements and help other developer to get started in this domain.
-<br>
-<br>
+
+<p align="center">
+  <a href="https://qxresearch.github.io">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/giphy.gif" alt="Logo">
+  </a>
+</p>
 
