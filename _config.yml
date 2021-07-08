@@ -8,11 +8,7 @@
 # Site settings
 title: qxresearch
 email: qxresearch20@gmail.com
-description: 
-  qxresearch is a deep learning Artificial Intelligence Research Team. 
-  At qxresearch, we think that AI can improve and make our lives easier. 
-  Learn more about our research ...
-  
+description: qxresearch is a deep learning Artificial Intelligence Research Team. At qxresearch, we think that AI can improve and make our lives easier. Learn more about our research ...
 baseurl: ""
 url: "https://qxresearch.github.io"
 
