@@ -1,2 +1,2 @@
-# qxresearch.github.io
-qxresearch official website!
+# qxresearch
+qxresearch official website! qxresearch.github.io
