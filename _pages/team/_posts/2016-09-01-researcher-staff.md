@@ -17,4 +17,12 @@ education:
  - Education
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I am currently in my third year pursuing Bachelors of Technology in Computer Science @UEMKolkata. I found Machine Learning and Computer Vision really intriguing because it gives computer brain and eye(sort of). Now, I'm in a internship as Machine Learning researcher @NLP AI Automation.
+
+I'm the founder of this ML project based organization @qxresearch, where we're working on new problem statements and help other developer to get started in this domain.
+
+<p align="center">
+  <a href="https://qxresearch.github.io">
+    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/giphy.gif" alt="Logo">
+  </a>
+</p>
