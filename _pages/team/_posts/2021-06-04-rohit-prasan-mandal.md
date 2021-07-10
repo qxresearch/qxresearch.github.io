@@ -15,6 +15,7 @@ social:
     research-gate: 
 education:
  - Bachelor of Technology, Computer Science (3rd Year)
+skills : `Computer Vision` `Machine Learning` `MediaPipe` `Deep Learning` `Python` `C++`
 
 ---
 
