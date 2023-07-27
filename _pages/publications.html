@@ -6,13 +6,12 @@ sitemap: false
 permalink: /publications/
 ---
 
-
-<h1>{{page.title}}</h1>
+<h1>{{ page.title }}</h1>
 
 <div class="panel-group" id="accordion">
     <div class="panel panel-default">
 
-        <!-- New Paper -->
+        <!-- New Paper 1 -->
         <div class="panel-heading">
             <!-- Authors -->
             Authors
@@ -28,10 +27,10 @@ permalink: /publications/
             (2022/8/18),
 
             <!-- DOI -->
-            <a href="https://doi.org/NEW_PAPER_DOI">DOI: NEW_PAPER_DOI</a>
+            <a href="https://doi.org/NEW_PAPER1_DOI">DOI: NEW_PAPER1_DOI</a>
         </div>
 
-        <div id="collapseNEW" class="panel-collapse collapse">
+        <div id="collapseNEW1" class="panel-collapse collapse">
             <div class="panel-body">
                 <!-- Description -->
                 Maity, Soumyajit Mandal, Rohit Prasan Bhattacharjee, Saranya Chatterjee, Sankhadeep Alzheimer’s disease is an incurable, progressive neurological disease that causes the brain to shrink and brain cells to die. Earlier detection of Alzheimer’s disease can lead to proper treatment and prevent brain tissue damage. So accurate and fast detection of Alzheimer is most important. There is many well-established model which can predict Alzheimer’s disease but they struggle hard for imbalance datasets. This work has focused on the early and fast detection of Alzheimer’s disease from imbalance brain magnetic resonance imaging (MRI) dataset using proper variational autoencoder (VAE) model. Firstly, the whole dataset has been converted into a latent vector form then we used some popular sampling methods to balance the dataset. Finally, we applied some classification algorithm to classify the brain MRI images into …
@@ -40,56 +39,11 @@ permalink: /publications/
                 Total citations: Cited by 1
 
                 <!-- Link -->
-                <a class="btn btn-outline-primary" href="https://doi.org/NEW_PAPER_DOI" role="button" target="blank">Link</a>
+                <a class="btn btn-outline-primary" href="https://doi.org/NEW_PAPER1_DOI" role="button" target="blank">Link</a>
             </div>
         </div>
-        
-        <!-- Continue with other publications -->
-        {% for publi in site.data.publications %}
-            <div class="panel-heading">
-                <!-- authors -->
-                {% assign authors = "" | split:"/" %}
-                {% for author in publi.author %}
-                    {% assign authors = authors | push: author.family %}
-                {% endfor %}
-                {{ authors | array_to_sentence_string }},
 
-                <!-- title with link -->
-                "{{ publi.title }}",
-
-                <!-- container -->
-                <b>{{ publi.container-title }}</b>
-
-                <!-- issued date -->
-                ({{ publi.issued.date-parts | jsonify | slice: 3,4 }}),
-
-                <!-- DOI -->
-                {% if publi.DOI %}
-                    <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
-                {% endif %}
-            </div>
-
-            <div id="collapse{{forloop.index}}" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <p>{{ publi.abstract }}</p>
-
-                    <a class="btn btn-outline-primary" href="https://doi.org/{{publi.DOI}}"
-                    role="button" target="blank">Link</a>
-                </div>
-            </div>
-        {% endfor %}
-
-    </div>
-</div>
-
-
-
-<h1>{{ page.title }}</h1>
-
-<div class="panel-group" id="accordion">
-    <div class="panel panel-default">
-
-        <!-- New Paper -->
+        <!-- New Paper 2 -->
         <div class="panel-heading">
             <!-- Authors -->
             Authors
@@ -105,10 +59,10 @@ permalink: /publications/
             (2022/12/20),
 
             <!-- DOI -->
-            <a href="https://doi.org/NEW_PAPER_DOI">DOI: NEW_PAPER_DOI</a>
+            <a href="https://doi.org/NEW_PAPER2_DOI">DOI: NEW_PAPER2_DOI</a>
         </div>
 
-        <div id="collapseNEW" class="panel-collapse collapse">
+        <div id="collapseNEW2" class="panel-collapse collapse">
             <div class="panel-body">
                 <!-- Description -->
                 Soil moisture prediction is one of the emerging fields in the domain of smart agriculture. Ample moisture levels are of high importance to yields; thus, plants will not grow and develop with inadequate soil moisture, which influences soil temperature and heat capacity and also prevents soil from weathering. Accurate soil moisture detection can lead to proper growth of all kinds of trees and crops. In this chapter, we have implemented a deep learning and few transfer learning algorithms, such as convolutional neural network (CNN), VGGNet (VGG‐16, VGG‐19), Inception v3, ResNet50, Xception for prediction of soil moisture based on a very small custom dataset of 626 field images of rural India over a period of 10 days, both with and without the effect of data augmentation. We have also demonstrated how these pretrained algorithms save both time and resources compared to traditional …
@@ -117,7 +71,7 @@ permalink: /publications/
                 Total citations: Cited by 0 <!-- Update the citation count as per the actual data -->
 
                 <!-- Link -->
-                <a class="btn btn-outline-primary" href="https://doi.org/NEW_PAPER_DOI" role="button" target="blank">Link</a>
+                <a class="btn btn-outline-primary" href="https://doi.org/NEW_PAPER2_DOI" role="button" target="blank">Link</a>
             </div>
         </div>
 
@@ -158,4 +112,3 @@ permalink: /publications/
 
     </div>
 </div>
-
