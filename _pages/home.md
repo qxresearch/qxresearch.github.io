@@ -26,6 +26,17 @@ In past couple of years, computing has expanded as a field and grown in its impo
 
 At qxresearch AI, we are passionate about fostering the next generation of computer scientists and researchers. We firmly believe that empowering young minds with knowledge and skills in artificial intelligence and machine learning will shape a brighter future for technology and society as a whole. As part of our commitment to education and knowledge-sharing, we are thrilled to introduce our personalized 1-to-1 `Python` and `Machine Learning` Sessions designed specifically for students.
 
-`Work on live projects with us`
+<br>
 
 Browse our Machine Learning with Python course outline : [here]()
+
+<br> 
+
+Here are some projects that our student has developed : 
+
+1.
+2. 
+3. 
+
+<br>
+<br>
