@@ -35,8 +35,6 @@ Browse our Machine Learning with Python course outline : [here]()
 Here are some projects that our student has developed : 
 
 1.
-2. 
-3. 
 
 <br>
 <br>
