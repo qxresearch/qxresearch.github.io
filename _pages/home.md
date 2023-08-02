@@ -19,6 +19,10 @@ In past couple of years, computing has expanded as a field and grown in its impo
 <br>
 
 <p align="center">
+  Courses
+</p>
+
+<p align="center">
   Course : `1-to-1 Python & Machine Learning Sessions`
 </p>
 
