@@ -2,7 +2,7 @@
 title: "AI"
 layout: homelay
 excerpt: "qxresearch AI"
-sitemap: false
+sitemap: true
 permalink: /
 ---
 
