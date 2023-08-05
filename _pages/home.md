@@ -38,7 +38,9 @@ Browse our course outlines :
 
 Here are some projects that our student has developed : 
 
-1.
+1. Cryptographically secured random number genrator
+2. Automated News-Briefing and Blogging (ChatGPT)
+3. Web scraping Content Summarizer
 
 <br>
 <br>
