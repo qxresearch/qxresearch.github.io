@@ -10,7 +10,7 @@ permalink: /
   About
 </p>
 
-qxresearch AI is a `Machine Learning` `Deep Learning` `Computer Vision` research organization. Our teams aspire to make discoveries that impact everyone, and core to our approach is sharing our findings in the field. Our researchers publish regularly in academic journals, release projects as open source on GitHub, and apply these in Application.<br> 
+qxresearch AI is a `Machine Learning` `Deep Learning` `Computer Vision` research lab. Our teams aspire to make discoveries that impact everyone, and core to our approach is sharing our findings in the field. Our researchers publish regularly in academic journals, release projects as open source on GitHub, and apply these in Application.<br> 
 
 As an organization, we maintain a portfolio of research projects and research papers driven by fundamental research, real-life application and infrastructure goals, while providing individuals and teams the freedom to emphasize specific types of research. We're influencing many different types of research across many different fields like App and Web development.
 
