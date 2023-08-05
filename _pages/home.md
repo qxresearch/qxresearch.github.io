@@ -22,17 +22,21 @@ In past couple of years, computing has expanded as a field and grown in its impo
   Courses
 </p>
 
+<br>
+
 <p align="center">
   `1-to-1 Python - Data Strucutres & Machine Learning Sessions`
 </p>
 
-<br>
 
 At qxresearch AI, we are passionate about fostering the next generation of computer scientists and researchers. We firmly believe that empowering young minds with knowledge and skills in artificial intelligence and machine learning will shape a brighter future for technology and society as a whole. As part of our commitment to education and knowledge-sharing, we are thrilled to introduce our personalized 1-to-1 `Python`, `Data Structures` and `Machine Learning` Sessions designed specifically for students.
 
 <br>
 
-Browse our Machine Learning with Python course outline : [here]()
+Browse our course outlines : 
+1. Python Basics to Advanced [here]()
+2. Python + Data Structure and Algorithm [here]()
+3. Python + Data Science / Machine Learning [here]()
 
 <br> 
 
