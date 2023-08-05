@@ -23,12 +23,12 @@ In past couple of years, computing has expanded as a field and grown in its impo
 </p>
 
 <p align="center">
-  Course : `1-to-1 Python & Machine Learning Sessions`
+  `1-to-1 Python - Data Strucutres & Machine Learning Sessions`
 </p>
 
 <br>
 
-At qxresearch AI, we are passionate about fostering the next generation of computer scientists and researchers. We firmly believe that empowering young minds with knowledge and skills in artificial intelligence and machine learning will shape a brighter future for technology and society as a whole. As part of our commitment to education and knowledge-sharing, we are thrilled to introduce our personalized 1-to-1 `Python` and `Machine Learning` Sessions designed specifically for students.
+At qxresearch AI, we are passionate about fostering the next generation of computer scientists and researchers. We firmly believe that empowering young minds with knowledge and skills in artificial intelligence and machine learning will shape a brighter future for technology and society as a whole. As part of our commitment to education and knowledge-sharing, we are thrilled to introduce our personalized 1-to-1 `Python`, `Data Structures` and `Machine Learning` Sessions designed specifically for students.
 
 <br>
 
