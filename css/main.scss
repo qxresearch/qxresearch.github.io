@@ -1,16 +1,17 @@
+---
+---
+
 @import "bootstrap";
 
 body {
   padding-top: 70px;
   text-align: justify;
-  transition: background-color 0.3s ease-in-out;
 }
 
 figcaption {
   text-align: right;
   margin-top: -20px;
   margin-bottom: 20px;
-  transition: margin 0.3s ease-in-out;
 }
 
 .breadcrumb {
@@ -19,39 +20,33 @@ figcaption {
   display: block;
   margin-left: 0;
   padding-left: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .nopadding-left {
   padding-left: 0 !important;
   margin-left: 0 !important;
-  transition: padding 0.3s ease-in-out, margin 0.3s ease-in-out;
 }
 
 .nopadding-right {
   padding-right: 0 !important;
   margin-right: 0 !important;
-  transition: padding 0.3s ease-in-out, margin 0.3s ease-in-out;
 }
 
 .team-member-card {
   margin-top: 20px;
   margin-bottom: 20px;
-  transition: margin 0.3s ease-in-out;
 }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
   max-width: 900px; /* or 950px */
-  transition: max-width 0.3s ease-in-out;
 }
 
 /* Carousel */
 
 .carousel {
-  border-radius: 3px;
+  border-radius: 3px 3px 3px 3px;
   margin-bottom: 20px;
   margin-top: 20px;
-  transition: border-radius 0.3s ease-in-out, margin 0.3s ease-in-out;
 }
