@@ -25,7 +25,7 @@ In the past few years, the field of computing has expanded significantly, gainin
 
 At qxresearch AI, we are passionate about fostering the next generation of computer scientists and researchers. We firmly believe that empowering young minds with knowledge and skills in artificial intelligence and machine learning will shape a brighter future for technology and society as a whole. As part of our commitment to education and knowledge-sharing, we are thrilled to introduce our personalized 1-to-1 `Python`, `Data Structures` and `Machine Learning` Sessions designed specifically for students. 
 
-The course aims to enhance students' problem-solving abilities through intensive interaction with `LeetCode` questions. Additionally, it concludes with students undertaking a substantial Python-based project, contributing to the holistic achievement of this objective. Our trainers possess extensive experience collaborating with prominent industry leaders such as `IBM`, `Intel`,`Mindtree` etc and students from `IIT`s. 
+The course aims to enhance students' problem-solving abilities through intensive interaction with `LeetCode` questions. Additionally, it concludes with students undertaking a substantial Python-based project, contributing to the holistic achievement of this objective. Our trainers possess extensive experience collaborating with prominent industry leaders, such as `IBM`, `Intel`, `Mindtree`, etc., as well as with students from `IIT`s. 
 
 <br>
 
