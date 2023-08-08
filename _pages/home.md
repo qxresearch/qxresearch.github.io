@@ -16,6 +16,7 @@ As an organization, we curate a portfolio of research projects and papers driven
 
 In the past few years, the field of computing has expanded significantly, gaining importance in society. Similarly, our research has become more intricate and accurate. Our approach to research has always been flexible; some projects extend beyond the formal definition of research and are done for fun. We're dedicated to assisting developers and researchers from around the world ⚡
 <br>
+<br> 
 
 <p align="center">
   Courses
