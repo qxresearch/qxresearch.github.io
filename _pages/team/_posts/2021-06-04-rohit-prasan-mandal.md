@@ -2,7 +2,7 @@
 layout: member
 category: staff
 title: Rohit Prasan Mandal
-image: rmp.png
+image: rpm.png
 role: Machine Learning Researcher
 permalink: 'team/rohit-prasan-mandal'
 social:
