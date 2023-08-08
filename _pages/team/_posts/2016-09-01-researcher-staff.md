@@ -2,12 +2,12 @@
 layout: member
 category: staff
 title: Rohit Prasan Mandal
-image: rmp.png
+image: rpm.png
 role: Lab Director
 permalink: 'team/rohit-prasan-mandal'
 social:
-    twitter: https://twitter.com/
-    linkedin: https://www.linkedin.com/
+    twitter: https://twitter.com/xiaowuc2
+    linkedin: https://www.linkedin.com/in/xiaowuc2
     google-scholar: https://scholar.google.fr/
     github: https://github.com/
     website:
@@ -17,9 +17,9 @@ education:
  - Education
 ---
 
-I am currently in my third year pursuing Bachelors of Technology in Computer Science @UEMKolkata. I found Machine Learning and Computer Vision really intriguing because it gives computer brain and eye(sort of). Now, I'm in an internship as Machine Learning researcher @NLP AI Automation.
+I am Rohit Prasan Mandal, a machine learning researcher, currently working with IBM, and distinguished Stanford Code in Place section leader for 2023. My research has been published in reputed journals like springer, O'Reilly. I teach computational thinking with python. 
 
-I'm the founder of this ML project based organization @qxresearch, where we're working on new problem statements and help other developer to get started in this domain.
+Building this lab @qxresearch AI
 
 <p align="center">
   <a href="https://qxresearch.github.io">
