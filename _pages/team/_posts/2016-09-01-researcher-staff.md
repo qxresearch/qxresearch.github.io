@@ -20,9 +20,3 @@ education:
 I am Rohit Prasan Mandal, a machine learning researcher, currently working with IBM, and distinguished Stanford Code in Place section leader for 2023. My research has been published in reputed journals like springer, O'Reilly. I teach computational thinking with python. 
 
 Building this lab @qxresearch AI
-
-<p align="center">
-  <a href="https://qxresearch.github.io">
-    <img src="https://raw.githubusercontent.com/qxresearch/qxresearch.github.io/main/images/Delete/giphy.gif" alt="Logo">
-  </a>
-</p>
