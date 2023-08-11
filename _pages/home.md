@@ -15,6 +15,8 @@ qxresearch AI is a research lab focused on Machine Learning, Deep Learning, and 
 As an organization, we curate a portfolio of research projects and papers driven by fundamental research, real-life applications, and infrastructure goals. We provide individuals and teams the freedom to emphasize specific research types. Our influence spans diverse fields such as App and Web development.
 
 In the past few years, the field of computing has expanded significantly, gaining importance in society. Similarly, our research has become more intricate and accurate. Our approach to research has always been flexible; some projects extend beyond the formal definition of research and are done for fun. We're dedicated to assisting developers and researchers from around the world ⚡
+
+**We are looking for passionate new PhD students, Postdocs, and Master students to join the team ([more info](https://www.qxresearch.org/news)) !**
 <br>
 <br> 
 
