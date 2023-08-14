@@ -24,6 +24,8 @@ In the past few years, the field of computing has expanded significantly, gainin
 <br> 
 
 [Click Me](https://yourlink.com){: .breadcrumb }
+<a href="https://yourlink.com" class="breadcrumb">Click Me</a>
+
 
 
 <p align="center">
