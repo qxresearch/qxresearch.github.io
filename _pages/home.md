@@ -10,11 +10,11 @@ permalink: /
   About
 </p>
 
-qxresearch AI is a research lab focused on Machine Learning, Deep Learning, and Computer Vision. Our team aspires to make discoveries that hold a broad impact, and at the core of our approach lies the sharing of our findings in the field. Our researchers regularly publish in academic journals, release projects as open source on GitHub, and apply these findings in practical applications.
+qxresearch AI is a research lab focused on Machine Learning, Deep Learning, and Computer Vision. Our team aspires to make discoveries that hold a broad impact, and at the core of our approach lies the sharing of our findings in the field. Our researchers consistently contribute to academic journals, share their projects as open-source on GitHub, and implement these discoveries in tangible AI applications within the realms of Healthcare and Education.
 
-As an organization, we curate a portfolio of research projects and papers driven by fundamental research, real-life applications, and infrastructure goals. We provide individuals and teams the freedom to emphasize specific research types. Our influence spans diverse fields such as App and Web development.
+As an organization, we curate a portfolio of research projects and papers driven by fundamental research, real-life applications, and infrastructure goals. We provide individuals and teams the freedom to emphasize specific research types. Our primary research focus resides in the domains of `Generative AI`, `Computer Vision`, `Reinforcement Learning`. 
 
-In the past few years, the field of computing has expanded significantly, gaining importance in society. Similarly, our research has become more intricate and accurate. Our approach to research has always been flexible; some projects extend beyond the formal definition of research and are done for fun. We're dedicated to assisting developers and researchers from around the world ⚡
+In the past few years, the field of computing has expanded significantly, gaining importance in society. Similarly, our research has become more intricate and accurate. Our approach to research has always been flexible; some projects extend beyond the formal definition of research and are done for fun. We're dedicated to assisting developers and researchers from around the world.
 
 **We are looking for passionate new PhD students, Postdocs, and Master students to join the team!** <br> 
 - Follow us on [LinkedIn](https://linkedin.com/company/qxresearch) for timely updates regarding new opportunities.
