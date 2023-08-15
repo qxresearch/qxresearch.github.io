@@ -16,7 +16,7 @@ As an organization, we curate a portfolio of research projects and papers driven
 
 Our dynamic team comprises a diverse group of dedicated individuals who bring a wealth of experience from some of the most influential tech giants in the industry. Hailing from esteemed organizations such as `IBM`, `Mindtree`, `Intel Labs` and `Amazon`, our professionals infuse their industry insights into every facet of our research projects.
 
-But that's not all – we're also proud to host a vibrant blend of academic brilliance. Our team is enriched by the contributions of exceptional students pursuing their Masters and Bachelors degrees from prestigious institutions like `IIT`s, `NIT`s, `VIT`, `ISI`, and `IISc`. This fusion of industry expertise and academic rigor forms the backbone of our lab's pursuit of cutting-edge AI advancements.
+But that's not all – we're also proud to host a vibrant blend of academic brilliance. Our team is enriched by the contributions of exceptional students pursuing their Masters and Bachelors degrees from prestigious institutions like `IIT`s, `NIT`s, `VIT`, `ISI`, `JU`, `MIT` and `IISc`. This fusion of industry expertise and academic rigor forms the backbone of our lab's pursuit of cutting-edge AI advancements.
 
 In the past few years, the field of computing has expanded significantly, gaining importance in society. Similarly, our research has become more intricate and accurate. Our approach to research has always been flexible; some projects extend beyond the formal definition of research and are done for fun. We're dedicated to assisting developers and researchers from around the world.
 
