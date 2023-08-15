@@ -47,7 +47,9 @@ Browse our course outlines :
 
 <br> 
 
-Find the archive of research projects and papers developed by our team and our students : [here]()
+
+<p style="text-align: center;">Find the archive of research projects and papers developed by our team and our students : [here](https://github.com/qxresearch/qxresearch-event-1)</p>
+
 
 <br>
 <br>
