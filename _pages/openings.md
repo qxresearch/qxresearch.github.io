@@ -32,6 +32,7 @@ Tags : `Random Number Generation` `Cryptography` `Generative Adversarial Network
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <a href="#" style="display: inline-block; padding: 5px 10px; background-color: #242526; color: white; border-radius: 5px; text-decoration: none;">Demo</a>
+  <a href="#" style="display: inline-block; padding: 5px 10px; background-color: #242526; color: white; border-radius: 5px; text-decoration: none;">API</a>
 </div>
 
 
