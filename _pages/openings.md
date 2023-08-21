@@ -13,7 +13,7 @@ We are always looking for new group members with passion, talent, and grit—esp
 
 
 
-<p style="text-align: center;"> **`Note`:** Please provide the project details you would like to work on, and kindly adhere to the following templates at `contact@qxresearch.org`</p>
+<p style="text-align: center;"> **`⚙️`:** Please provide the project details you would like to work on, and kindly adhere to the following templates at `contact@qxresearch.org`</p>
 
 <br>
 
