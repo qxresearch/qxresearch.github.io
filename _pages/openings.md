@@ -29,6 +29,8 @@ The Cryptographically Secured Random Number Generator (CSRNG) project explores t
 
 Tags : `Random Number Generation` `Cryptography` `Generative Adversarial Networks (GANs)` `Cybersecurity` `Secure Communication`
 
+<br>
+
 #### **AnoMe: Anomaly Detection in Medical Imaging**
 
 Anomaly Detection in Medical Imaging focuses on developing a sophisticated system for identifying anomalies within medical images. By leveraging the capabilities of generative models, this project aims to enhance disease detection by analyzing deviations from healthy image distributions.
@@ -41,6 +43,7 @@ Anomaly Detection in Medical Imaging focuses on developing a sophisticated syste
  
 Tags: `Anomaly Detection` `Medical Imaging` `Generative Models` `Early Disease Detection` `Healthcare Technology`
 
+<br>
 
 #### **StrideMentor: Guiding Agents into Graceful Motion with Reinforcement Learning**
 
@@ -53,4 +56,6 @@ StrideMentor stands at the forefront of innovation by leveraging the capabilitie
 - **Potential Impact:** Revolutionize industries dependent on realistic agent movements, contributing to improved user experiences.
  
 **Tags:** `Reinforcement Learning` `Motion Guidance` `Efficient Movement` `Robotics` `Animation` `Virtual Environments`
+
+<br>
 
