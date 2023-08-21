@@ -27,7 +27,7 @@ The Cryptographically Secured Random Number Generator (CSRNG) project explores t
 - **Impact:** Enhance security in cryptography, digital signatures, and secure communication channels.
 - **Outcome:** Advancement in secure random number generation methods with potential for widespread application.
 
-Tags : `Random Number Generation` `Cryptography` `Generative Adversarial Networks (GANs)` `Cybersecurity` `Secure Communication`
+Tags : `Random Number Generation` `Cryptography` `Generative Adversarial Networks` `Cybersecurity` `Secure Communication`
 
 <br>
 
