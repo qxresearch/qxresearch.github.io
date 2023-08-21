@@ -30,7 +30,7 @@ The Cryptographically Secured Random Number Generator (CSRNG) project explores t
 
 Tags : `Random Number Generation` `Cryptography` `Generative Adversarial Networks` `Cybersecurity`
 
-<a href="#" style="display: inline-block; padding: 10px 20px; background-color: #141414; color: white; border-radius: 5px; text-decoration: none;">Click Me</a>
+<a href="#" style="display: inline-block; padding: 10px 20px; background-color: black; color: white; border-radius: 5px; text-decoration: none;">Click Me</a>
 
 
 
