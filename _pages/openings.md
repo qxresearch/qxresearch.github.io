@@ -62,8 +62,6 @@ StrideMentor stands at the forefront of innovation by leveraging the capabilitie
 
 #### **MoodPredict: Predicting User Mood from Search History Using Machine Learning**
 
-**Description:**
-
 MoodPredict delves into the realm of cutting-edge Machine Learning techniques to create a groundbreaking system that predicts user mood based on their search history. In the age of digital interactions, understanding user emotions and preferences is paramount for creating personalized and engaging experiences. MoodPredict leverages Machine Learning to decode the subtle nuances within search history, uncovering valuable insights into user emotions.
 
 - **Objective:** Develop a system using Machine Learning to predict user moods based on search history.
