@@ -19,5 +19,17 @@ The Cryptographically Secured Random Number Generator (CSRNG) project explores t
 - **Impact:** Enhance security in cryptography, digital signatures, and secure communication channels.
 - **Outcome:** Advancement in secure random number generation methods with potential for widespread application.
 
-`Random Number Generation` `Cryptography` `Generative Adversarial Networks (GANs)` `Cybersecurity` `Secure Communication`
+Tags : `Random Number Generation` `Cryptography` `Generative Adversarial Networks (GANs)` `Cybersecurity` `Secure Communication`
+
+#### **Anomaly Detection in Medical Imaging**
+
+Anomaly Detection in Medical Imaging focuses on developing a sophisticated system for identifying anomalies within medical images. By leveraging the capabilities of generative models, this project aims to enhance disease detection by analyzing deviations from healthy image distributions.
+
+- **Objective:** Create a system capable of detecting anomalies in medical images, aiding in early disease detection.
+- **Approach:** Train a generative model on a dataset of healthy images to learn the underlying distribution. Analyze the model's latent space for outliers and deviations.
+- **Advantage:** Utilizes generative models to capture complex patterns and variations in medical images.
+- **Application:** Early detection of diseases by identifying subtle deviations from the norm in medical imagery.
+- **Potential Impact:** Improve patient outcomes through early intervention and treatment.
+ 
+Tags: `Anomaly Detection` `Medical Imaging` `Generative Models` `Early Disease Detection` `Healthcare Technology`
 
