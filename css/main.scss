@@ -56,16 +56,17 @@ figcaption {
   display: inline-block;
   padding: 8px 15px;
   background-color: transparent;
-  color: #007bff;
-  border: 1px solid #007bff;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  backdrop-filter: blur(5px); /* Glass effect */
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 
   &:hover {
-    background-color: #007bff;
+    background-color: rgba(255, 255, 255, 0.1);
     color: white;
+    border-color: rgba(255, 255, 255, 0.3);
   }
 }
-
 
