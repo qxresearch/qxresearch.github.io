@@ -3,20 +3,6 @@
 
 @import "bootstrap";
 
-.custom-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-  &:hover {
-    background-color: #0056b3;
-  }
-}
-
 
 body {
   padding-top: 70px;
@@ -65,4 +51,21 @@ figcaption {
   margin-bottom: 20px;
   margin-top: 20px;
 }
+
+.custom-button {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #007bff;
+    color: white;
+  }
+}
+
 
