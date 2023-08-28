@@ -11,39 +11,30 @@
 - title: "Water Content Prediction in Smart Agriculture of Rural India Using CNN and Transfer Learning Approach"
   image: 8.jpg
   description: "Soil moisture prediction is one of the emerging fields in the domain of smart agriculture. Ample moisture levels are of high importance to yields; thus, plants will not grow and develop with inadequate soil moisture, which influences soil temperature and heat capacity and also prevents soil from weathering. Accurate soil moisture detection can lead to proper growth of all kinds of trees and crops. In this chapter, we have implemented a deep learning and few transfer learning algorithms, such as convolutional neural network (CNN), VGGNet (VGG-16, VGG-19), Inception v3, ResNet50, Xception for prediction of soil moisture based on a very small custom dataset of 626 field images of rural India over a period of 10 days, both with and without the effect of data augmentation. We have also demonstrated how these pretrained algorithms save both time and resources compared to traditional deep learning models. Here, multiclass classification is considered based on three different classes, viz. “dry,” “wet,” “extremely wet."
-  authors: JJiasen Niu, Koen M. Bastiaans, Jianfeng Ge, Ruchi Tomar, John Jesudasan, Pratap Raychaudhuri, Max Karrer, Reinhold Kleiner, Dieter Koelle, Arnaud Barbier, Eduard F.C. Driessen, Yaroslav M. Blanter, Milan P. Allan
+  authors: Rohit Prasan Mandal, Deepanshu Dutta, Saranya Bhattacharjee, Subhalaxmi Chakraborty
   link:
-    url: https://arxiv.org/abs/2306.02397
+    url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
     display: O’Reilly
   highlight: 1
 
-- title: "Puddle formation, persistent gaps, and non-mean-field breakdown of superconductivity in overdoped (Pb,Bi)2Sr2CuO6+δ"
-  image: BSCCOgap.png
-  description: Why does cuprate superconductivity break down at a certain doping level? Using scanning tunneling spectroscopy we find that an emerging metallic matrix inside the superconducting state is responsible for the overall reduction of Tc and the superfluid density, while leaving the gapsize unchanged. The formation of the matrix is tied to a pair breaking process violating a core principle of mean-field theories.
-  authors: WO Tromp, T Benschop, J-F Ge, I Battisti, KM Bastiaans, D Chatzopoulos, A Vervloet, S Smit, E van Heumen, MS Golden, Y Huang, T Kondo, Y Yin, JE Hoffman, MA Sulangi, J Zaanen, MP Allan
-  link:
-    url: https://www.nature.com/articles/s41563-023-01497-1
-    display: Nature Materials 22, 703 (2023)
-  highlight: 1
-
-- title: "Direct evidence for Cooper pairing without a spectral gap in a disordered superconductor above Tc"
+- title: "Breast Cancer Prediction: A Machine Learning Approach"
   image: Pairs3.png
-  description: We use our atomic-scale scanning tunneling noise setup on a disordered superconductor, and discover a state above TC that, much like an ordinary metal, has no (pseudo)gap, but carries charge via paired electrons.
-  authors: KM Bastiaans, D Chatzopoulos, J-F Ge, D Cho, WO Tromp, JM van Ruitenbeek, MH Fischer, PJ de Visser, DJ Thoen, EFC Driessen, TM Klapwijk, MP Allan
+  description: "Breast cancer is the most common cancer in women world-wide. In 2020, there were 2.3 million women diagnosed with breast can-cer and 685 000 deaths globally. Incidence rates vary widely across theworld, from 27 per 100,000 in Middle Africa and Eastern Asia to 92 per100,000 in Northern America. Earlier detection of this disease can leadto proper treatment. So accurate and fast detection is most important.This proposed paper presents a comparison of six machine learning al-gorithms: XGBoost Classifier, Random Forest, KNN Classifier, Logistic Regression, SVM Classification, Decision Tree on the Wisconsin Diagnos-tic Breast Cancer dataset which is extracted from a digitised image of anMRI. After cleaning the dataset we perform feature scaling. Finally, weapplied those classification algorithm to classifies into two classes‘Ma-lignant Tumor’, and‘Malignant Benign’. The best overall accuracy forbreast cancer diagnosis is achieved equal to 93.24% and 94.96% respec-tively using support vector machines classifier and Logistic Regressionmodels against two widely used breast cancer benchmark datasets."
+  authors: Deepanshu Dutta, Rohit Prasan Mandal, Subhalaxmi Chakraborty
   link:
     url: https://www.science.org/doi/10.1126/science.abe3987
     display: Science 374, 608 (2021)
-  highlight: 1
+  highlight: 0
   news1:   <a style="color:#FF0000" href="https://www.nature.com/articles/s41567-021-01468-w">Featured as 'Research Highlight' in Nature Physics by David Abergel</a>
   news2: See [Physics World](https://physicsworld.com/a/cooper-pairs-spotted-above-critical-temperature-for-superconductivity/), [SRON news](https://www.sron.nl/news/5169-elektronparen-blijven-stabiel-boven-kritische-temperatuur-supergeleiding), [TU Delft news](https://www.tudelft.nl/en/2021/eemcs/inexplicably-stable-electron-pairs-without-superconductivity), [Leiden news](https://www.universiteitleiden.nl/en/news/2021/10/new-quantum-liquid-discovered).
 
-- title: "Imaging moiré deformation and dynamics in twisted bilayer graphene"
+- title: " COVID-Classifier: a simpler supervised machine learning model"
   image: TBG_SL.png
-  description: Why is there so much variation in TBG devices? And are open devices more disordered than encapsulated ones? We introduce a new method to continuously map inhomogeneities of a moiré lattice and apply it to open-device TBG to show that twist angle variation is small over areas of hundreds of nm.
-  authors: TA de Jong, T Benschop, X Chen, EE Krasovskii, MJA de Dood, RM Tromp,  MP Allan, SJ van der Molen
+  description: "Coronavirus disease (COVID-19) is an infectious disease causedby the SARS-CoV-2 virus. It is the largest category for anRNA virus. Authorities in 222 countries and territories have reportedabout 244.2 million Covid-19 cases and 5 million deaths since Chinareported its first cases to the World Health Organization (WHO) in De-cember 2019. Our proposed classifier assists in the early diagnosis of Covid-19. There are many well established model which can give moreaccurate results based on X-ray or CT scans, but they are convoluted andabstruse for normal person. We’ve developed a more simpler model with‘Yes’ and ‘No’ types on question, where our huge dataset are trained with these features : ‘BreathingProblem’, ‘Fever’, ‘Dry Cough’, ‘Sore throat’, ‘Running Nose’, ‘Asthma’, ‘Chronic Lung Disease’, ‘Headache’, ‘Heart Disease’, ‘Diabetes’, ‘HyperTension’, ‘Fatigue’ and eight more. Based on these data the model willpredict result in a probabilistic view."
+  authors: Rohit Prasan Mandal, Deepanshu Dutta, Subhalaxmi Chakraborty
   link:
-    url: https://www.nature.com/articles/s41467-021-27646-1
-    display:  Nat Comm 13, 70 (2022)
+    url: https://github.com/xiaowuc2/COVID-Classifier-a-simpler-supervised-machine-learning-model
+    display:  UEMK (2022)
   highlight: 0
   news2:
 
