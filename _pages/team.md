@@ -1,6 +1,6 @@
 ---
 title: "Team"
-layout: default
+layout: gridlay
 excerpt: "qxresearch: Team members"
 sitemap: false
 permalink: /team/
