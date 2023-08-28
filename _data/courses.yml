@@ -1,40 +1,20 @@
-- title: "Variational Autoencoder-Based Imbalanced Alzheimer Detection Using Brain MRI Images"
+- title: "Computational Thinking: Python"
   image: mildDem.jpg
-  description: "Alzheimer’s disease is an incurable, progressive neurological disease that causes the brain to shrink and brain cells to die. Earlier detection of Alzheimer’s disease can lead to proper treatment and prevent brain tissue damage. So accurate and fast detection of Alzheimer is most important. There are many well-established models which can predict Alzheimer’s disease, but they struggle with imbalanced datasets. This work has focused on the early and fast detection of Alzheimer’s disease from an imbalanced brain magnetic resonance imaging (MRI) dataset using a proper variational autoencoder (VAE) model. Firstly, the whole dataset has been converted into a latent vector form; then, we used some popular sampling methods to balance the dataset. Finally, we applied some classification algorithms to classify the brain MRI images into four different classes: ‘Very Mild Demented,’ ‘Mild Demented,’ ‘Non-Demented,’ and ‘Moderate Demented.’ In order to maintain stability in the results, we have applied tenfold cross-validation. In our experiment, it indicates an improvement in results to detect Alzheimer’s disease using VAE."
-  authors: Soumyajit Maity, Rohit Prasan Mandal, Saranya Bhattacharjee, Sankhadeep Chatterjee
+  description: "Learn the fundamentals of computational thinking using Python."
+  authors: Rohit Prasan Mandal
   link:
     url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
-    display: Springer (2021)
+    display: Buy Now ($49)
   highlight: 1
   
 
-- title: "Water Content Prediction in Smart Agriculture of Rural India Using CNN and Transfer Learning Approach"
+- title: "Python Data Structures and Algorithm"
   image: 8.jpg
-  description: "Soil moisture prediction is one of the emerging fields in the domain of smart agriculture. Ample moisture levels are of high importance to yields; thus, plants will not grow and develop with inadequate soil moisture, which influences soil temperature and heat capacity and also prevents soil from weathering. Accurate soil moisture detection can lead to proper growth of all kinds of trees and crops. In this chapter, we have implemented a deep learning and few transfer learning algorithms, such as convolutional neural network (CNN), VGGNet (VGG-16, VGG-19), Inception v3, ResNet50, Xception for prediction of soil moisture based on a very small custom dataset of 626 field images of rural India over a period of 10 days, both with and without the effect of data augmentation. We have also demonstrated how these pretrained algorithms save both time and resources compared to traditional deep learning models. Here, multiclass classification is considered based on three different classes, viz. “dry,” “wet,” “extremely wet."
-  authors: Rohit Prasan Mandal, Deepanshu Dutta, Saranya Bhattacharjee, Subhalaxmi Chakraborty
+  description: "Master data structures and algorithms using Python programming."
+  authors: Rohit Prasan Mandal
   link:
     url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
-    display: O’Reilly (2023)
+    display: Buy Now ($69)
   highlight: 1
 
-- title: "Breast Cancer Prediction: A Machine Learning Approach"
-  image: Pairs3.png
-  description: "Breast cancer is the most common cancer in women world-wide. In 2020, there were 2.3 million women diagnosed with breast can-cer and 685 000 deaths globally. Incidence rates vary widely across theworld, from 27 per 100,000 in Middle Africa and Eastern Asia to 92 per100,000 in Northern America. Earlier detection of this disease can leadto proper treatment. So accurate and fast detection is most important.This proposed paper presents a comparison of six machine learning al-gorithms: XGBoost Classifier, Random Forest, KNN Classifier, Logistic Regression, SVM Classification, Decision Tree on the Wisconsin Diagnos-tic Breast Cancer dataset which is extracted from a digitised image of anMRI. After cleaning the dataset we perform feature scaling. Finally, weapplied those classification algorithm to classifies into two classes‘Ma-lignant Tumor’, and‘Malignant Benign’. The best overall accuracy forbreast cancer diagnosis is achieved equal to 93.24% and 94.96% respec-tively using support vector machines classifier and Logistic Regressionmodels against two widely used breast cancer benchmark datasets."
-  authors: Deepanshu Dutta, Rohit Prasan Mandal, Subhalaxmi Chakraborty
-  link:
-    url: https://github.com/xiaowuc2/Breast-Cancer-Prediction-A-Machine-Learning-Approach
-    display: UEMK (2021)
-  highlight: 0
-  news1:   <a style="color:#FF0000" href="https://www.nature.com/articles/s41567-021-01468-w">Featured as 'Research Highlight' in Nature Physics by David Abergel</a>
-  news2: See [Physics World](https://physicsworld.com/a/cooper-pairs-spotted-above-critical-temperature-for-superconductivity/), [SRON news](https://www.sron.nl/news/5169-elektronparen-blijven-stabiel-boven-kritische-temperatuur-supergeleiding), [TU Delft news](https://www.tudelft.nl/en/2021/eemcs/inexplicably-stable-electron-pairs-without-superconductivity), [Leiden news](https://www.universiteitleiden.nl/en/news/2021/10/new-quantum-liquid-discovered).
-
-- title: " COVID-Classifier: a simpler supervised machine learning model"
-  image: TBG_SL.png
-  description: "Coronavirus disease (COVID-19) is an infectious disease causedby the SARS-CoV-2 virus. It is the largest category for anRNA virus. Authorities in 222 countries and territories have reportedabout 244.2 million Covid-19 cases and 5 million deaths since Chinareported its first cases to the World Health Organization (WHO) in De-cember 2019. Our proposed classifier assists in the early diagnosis of Covid-19. There are many well established model which can give moreaccurate results based on X-ray or CT scans, but they are convoluted andabstruse for normal person. We’ve developed a more simpler model with‘Yes’ and ‘No’ types on question, where our huge dataset are trained with these features : ‘BreathingProblem’, ‘Fever’, ‘Dry Cough’, ‘Sore throat’, ‘Running Nose’, ‘Asthma’, ‘Chronic Lung Disease’, ‘Headache’, ‘Heart Disease’, ‘Diabetes’, ‘HyperTension’, ‘Fatigue’ and eight more. Based on these data the model willpredict result in a probabilistic view."
-  authors: Rohit Prasan Mandal, Deepanshu Dutta, Subhalaxmi Chakraborty
-  link:
-    url: https://github.com/xiaowuc2/COVID-Classifier-a-simpler-supervised-machine-learning-model
-    display:  UEMK (2022)
-  highlight: 0
-  news2:
 
