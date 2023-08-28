@@ -1,6 +1,6 @@
 ---
 title: "Publications"
-layout: default
+layout: gridlay
 excerpt: "qxresearch AI Lab -- Publications."
 sitemap: false
 permalink: /publications/
