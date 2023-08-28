@@ -1,7 +1,6 @@
 - title: "Computational Thinking : Python"
   image: pythonctp.png
-  description: "Learn the fundamentals of computational thinking using Python."
-  authors: Rohit Prasan Mandal
+  description: "A transformative course where the synergy of an IBM expert and collaborative input from IITians sets the stage for mastering computational concepts. Crafted by an Artificial Intelligence Research Lab, this course bridges theory and practical application. Explore Python's power while cultivating structured problem-solving skills. Our IBM instructor lends real-world insights, complemented by IIT excellence, ensuring a well-rounded education. Embrace this unique opportunity to learn at the forefront of computational thinking, guided by cutting-edge AI research. Join us in shaping the future through logic, algorithms, and innovation."
   authors: Rohit Prasan Mandal
   link:
     url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
@@ -11,7 +10,7 @@
 
 - title: "Data Structures and Algorithm : Python"
   image: dsa.png
-  description: "Master data structures and algorithms using Python programming."
+  description: "A course that fuses IBM's professional expertise with the insights of IITians, all backed by an Artificial Intelligence Research Lab. Delve into Python-powered data structures and algorithms, honing essential programming skills. Our IBM instructor brings real-world insights, while IIT collaboration ensures academic excellence. Experience a curriculum meticulously designed to blend theory and practicality, equipping you to tackle real-world coding challenges. Guided by the forefront of AI research, this course offers more than education—it's an exploration of innovation. Join us to master the heart of programming and shape tomorrow's technological landscape."
   authors: Rohit Prasan Mandal
   link:
     url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
@@ -29,7 +28,7 @@
 
 - title: "Machine Learning : Python"
   image: ml.png
-  description: "Explore machine learning concepts and techniques using Python."
+  description: "Experience a revolutionary program where IBM's seasoned proficiency meets the perspectives of IIT scholars, expertly curated by an Artificial Intelligence Research Lab. Immerse yourself in the domain of machine learning, steered by real-world acumen from our IBM educator and enhanced by IIT collaborations for scholastic distinction. Discover Python's potential in constructing astute algorithms and anticipatory models. Through a curriculum seamlessly merging theory and practicality, this course empowers you to navigate the dynamic AI terrain. Embrace this opportunity to shape technology's future with data-centric revelations and inventive thinking."
   authors: Rohit Prasan Mandal
   link:
     url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
