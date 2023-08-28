@@ -6,12 +6,15 @@ sitemap: false
 permalink: /courses/
 ---
 
-<h1>{{ page.title }}</h1>
+At qxresearch AI, we are passionate about fostering the next generation of computer scientists and researchers. We firmly believe that empowering young minds with knowledge and skills in artificial intelligence and machine learning will shape a brighter future for technology and society as a whole. As part of our commitment to education and knowledge-sharing, we are thrilled to introduce our personalized 1-to-1 `Python`, `Data Structures` and `Machine Learning` Sessions designed specifically for students. 
+
+The course is designed with a dual purpose: not only to foster academic research, but also to elevate students' problem-solving acumen through immersive engagement with `LeetCode` challenges. Furthermore, the course culminates with students embarking on a significant Python-based project, thereby playing a pivotal role in realizing this comprehensive objective.
+
+<br>
 
 
-## Group highlights
+<p style="text-align: center;">Find the archive of research projects and papers developed by our team and our students : [here](https://github.com/qxresearch/qxresearch-event-1)</p>
 
-**At the end of this page, you can find the [full list of publications and patents](#full-list-of-publications). 
 
 {% assign number_printed = 0 %}
 {% for publi in site.data.courses %}
@@ -56,14 +59,6 @@ permalink: /courses/
 </p>
 
 
-At qxresearch AI, we are passionate about fostering the next generation of computer scientists and researchers. We firmly believe that empowering young minds with knowledge and skills in artificial intelligence and machine learning will shape a brighter future for technology and society as a whole. As part of our commitment to education and knowledge-sharing, we are thrilled to introduce our personalized 1-to-1 `Python`, `Data Structures` and `Machine Learning` Sessions designed specifically for students. 
-
-The course is designed with a dual purpose: not only to foster academic research, but also to elevate students' problem-solving acumen through immersive engagement with `LeetCode` challenges. Furthermore, the course culminates with students embarking on a significant Python-based project, thereby playing a pivotal role in realizing this comprehensive objective.
-
-<br>
-
-
-<p style="text-align: center;">Find the archive of research projects and papers developed by our team and our students : [here](https://github.com/qxresearch/qxresearch-event-1)</p>
 
 
 <br>
