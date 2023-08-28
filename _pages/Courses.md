@@ -3,7 +3,7 @@ title: "Courses"
 layout: default
 excerpt: "Openings"
 sitemap: false
-permalink: /Courses 
+permalink: /courses 
 ---
 
 <p align="center">
