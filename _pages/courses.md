@@ -21,6 +21,19 @@ These courses are designed with a dual purpose: not only to foster academic rese
 
 <br>
 
+**All courses includes**
+
+  50+ hours content<br>
+  45 minute live doubt session every week<br>
+  2 Industry level real world projects<br>
+  Hands on exercises & quizzes after each module<br>
+  Surprise live sessions with industry experts<br>
+  Career & Interview Preparation guidance<br>
+  Resume Preparation<br>
+  Certificate of completion
+
+<br>
+
 {% assign number_printed = 0 %}
 {% for publi in site.data.courses %}
 
