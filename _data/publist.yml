@@ -8,30 +8,4 @@
   highlight: 1
   news2: See [news item](https://www.universiteitleiden.nl/en/news/2023/06/new-method-to-find-majoranas-tested-for-the-first-time) by Michelle Willebrands
 
-- title: "Variational Autoencoder-Based Imbalanced Alzheimer Detection Using Brain MRI Images"
-  image: imageaward_edited.png
-  description: Alzheimer’s disease is an incurable, progressive neurological disease that causes the brain to shrink and brain cells to die. Earlier detection of Alzheimer’s disease can lead to proper treatment and prevent brain tissue damage. So accurate and fast detection of Alzheimer is most important. There is many well-established model which can predict Alzheimer’s disease but they struggle hard for imbalance datasets. This work has focused on the early and fast detection of Alzheimer’s disease from imbalance brain magnetic resonance imaging (MRI) dataset using proper variational autoencoder (VAE) model. Firstly, the whole dataset has been converted into a latent vector form then we used some popular sampling methods to balance the dataset. Finally, we applied some classification algorithm to classify the brain MRI images into four different classes ‘Very Mild Demented,’ ‘Mild Demented,’ ‘Non-Demented,’ and ‘Moderate Demented.’ In order to maintain the stability in result, we have applied tenfold cross-validation. In our experiment, it indicates improvement in results to detect Alzheimer’s disease using VAE.
-  authors: Soumyajit Maity, Rohit Prasan Mandal, Saranya Bhattacharjee, Sankhadeep Chatterjee
-  link:
-    url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
-    display: Springer IEM-ICDC (2021)
-  highlight: 1
-  news2: See [news item](https://www.universiteitleiden.nl/en/news/2023/06/new-method-to-find-majoranas-tested-for-the-first-time) by Michelle Willebrands
 
-- title: "Water Content Prediction in Smart Agriculture of Rural India Using CNN and Transfer Learning Approach"
-  image: imageaward_edited.png
-  description: Soil moisture prediction is one of the emerging fields in the domain of smart agriculture. Ample moisture levels are of high importance to yields; thus, plants will not grow and develop with inadequate soil moisture, which influences soil temperature and heat capacity and also prevents soil from weathering. Accurate soil moisture detection can lead to proper growth of all kinds of trees and crops. In this chapter, we have implemented a deep learning and few transfer learning algorithms, such as convolutional neural network (CNN), VGGNet (VGG-16, VGG-19), Inception v3, ResNet50, Xception for prediction of soil moisture based on a very small custom dataset of 626 field images of rural India over a period of 10 days, both with and without the effect of data augmentation. We have also demonstrated how these pretrained algorithms save both time and resources compared to traditional deep learning models. Here, multiclass classification is considered based on three different classes, viz. “dry,” “wet,” “extremely wet.
-  authors: Rohit Prasan Mandal, Deepanshu Dutta, Saranya Bhattacharjee, Subhalaxmi Chakraborty
-  link:
-    url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
-    display: O’Reilly
-  highlight: 0
-
-- title: "COVID-Classifier: a simpler supervised machine learning model"
-  image: BSCCOgap.png
-  description: Coronavirus disease (COVID-19) is an infectious disease causedby the SARS-CoV-2 virus. It is the largest category for anRNA virus. Authorities in 222 countries and territories have reportedabout 244.2 million Covid-19 cases and 5 million deaths since Chinareported its first cases to the World Health Organization (WHO) in De-cember 2019. Our proposed classifier assists in the early diagnosis of Covid-19. There are many well established model which can give moreaccurate results based on X-ray or CT scans, but they are convoluted andabstruse for normal person. We’ve developed a more simpler model with‘Yes’ and ‘No’ types on question, where our huge dataset are trained with these features : ‘BreathingProblem’, ‘Fever’, ‘Dry Cough’, ‘Sore throat’, ‘Running Nose’, ‘Asthma’, ‘Chronic Lung Disease’, ‘Headache’, ‘Heart Disease’, ‘Diabetes’, ‘HyperTension’, ‘Fatigue’ and eight more. Based on these data the model willpredict result in a probabilistic view.
-  authors: Rohit Prasan Mandal
-  link:
-    url: https://github.com/xiaowuc2/COVID-Classifier-a-simpler-supervised-machine-learning-model
-    display: ResearchGate (2022)
-  highlight: 0
