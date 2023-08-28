@@ -6,6 +6,11 @@ sitemap: false
 permalink: /courses/
 ---
 
+<div style="text-align: center;">
+  <h1>Courses</h1>
+</div>
+
+
 At qxresearch AI, we are passionate about fostering the next generation of computer scientists and researchers. We firmly believe that empowering young minds with knowledge and skills in artificial intelligence and machine learning will shape a brighter future for technology and society as a whole. As part of our commitment to education and knowledge-sharing, we are thrilled to introduce our personalized 1-to-1 `Python`, `Data Structures` and `Machine Learning` Sessions designed specifically for students. 
 
 The course is designed with a dual purpose: not only to foster academic research, but also to elevate students' problem-solving acumen through immersive engagement with `LeetCode` challenges. Furthermore, the course culminates with students embarking on a significant Python-based project, thereby playing a pivotal role in realizing this comprehensive objective.
