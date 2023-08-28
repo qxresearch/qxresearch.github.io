@@ -6,10 +6,9 @@ sitemap: false
 permalink: /publications/
 ---
 
-<h1>{{ page.title }}</h1>
-
-
-## Group highlights
+<div style="text-align: center;">
+  <h1>Publications</h1>
+</div>
 
 **At the end of this page, you can find the [full list of publications and patents](#full-list-of-publications). 
 
