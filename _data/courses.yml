@@ -1,6 +1,7 @@
-- title: "Computational Thinking: Python"
+- title: "Computational Thinking : Python"
   image: pythonctp.png
   description: "Learn the fundamentals of computational thinking using Python."
+  authors: Rohit Prasan Mandal
   authors: Rohit Prasan Mandal
   link:
     url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
@@ -8,7 +9,7 @@
   highlight: 1
   
 
-- title: "Python Data Structures and Algorithm"
+- title: "Data Structures and Algorithm : Python"
   image: dsa.png
   description: "Master data structures and algorithms using Python programming."
   authors: Rohit Prasan Mandal
@@ -17,7 +18,7 @@
     display: Buy Now ($69)
   highlight: 1
 
-- title: "Data Science with Python"
+- title: "Data Science : Python"
   image: datasc.png
   description: "Dive into data science with Python and analyze real-world datasets."
   authors: Rohit Prasan Mandal
@@ -26,7 +27,7 @@
     display: Buy Now ($69)
   highlight: 1
 
-- title: "Machine Learning with Python"
+- title: "Machine Learning : Python"
   image: ml.png
   description: "Explore machine learning concepts and techniques using Python."
   authors: Rohit Prasan Mandal
