@@ -1,10 +1,10 @@
 - title: "Single-electron charge transfer into putative Majorana and trivial modes in individual vortices"
-  image: imageaward_edited.png
+  image: mildDiv.jpg
   description: "Alzheimer’s disease is an incurable, progressive neurological disease that causes the brain to shrink and brain cells to die. Earlier detection of Alzheimer’s disease can lead to proper treatment and prevent brain tissue damage. So accurate and fast detection of Alzheimer is most important. There is many well established model which can predict Alzheimer’s disease but they struggle hard for imbalance datasets. This work has focused on the early and fast detection of Alzheimer’s disease from Imbalance Brain Magnetic resonance imaging(MRI) dataset using proper Variational Autoencoder(VAE) model. Firstly, the whole dataset has been converted into a latent vector form then we used some popular sampling methods to balance the dataset. Finally, we applied some classification algorithm to classify the Brain MRI images into four different classes ‘Very Mild Demented’, ‘Mild Demented’, ‘Non Demented’ and ‘Moderate  Demented’. In order to maintain stability in result we have applied 10-fold cross validation. In our experiment it indicates improvement in results to detect Alzheimer’s disease using VAE."
-  authors: J-F Ge, KM Bastiaans, D Chatzopoulos, D Cho, WO Tromp, T Benschop, J Niu, G Gu, MP Allan
+  authors: Soumyajit Maity, Rohit Prasan Mandal, Saranya Bhattacharjee, Sankhadeep Chatterjee
   link:
-    url: https://www.nature.com/articles/s41467-023-39109-w
-    display: Nature Communications 4, 3341 (2023)
+    url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
+    display: Springer IEM-ICDC (2021)
   highlight: 1
   news2: See [news item](https://www.universiteitleiden.nl/en/news/2023/06/new-method-to-find-majoranas-tested-for-the-first-time) by Michelle Willebrands
 
