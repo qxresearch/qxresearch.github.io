@@ -9,8 +9,26 @@
   
 
 - title: "Python Data Structures and Algorithm"
-  image: 8.jpg
+  image: dsa.png
   description: "Master data structures and algorithms using Python programming."
+  authors: Rohit Prasan Mandal
+  link:
+    url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
+    display: Buy Now ($69)
+  highlight: 1
+
+- title: "Data Science with Python"
+  image: datasc.png
+  description: "Dive into data science with Python and analyze real-world datasets."
+  authors: Rohit Prasan Mandal
+  link:
+    url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
+    display: Buy Now ($69)
+  highlight: 1
+
+- title: "Machine Learning with Python"
+  image: ml.png
+  description: "Explore machine learning concepts and techniques using Python."
   authors: Rohit Prasan Mandal
   link:
     url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
