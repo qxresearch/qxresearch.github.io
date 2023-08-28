@@ -1,17 +1,17 @@
-- title: "Variational Autoencoder-Based Imbalanced Alzheimer Detection Using Brain MRI Images"
+- title: "Single-electron charge transfer into putative Majorana and trivial modes in individual vortices"
   image: imageaward_edited.png
-  description: Alzheimer’s disease is an incurable, progressive neurological disease that causes the brain to shrink and brain cells to die. Earlier detection of Alzheimer’s disease can lead to proper treatment and prevent brain tissue damage. So accurate and fast detection of Alzheimer is most important. There is many well-established model which can predict Alzheimer’s disease but they struggle hard for imbalance datasets. This work has focused on the early and fast detection of Alzheimer’s disease from imbalance brain magnetic resonance imaging (MRI) dataset using proper variational autoencoder (VAE) model. Firstly, the whole dataset has been converted into a latent vector form then we used some popular sampling methods to balance the dataset. Finally, we applied some classification algorithm to classify the brain MRI images into four different classes `Very Mild Demented`, `Mild Demented`, `Non-Demented`, and `Moderate Demented`. In order to maintain the stability in result, we have applied tenfold cross-validation. In our experiment, it indicates improvement in results to detect Alzheimer’s disease using VAE.
-  authors: Soumyajit Maity, Rohit Prasan Mandal, Saranya Bhattacharjee, Sankhadeep Chatterjee
+  description: Alzheimer’s disease is an incurable, progressive neurologicaldisease that cause the brain to shrink and brain cells to die. Earlierdetection of Alzheimer’s disease can lead to proper treatment and pre-vent brain tissue damage. So accurate and fast detection of Alzheimer ismost important. There is many well established model which can predictAlzheimer’s disease but they struggle hard for imbalance datasets. Thiswork has foused on the early and fast detection of Alzheimer’s diseasefrom Imbalance Brain Magnetic resonance imaging(MRI) dataset usingproper Variational Autoencoder(VAE) model. Firstly, the whole datasethas been converted into a latent vector form then we used some popu-lar sampling methods to balance the dataset. Finally, we applied someclassification algorithm to classify the Brain MRI images into four dif-ferent classes‘Very Mild Demented’,‘Mild Demented’,‘Non Demented’and ‘Moderate  Demented’. In order to maintain the stability in resultwe have applied 10-fold cross validation. In our experiment it indicatesimprovement in results to detect Alzheimer’s disease using VAE.
+  authors: J-F Ge, KM Bastiaans, D Chatzopoulos, D Cho, WO Tromp, T Benschop, J Niu, G Gu, MP Allan
   link:
-    url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
-    display:Springer IEM-ICDC (2021)
+    url: https://www.nature.com/articles/s41467-023-39109-w
+    display: Nature Communications 4, 3341 (2023)
   highlight: 1
   news2: See [news item](https://www.universiteitleiden.nl/en/news/2023/06/new-method-to-find-majoranas-tested-for-the-first-time) by Michelle Willebrands
 
-- title: "Water Content Prediction in Smart Agriculture of Rural India Using CNN and Transfer Learning Approach"
+- title: "Why shot noise does not generally detect pairing in mesoscopic superconducting tunnel junctions"
   image: imageaward_edited.png
-  description: Soil moisture prediction is one of the emerging fields in the domain of smart agriculture. Ample moisture levels are of high importance to yields; thus, plants will not grow and develop with inadequate soil moisture, which influences soil temperature and heat capacity and also prevents soil from weathering. Accurate soil moisture detection can lead to proper growth of all kinds of trees and crops. In this chapter, we have implemented a deep learning and few transfer learning algorithms, such as convolutional neural network (CNN), VGGNet (VGG-16, VGG-19), Inception v3, ResNet50, Xception for prediction of soil moisture based on a very small custom dataset of 626 field images of rural India over a period of 10 days, both with and without the effect of data augmentation. We have also demonstrated how these pretrained algorithms save both time and resources compared to traditional deep learning models. Here, multiclass classification is considered based on three different classes, viz. `dry`, `wet`, `extremely wet`.
-  authors: Rohit Prasan Mandal, Deepanshu Dutta, Saranya Bhattacharjee, Subhalaxmi Chakraborty
+  description: Shot noise has been suggested for a long time as a tell-tale probe for Majorana bound states. We are the first to carry out local tunneling shot noise measurements on the putative vortex Majorana states.
+  authors: JJiasen Niu, Koen M. Bastiaans, Jianfeng Ge, Ruchi Tomar, John Jesudasan, Pratap Raychaudhuri, Max Karrer, Reinhold Kleiner, Dieter Koelle, Arnaud Barbier, Eduard F.C. Driessen, Yaroslav M. Blanter, Milan P. Allan
   link:
     url: https://arxiv.org/abs/2306.02397
     display: arXiv
