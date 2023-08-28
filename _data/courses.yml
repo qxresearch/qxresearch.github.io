@@ -1,20 +1,44 @@
-- name: Computational Thinking: Python
+- title: Computational Thinking: Python
+  image: mildDem.jpg
+  description: Learn the fundamentals of computational thinking using Python.
   duration: 4 weeks
   fees: $200
   modules: 6
-  description: Learn the fundamentals of computational thinking using Python.
-- name: Python Data Structures and Algorithm
+  link:
+    url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
+    display: Springer (2021)
+  highlight: 1
+
+- title: Python Data Structures and Algorithm
+  image: mildDem.jpg
+  description: Master data structures and algorithms using Python programming.
   duration: 6 weeks
   fees: $250
   modules: 8
-  description: Master data structures and algorithms using Python programming.
-- name: Python for Data Science
+  link:
+    url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
+    display: Springer (2021)
+  highlight: 1
+
+- title: Python for Data Science
+  image: mildDem.jpg
+  description: Dive into data science with Python and analyze real-world datasets.
   duration: 8 weeks
   fees: $300
   modules: 10
-  description: Dive into data science with Python and analyze real-world datasets.
-- name: Machine Learning with Python
+  link:
+    url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
+    display: Springer (2021)
+  highlight: 1
+
+- title: Machine Learning with Python
+  image: mildDem.jpg
+  description: Explore machine learning concepts and techniques using Python.
   duration: 10 weeks
   fees: $350
   modules: 12
-  description: Explore machine learning concepts and techniques using Python.
+  link:
+    url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
+    display: Springer (2021)
+  highlight: 1
+
