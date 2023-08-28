@@ -4,7 +4,7 @@
   authors: Soumyajit Maity, Rohit Prasan Mandal, Saranya Bhattacharjee, Sankhadeep Chatterjee
   link:
     url: https://link.springer.com/chapter/10.1007/978-981-19-1657-1_14
-    display: Nature Communications 4, 3341 (2023)
+    display: Springer IEM-ICDC (2021)
   highlight: 1
   
 
@@ -14,8 +14,8 @@
   authors: JJiasen Niu, Koen M. Bastiaans, Jianfeng Ge, Ruchi Tomar, John Jesudasan, Pratap Raychaudhuri, Max Karrer, Reinhold Kleiner, Dieter Koelle, Arnaud Barbier, Eduard F.C. Driessen, Yaroslav M. Blanter, Milan P. Allan
   link:
     url: https://arxiv.org/abs/2306.02397
-    display: arXiv
-  highlight: 0
+    display: O’Reilly
+  highlight: 1
 
 - title: "Puddle formation, persistent gaps, and non-mean-field breakdown of superconductivity in overdoped (Pb,Bi)2Sr2CuO6+δ"
   image: BSCCOgap.png
