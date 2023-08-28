@@ -1,0 +1,20 @@
+- name: Computational Thinking: Python
+  duration: 4 weeks
+  fees: $200
+  modules: 6
+  description: Learn the fundamentals of computational thinking using Python.
+- name: Python Data Structures and Algorithm
+  duration: 6 weeks
+  fees: $250
+  modules: 8
+  description: Master data structures and algorithms using Python programming.
+- name: Python for Data Science
+  duration: 8 weeks
+  fees: $300
+  modules: 10
+  description: Dive into data science with Python and analyze real-world datasets.
+- name: Machine Learning with Python
+  duration: 10 weeks
+  fees: $350
+  modules: 12
+  description: Explore machine learning concepts and techniques using Python.
