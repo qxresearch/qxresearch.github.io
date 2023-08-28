@@ -20,16 +20,7 @@
 
 - title: "Data Science : Python"
   image: datasc.png
-  description: "Dive into data science with Python and analyze real-world datasets.
-Python Introduction
-Intro to Jupyter Notebook and installation
-Variables,Data Types and Operators in Python
-Data Structures in Python: Tuple, List, Dictionary & Set
-Python Object-Oriented Programming: Class & Object
-Searching and Sorting
-Data Analysis Libraries in Python - NumPy,Pandas
-Data Visualization with Python: Matplotlib,SeaBorn
-Data Cleaning and Exploratory Data Analysis(EDA)"
+  description: "Dive into data science with Python and analyze real-world datasets. <br> hi"
   authors: Rohit Prasan Mandal
   link:
     url: https://www.oreilly.com/library/view/intelligent-decision-support/9781119896432/c10.xhtml
