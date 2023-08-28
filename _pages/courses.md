@@ -65,11 +65,6 @@ At qxresearch AI, we are passionate about fostering the next generation of compu
 
 <p> &nbsp; </p>
 
-
-
-
-<br>
-
 These courses are designed with a dual purpose: not only to foster academic research, but also to elevate students' problem-solving acumen through immersive engagement with `LeetCode` challenges. Furthermore, the course culminates with students embarking on a significant Python-based project, thereby playing a pivotal role in realizing this comprehensive objective.
 
 <br>
