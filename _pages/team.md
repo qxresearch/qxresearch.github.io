@@ -76,7 +76,7 @@ Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-stu
 
 
 
-## Master and Bachelor Students
+<!--## Master and Bachelor Students
 {% assign number_printed = 0 %}
 {% for member in site.data.students %}
 
@@ -88,7 +88,7 @@ Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-stu
 
 <div class="col-sm-6 clearfix">
   <h4>{{ member.name }}</h4>
-  <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i> -->
+  <i>{{ member.info }} <!-- <br>email: <{{ member.email }}></i>
   <ul style="overflow: hidden">
 
   {% if member.number_educ == 1 %}
@@ -115,6 +115,7 @@ Jump to [staff](#staff), [master and bachelor students](#master-and-bachelor-stu
 
   </ul>
 </div>
+-->
 
 {% assign number_printed = number_printed | plus: 1 %}
 
