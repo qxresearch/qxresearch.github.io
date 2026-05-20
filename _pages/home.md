@@ -27,13 +27,6 @@ In the past few years, the field of computing has expanded significantly, gainin
 <br>
 <br> 
 
----
-title: "qxresearch AI"
-layout: fullpage
-excerpt: "qxresearch AI — Independent AI Research Platform"
-sitemap: false
-permalink: /
----
 
 <style>
 *, *::before, *::after { box-sizing: border-box; }
