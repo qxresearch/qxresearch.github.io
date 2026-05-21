@@ -597,8 +597,8 @@ var navLinks = nav.querySelector('.nav-links');
 var btn = document.getElementById('back-to-top');
 var hideTimer = null;
 var isHoveringLinks = false;
+var isScrolling = false;
 
-// Track hover state on the nav links pill
 navLinks.addEventListener('mouseenter', function() {
     isHoveringLinks = true;
     clearTimeout(hideTimer);
@@ -607,8 +607,7 @@ navLinks.addEventListener('mouseenter', function() {
 
 navLinks.addEventListener('mouseleave', function() {
     isHoveringLinks = false;
-    // Only start the hide timer if we've scrolled past the logo threshold
-    if (window.scrollY > 60) {
+    if (isScrolling && window.scrollY > 60) {
         scheduleHide();
     }
 });
@@ -618,24 +617,29 @@ function scheduleHide() {
     hideTimer = setTimeout(function() {
         if (!isHoveringLinks) {
             nav.classList.add('nav-hidden');
+            isScrolling = false;
         }
     }, 1000);
 }
 
 window.addEventListener('scroll', function() {
     var y = window.scrollY;
+    isScrolling = true;
 
     if (y > 60) {
         nav.classList.add('scrolled');
     } else {
         nav.classList.remove('scrolled');
+        nav.classList.remove('nav-hidden');
+        isScrolling = false;
+        return;
     }
 
     btn.classList.toggle('visible', y > 300);
 
     nav.classList.remove('nav-hidden');
 
-    if (y > 60 && !isHoveringLinks) {
+    if (!isHoveringLinks) {
         scheduleHide();
     }
 });
