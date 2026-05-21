@@ -629,21 +629,23 @@ window.addEventListener('scroll', function() {
     if (y > 60) {
         nav.classList.add('scrolled');
     } else {
+        clearTimeout(hideTimer);
+        isScrolling = false;
+        isHoveringLinks = false;
         nav.classList.remove('scrolled');
         nav.classList.remove('nav-hidden');
-        isScrolling = false;
+        btn.classList.remove('visible');
         return;
     }
 
     btn.classList.toggle('visible', y > 300);
-
     nav.classList.remove('nav-hidden');
 
     if (!isHoveringLinks) {
         scheduleHide();
     }
 });
-    </script>
+</script>
 
     <!-- Above the Fold / Hero Container -->
     <div class="hero-section">
