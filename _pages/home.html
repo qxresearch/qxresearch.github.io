@@ -122,49 +122,7 @@ permalink: /
             color: #0f172a;
         }
 
-        /* Search Bar */
-        .nav-search {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: center;
-            padding: 0 30px;
-        }
-
-        .nav-search-inner {
-            display: flex;
-            align-items: center;
-            background: #f1f5f9;
-            border: 1px solid #e2e8f0;
-            border-radius: 999px;
-            padding: 7px 18px;
-            width: 340px;
-            transition: border-color 0.2s, box-shadow 0.2s;
-        }
-
-        .nav-search-inner:focus-within {
-            border-color: #94a3b8;
-            box-shadow: 0 0 0 3px rgba(148,163,184,0.15);
-            background: #fff;
-        }
-
-        .nav-search-inner svg {
-            width: 15px;
-            height: 15px;
-            flex-shrink: 0;
-            margin-right: 8px;
-            stroke: #94a3b8;
-        }
-
-        .nav-search-inner input {
-            border: none;
-            background: transparent;
-            outline: none;
-            font-size: 9.5pt;
-            color: #334155;
-            width: 100%;
-        }
-
-        .nav-search-inner input::placeholder { color: #94a3b8; }
+        /* Search bar removed */
 
         /* Back to Top */
         #back-to-top {
@@ -572,7 +530,47 @@ permalink: /
         .footer-link-group a:hover { color: #cbd5e1; }
         .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; font-size: 8.5pt; color: #334155; }
         .footer-bottom-right { font-family: "Times New Roman", Times, serif; font-style: italic; color: #334155; }
-</style>
+
+        /* YouTube Lazy Load */
+        .yt-lazy {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: #000;
+            border-radius: 6px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .yt-lazy img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .yt-lazy:hover img { transform: scale(1.03); }
+        .yt-lazy .yt-play {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 68px;
+            height: 48px;
+            transition: transform 0.2s ease, opacity 0.2s;
+            opacity: 0.92;
+        }
+        .yt-lazy:hover .yt-play { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+        .yt-lazy iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: 0;
+        }
+        </style>
 
 
     <!-- Navigation -->
@@ -645,7 +643,7 @@ window.addEventListener('scroll', function() {
         scheduleHide();
     }
 });
-</script>
+    </script>
 
     <!-- Above the Fold / Hero Container -->
     <div class="hero-section">
@@ -683,7 +681,7 @@ window.addEventListener('scroll', function() {
             <!-- Right Visual Frame -->
             <div class="hero-right">
                 <div class="mascot-container">
-                    <img class="custom-profile-img" src="/images/logo.png" alt="[Insert logo.jpg / profile image here]">
+                    <img class="custom-profile-img" src="/images/logo.jpg" alt="[Insert logo.jpg / profile image here]">
                     <div class="mascot-caption">qxresearch Platform Hub</div>
                 </div>
             </div>
@@ -704,7 +702,12 @@ window.addEventListener('scroll', function() {
                 <div class="big-video-card">
                     <div class="video-player-container">
                         <!-- Removed parameter filters to cleanly fix the player configuration bug -->
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                     </div>
                     <div class="big-video-meta">
                         <h3 class="big-video-title">Transformer Architecture: Under the Hood</h3>
@@ -717,7 +720,12 @@ window.addEventListener('scroll', function() {
             <div class="feature-video-col">
                 <div class="big-video-card">
                     <div class="video-player-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                     </div>
                     <div class="big-video-meta">
                         <h3 class="big-video-title">LLM Fine-Tuning Math: A Field Guide</h3>
@@ -736,7 +744,12 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="video-player-container" style="box-shadow:none;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                         </div>
                         <h4 class="tiny-video-title">AdamW Optimizer and Loss Curves Under the Hood</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Rigorous Math Deep Dive</div>
@@ -747,7 +760,12 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="video-player-container" style="box-shadow:none;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                         </div>
                         <h4 class="tiny-video-title">Real-Time Object Tracking & Coordinate Vectorization</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Computer Vision Series</div>
@@ -758,7 +776,12 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="video-player-container" style="box-shadow:none;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                         </div>
                         <h4 class="tiny-video-title">Pure Array Calculus Matrix Optimization Engine</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>From-Scratch Frameworks</div>
@@ -769,7 +792,12 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="video-player-container" style="box-shadow:none;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                         </div>
                         <h4 class="tiny-video-title">Parallel Computing Loops & Shared GPU Kernels</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>High Performance AI</div>
@@ -783,7 +811,12 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="video-player-container" style="box-shadow:none;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                         </div>
                         <h4 class="tiny-video-title">Instruct Tuning & Masked Token Loss Arrays</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>LLM Engineering Lab</div>
@@ -794,7 +827,12 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="video-player-container" style="box-shadow:none;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                         </div>
                         <h4 class="tiny-video-title">Token Streaming Pipes & Live Application Interface</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Systems Engineering</div>
@@ -805,7 +843,12 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="video-player-container" style="box-shadow:none;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                         </div>
                         <h4 class="tiny-video-title">Understanding Diffusion and Mathematical Noise Loops</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Generative Frameworks</div>
@@ -816,7 +859,12 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="video-player-container" style="box-shadow:none;">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/beEBeQw5tpc?si=Hl6aULv63zU7Rw6G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/hqdefault.jpg" alt="Video thumbnail" loading="lazy">
+                        <button class="yt-play" aria-label="Play video">
+                            <svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>
+                        </button>
+                    </div>
                         </div>
                         <h4 class="tiny-video-title">Vector Storage Implementations and Query Mechanics</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Database Internals</div>
@@ -955,3 +1003,18 @@ window.addEventListener('scroll', function() {
             </div>
         </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('.yt-lazy').forEach(function(el) {
+            el.addEventListener('click', function() {
+                var vid = el.getAttribute('data-vid');
+                var iframe = document.createElement('iframe');
+                iframe.src = 'https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0';
+                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+                iframe.allowFullscreen = true;
+                iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;';
+                el.innerHTML = '';
+                el.appendChild(iframe);
+            });
+        });
+    </script>
