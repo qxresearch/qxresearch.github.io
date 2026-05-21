@@ -46,11 +46,7 @@ permalink: /
             width: 100%;
             z-index: 1000;
             padding: 20px 40px;
-            transition: padding 0.4s ease;
-        }
-
-        nav.scrolled {
-            padding: 12px 40px;
+            pointer-events: none;
         }
 
         .nav-container {
@@ -59,24 +55,31 @@ permalink: /
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
         }
 
+        /* Logo — always top-left, fades on scroll */
         .nav-logo {
             font-size: 13pt;
             font-weight: 700;
             letter-spacing: 0.5px;
             color: #0f172a;
             text-decoration: none;
-            transition: opacity 0.3s;
+            pointer-events: auto;
+            transition: opacity 0.4s ease, transform 0.4s ease;
         }
 
         nav.scrolled .nav-logo {
             opacity: 0;
             pointer-events: none;
+            transform: translateY(-4px);
         }
 
-        /* Glass pill container */
+        /* Glass pill — always centered absolutely so logo disappearing doesn't shift it */
         .nav-links {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
             align-items: center;
             gap: 4px;
@@ -87,13 +90,19 @@ permalink: /
             border-radius: 999px;
             padding: 5px 8px;
             box-shadow: 0 4px 24px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.8);
-            transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+            pointer-events: auto;
+            opacity: 1;
+            transition: opacity 0.3s ease, background 0.4s ease, box-shadow 0.4s ease;
         }
 
         nav.scrolled .nav-links {
-            background: rgba(250,248,245,0.75);
+            background: rgba(250,248,245,0.82);
             box-shadow: 0 8px 32px rgba(15,23,42,0.12), inset 0 1px 0 rgba(255,255,255,0.9);
-            padding: 6px 10px;
+        }
+
+        nav.nav-hidden .nav-links {
+            opacity: 0;
+            pointer-events: none;
         }
 
         .nav-links a {
@@ -573,9 +582,7 @@ permalink: /
             <div class="nav-links">
                 <a href="#video-lab">Videos</a>
                 <a href="#open-source">Open Source</a>
-                <a href="/research">Research</a>
-                <a href="/team">Team</a>
-                <a href="mailto:contact@qxresearch.org">Contact</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -585,15 +592,36 @@ permalink: /
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>
     </button>
     <script>
+        var nav = document.getElementById('main-nav');
+        var btn = document.getElementById('back-to-top');
+        var hideTimer = null;
+        var lastScrollY = 0;
+
         window.addEventListener('scroll', function() {
-            var nav = document.getElementById('main-nav');
-            var btn = document.getElementById('back-to-top');
-            if (window.scrollY > 60) {
+            var y = window.scrollY;
+
+            // Logo fades after 60px
+            if (y > 60) {
                 nav.classList.add('scrolled');
             } else {
                 nav.classList.remove('scrolled');
             }
-            btn.classList.toggle('visible', window.scrollY > 300);
+
+            // Back to top button
+            btn.classList.toggle('visible', y > 300);
+
+            // Show nav-links on scroll
+            nav.classList.remove('nav-hidden');
+
+            // Hide nav-links after 1s of no scrolling
+            clearTimeout(hideTimer);
+            if (y > 60) {
+                hideTimer = setTimeout(function() {
+                    nav.classList.add('nav-hidden');
+                }, 1000);
+            }
+
+            lastScrollY = y;
         });
     </script>
 
@@ -823,6 +851,46 @@ permalink: /
                         <span class="tech-pill">Python Core</span>
                         <span class="tech-pill">NumPy Vector</span>
                         <span class="tech-pill">Calculus Arrays</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="max-width:1300px;margin:80px auto;padding:0 40px;">
+        <div style="border-left:3px solid #0f172a;padding-left:18px;margin-bottom:45px;">
+            <h2 style="font-size:18pt;font-weight:600;margin:0;text-transform:uppercase;letter-spacing:1.5px;color:#0f172a;">Contact</h2>
+            <p style="margin:6px 0 0 0;font-style:italic;font-family:'Times New Roman',Times,serif;color:#64748b;font-size:13pt;">Get in touch with the qxresearch team</p>
+        </div>
+        <div style="display:table;width:100%;table-layout:fixed;gap:0;">
+            <div style="display:table-cell;width:50%;vertical-align:top;padding-right:40px;">
+                <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:36px;box-shadow:0 4px 12px rgba(15,23,42,0.01);">
+                    <div style="font-family:'Times New Roman',Times,serif;font-size:18pt;font-weight:400;color:#0f172a;margin-bottom:12px;">Let's collaborate</div>
+                    <p style="font-size:10.5pt;color:#475569;line-height:1.8;margin:0 0 28px 0;">We are always looking for passionate researchers, developers, and students to collaborate on cutting-edge AI projects. Reach out with your ideas or proposals.</p>
+                    <a href="mailto:qxresearch20@gmail.com" style="display:inline-block;background:#0f172a;color:#fff;text-decoration:none;padding:12px 28px;border-radius:6px;font-size:9.5pt;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:background 0.2s;">qxresearch20@gmail.com</a>
+                </div>
+            </div>
+            <div style="display:table-cell;width:50%;vertical-align:top;padding-left:40px;">
+                <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:36px;box-shadow:0 4px 12px rgba(15,23,42,0.01);">
+                    <div style="font-family:'Times New Roman',Times,serif;font-size:18pt;font-weight:400;color:#0f172a;margin-bottom:24px;">Find us online</div>
+                    <div style="margin-bottom:18px;">
+                        <a href="https://github.com/qxresearch" target="_blank" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;border-bottom:1px solid #f1f5f9;transition:color 0.2s;">
+                            <span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">GitHub</span>
+                            <span>github.com/qxresearch</span>
+                        </a>
+                    </div>
+                    <div style="margin-bottom:18px;">
+                        <a href="https://linkedin.com/company/qxresearch" target="_blank" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;border-bottom:1px solid #f1f5f9;transition:color 0.2s;">
+                            <span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">LinkedIn</span>
+                            <span>linkedin.com/company/qxresearch</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="/openings" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;transition:color 0.2s;">
+                            <span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">Openings</span>
+                            <span>View open positions</span>
+                        </a>
                     </div>
                 </div>
             </div>
