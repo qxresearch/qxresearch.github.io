@@ -38,77 +38,79 @@ permalink: /
             background: #94a3b8;
         }
 
-        /* Minimal Fixed Navigation */
+        /* Navigation */
         nav {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            background-color: rgba(250, 248, 245, 0.96);
-            border-bottom: 1px solid #e2e8f0;
             z-index: 1000;
-            padding: 18px 40px;
+            padding: 20px 40px;
+            transition: padding 0.4s ease;
         }
-        
+
+        nav.scrolled {
+            padding: 12px 40px;
+        }
+
         .nav-container {
             max-width: 1300px;
             margin: 0 auto;
-            display: table;
-            width: 100%;
-            table-layout: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
         .nav-logo {
-            display: table-cell;
-            vertical-align: middle;
-            vertical-align: middle;
-            text-decoration: none;
-        }
-
-        .nav-logo img {
-            height: 36px;
-            width: auto;
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 10px;
-            border-radius: 6px;
-        }
-
-        .nav-logo-text {
-            font-size: 14pt;
+            font-size: 13pt;
             font-weight: 700;
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
             color: #0f172a;
-            vertical-align: middle;
-            display: inline-block;
+            text-decoration: none;
+            transition: opacity 0.3s;
         }
 
+        nav.scrolled .nav-logo {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        /* Glass pill container */
         .nav-links {
-            display: table-cell;
-            vertical-align: middle;
-            text-align: right;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            background: rgba(255,255,255,0.55);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border: 1px solid rgba(255,255,255,0.7);
+            border-radius: 999px;
+            padding: 5px 8px;
+            box-shadow: 0 4px 24px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.8);
+            transition: background 0.4s, box-shadow 0.4s, padding 0.4s;
+        }
+
+        nav.scrolled .nav-links {
+            background: rgba(250,248,245,0.75);
+            box-shadow: 0 8px 32px rgba(15,23,42,0.12), inset 0 1px 0 rgba(255,255,255,0.9);
+            padding: 6px 10px;
         }
 
         .nav-links a {
-            color: #475569;
+            color: #334155;
             text-decoration: none;
-            font-size: 10pt;
-            margin-left: 35px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
+            font-size: 9pt;
             font-weight: 500;
-            transition: color 0.2s ease, border-color 0.2s ease;
-            padding-bottom: 4px;
+            letter-spacing: 0.3px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            transition: background 0.2s, color 0.2s;
+            white-space: nowrap;
         }
 
         .nav-links a:hover {
+            background: rgba(15,23,42,0.07);
             color: #0f172a;
-            border-bottom: 2px solid #0f172a;
-        }
-
-        .nav-links a {
-            text-transform: none;
-            letter-spacing: 0.5px;
         }
 
         /* Search Bar */
@@ -564,12 +566,10 @@ permalink: /
 </style>
 
 
-    <!-- Fixed Premium Top Navigation Bar -->
-    <nav>
+    <!-- Navigation -->
+    <nav id="main-nav">
         <div class="nav-container">
-            <a href="/" class="nav-logo">
-                <span class="nav-logo-text">qxresearch</span>
-            </a>
+            <a href="/" class="nav-logo">qxresearch</a>
             <div class="nav-links">
                 <a href="#video-lab">Videos</a>
                 <a href="#open-source">Open Source</a>
@@ -586,7 +586,14 @@ permalink: /
     </button>
     <script>
         window.addEventListener('scroll', function() {
-            document.getElementById('back-to-top').classList.toggle('visible', window.scrollY > 300);
+            var nav = document.getElementById('main-nav');
+            var btn = document.getElementById('back-to-top');
+            if (window.scrollY > 60) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            btn.classList.toggle('visible', window.scrollY > 300);
         });
     </script>
 
