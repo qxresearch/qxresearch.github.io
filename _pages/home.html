@@ -592,37 +592,53 @@ permalink: /
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" width="18" height="18"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5"/></svg>
     </button>
     <script>
-        var nav = document.getElementById('main-nav');
-        var btn = document.getElementById('back-to-top');
-        var hideTimer = null;
-        var lastScrollY = 0;
+var nav = document.getElementById('main-nav');
+var navLinks = nav.querySelector('.nav-links');
+var btn = document.getElementById('back-to-top');
+var hideTimer = null;
+var isHoveringLinks = false;
 
-        window.addEventListener('scroll', function() {
-            var y = window.scrollY;
+// Track hover state on the nav links pill
+navLinks.addEventListener('mouseenter', function() {
+    isHoveringLinks = true;
+    clearTimeout(hideTimer);
+    nav.classList.remove('nav-hidden');
+});
 
-            // Logo fades after 60px
-            if (y > 60) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
+navLinks.addEventListener('mouseleave', function() {
+    isHoveringLinks = false;
+    // Only start the hide timer if we've scrolled past the logo threshold
+    if (window.scrollY > 60) {
+        scheduleHide();
+    }
+});
 
-            // Back to top button
-            btn.classList.toggle('visible', y > 300);
+function scheduleHide() {
+    clearTimeout(hideTimer);
+    hideTimer = setTimeout(function() {
+        if (!isHoveringLinks) {
+            nav.classList.add('nav-hidden');
+        }
+    }, 1000);
+}
 
-            // Show nav-links on scroll
-            nav.classList.remove('nav-hidden');
+window.addEventListener('scroll', function() {
+    var y = window.scrollY;
 
-            // Hide nav-links after 1s of no scrolling
-            clearTimeout(hideTimer);
-            if (y > 60) {
-                hideTimer = setTimeout(function() {
-                    nav.classList.add('nav-hidden');
-                }, 1000);
-            }
+    if (y > 60) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
 
-            lastScrollY = y;
-        });
+    btn.classList.toggle('visible', y > 300);
+
+    nav.classList.remove('nav-hidden');
+
+    if (y > 60 && !isHoveringLinks) {
+        scheduleHide();
+    }
+});
     </script>
 
     <!-- Above the Fold / Hero Container -->
