@@ -7,515 +7,91 @@ permalink: /
 ---
 
 <style>
-        /* CSS Reset & Variable Root */
-        *, *::before, *::after {
-            box-sizing: border-box;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #faf8f5; /* Warm premium off-white */
-            color: #1e293b; /* Sophisticated charcoal */
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            overflow-x: hidden;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
+        *, *::before, *::after { box-sizing: border-box; }
+        body { margin:0;padding:0;background-color:#faf8f5;color:#1e293b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased; }
+        ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#f1ede4}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#94a3b8}
+        nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:20px 40px;pointer-events:none}
+        .nav-container{max-width:1300px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;position:relative}
+        .nav-logo{font-size:13pt;font-weight:700;letter-spacing:.5px;color:#0f172a;text-decoration:none;pointer-events:auto;transition:opacity .4s ease,transform .4s ease}
+        nav.scrolled .nav-logo{opacity:0;pointer-events:none;transform:translateY(-4px)}
+        .nav-links{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.55);backdrop-filter:blur(20px) saturate(180%);-webkit-backdrop-filter:blur(20px) saturate(180%);border:1px solid rgba(255,255,255,.7);border-radius:999px;padding:5px 8px;box-shadow:0 4px 24px rgba(15,23,42,.08),inset 0 1px 0 rgba(255,255,255,.8);pointer-events:auto;opacity:1;transition:opacity .3s ease,background .4s ease,box-shadow .4s ease}
+        nav.scrolled .nav-links{background:rgba(250,248,245,.82);box-shadow:0 8px 32px rgba(15,23,42,.12),inset 0 1px 0 rgba(255,255,255,.9)}
+        nav.nav-hidden .nav-links{opacity:0;pointer-events:none}
+        .nav-links a{color:#334155;text-decoration:none;font-size:9pt;font-weight:500;letter-spacing:.3px;padding:6px 14px;border-radius:999px;transition:background .2s,color .2s;white-space:nowrap}
+        .nav-links a:hover{background:rgba(15,23,42,.07);color:#0f172a}
+        #back-to-top{position:fixed;bottom:36px;right:36px;width:44px;height:44px;background:#0f172a;color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(10px);transition:opacity .3s,transform .3s;z-index:9999;box-shadow:0 4px 14px rgba(15,23,42,.25)}
+        #back-to-top.visible{opacity:1;transform:translateY(0)}#back-to-top:hover{background:#1e293b}
+        .hero-section{max-width:1300px;margin:150px auto 40px;padding:0 40px}
+        .hero-table{display:table;width:100%;table-layout:fixed}
+        .hero-left{display:table-cell;width:60%;vertical-align:middle;padding-right:60px}
+        .hero-right{display:table-cell;width:40%;vertical-align:middle;text-align:right}
+        .badge-container{margin-bottom:16px}
+        .branding-badge{display:inline-block;border:1px solid #0f172a;padding:5px 14px;font-size:8.5pt;text-transform:uppercase;letter-spacing:2px;border-radius:4px;font-weight:600;background-color:#0f172a;color:#fff}
+        .stanford-badge{display:inline-block;border:1px solid #8c1515;padding:5px 14px;font-size:8.5pt;text-transform:uppercase;letter-spacing:1.5px;border-radius:4px;font-weight:600;background-color:#fff;color:#8c1515;margin-left:8px}
+        h1{font-family:"Times New Roman",Times,serif;font-size:38pt;font-weight:400;color:#0f172a;margin:0 0 15px;line-height:1.15;letter-spacing:-.5px}
+        .subtitle{font-family:"Times New Roman",Times,serif;font-style:italic;font-size:16pt;color:#475569;margin-bottom:25px}
+        .intro-text{font-size:11pt;color:#334155;line-height:1.8;margin-bottom:30px}
+        .profile-snapshot{background-color:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:24px;box-shadow:0 4px 20px rgba(15,23,42,.02);display:table;width:100%}
+        .snapshot-cell{display:table-cell;width:33.33%;border-right:1px solid #e2e8f0;padding:0 20px}
+        .snapshot-cell:first-child{padding-left:0}.snapshot-cell:last-child{border-right:none;padding-right:0}
+        .snapshot-val{font-family:"Times New Roman",Times,serif;font-size:20pt;font-weight:bold;color:#0f172a;display:block}
+        .snapshot-label{font-size:8.5pt;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-top:4px;display:block;font-weight:600}
+        .mascot-container{display:inline-block;width:100%;max-width:420px;background-color:#fff;border:1px solid #e2e8f0;padding:16px;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,.04);text-align:center}
+        .custom-profile-img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px;background-color:#f8fafc;display:block;border:1px dashed #cbd5e1}
+        .mascot-caption{font-family:"Times New Roman",Times,serif;font-style:italic;font-size:11pt;color:#475569;margin-top:12px}
+        section{max-width:1300px;margin:100px auto;padding:0 40px}
+        .section-header{border-left:3px solid #0f172a;padding-left:18px;margin-bottom:45px}
+        .section-header h2{font-size:18pt;font-weight:600;margin:0;text-transform:uppercase;letter-spacing:1.5px;color:#0f172a}
+        .section-header p{margin:6px 0 0;font-style:italic;font-family:"Times New Roman",Times,serif;color:#64748b;font-size:13pt}
+        .feature-videos-row{display:table;width:100%;table-layout:fixed;margin-bottom:50px}
+        .feature-video-col{display:table-cell;width:50%;padding-right:25px;vertical-align:top}
+        .feature-video-col:last-child{padding-right:0;padding-left:25px}
+        .big-video-card{background-color:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:20px;box-shadow:0 4px 15px rgba(0,0,0,.02);transition:transform .25s ease,box-shadow .25s ease}
+        .big-video-card:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(15,23,42,.08)}
+        .big-video-meta{margin-top:20px}
+        .big-video-title{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:14pt;font-weight:600;color:#0f172a;margin:0 0 10px}
+        .big-video-desc{font-size:10pt;color:#475569;line-height:1.6}
+        .tiny-videos-grid{display:block;width:100%;border-top:1px solid #e2e8f0;padding-top:40px}
+        .tiny-grid-row{display:table;width:100%;table-layout:fixed;margin-bottom:35px}
+        .tiny-grid-col{display:table-cell;width:25%;padding-right:18px;vertical-align:top}
+        .tiny-grid-col:last-child{padding-right:0}
+        .tiny-video-card{background:none;border:none}
+        .tiny-video-title{font-size:10pt;font-weight:600;color:#0f172a;margin:12px 0 4px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+        .tiny-video-stats{font-size:8.5pt;color:#64748b;line-height:1.4}
+        .project-row{display:table;width:100%;table-layout:fixed;margin-bottom:20px}
+        .project-col{display:table-cell;width:33.33%;padding-right:20px;vertical-align:top}
+        .project-col:last-child{padding-right:0}
+        .project-card{background-color:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:24px;height:100%;box-shadow:0 4px 12px rgba(15,23,42,.01)}
+        .project-card:hover{box-shadow:0 10px 20px rgba(15,23,42,.04)}
+        .project-title{font-size:13pt;font-weight:600;color:#0f172a;margin:0 0 8px}
+        .project-stars{font-family:monospace;font-size:9pt;color:#0284c7;font-weight:600;margin-bottom:12px;display:block}
+        .project-desc{font-size:9.5pt;color:#475569;line-height:1.6;margin-bottom:16px}
+        .tech-pill{display:inline-block;background-color:#f1f5f9;color:#475569;padding:3px 8px;border-radius:4px;font-size:8pt;font-family:monospace;margin-right:4px;margin-bottom:4px}
+        footer{background-color:#0f172a;color:#64748b;border-top:1px solid #1e293b;margin-top:60px}
+        .footer-inner{max-width:1300px;margin:0 auto;padding:70px 40px 36px}
+        .footer-top{display:table;width:100%;table-layout:fixed;padding-bottom:50px;border-bottom:1px solid #1e293b}
+        .footer-brand-col{display:table-cell;width:38%;vertical-align:top;padding-right:60px}
+        .footer-wordmark{font-family:"Times New Roman",Times,serif;font-size:22pt;font-weight:400;color:#fff;letter-spacing:-.5px;margin-bottom:16px}
+        .footer-tagline{font-size:9.5pt;color:#475569;line-height:1.8;margin:0}
+        .footer-links-col{display:table-cell;width:62%;vertical-align:top}
+        .footer-link-group{display:inline-block;vertical-align:top;width:31%;margin-right:3%}
+        .footer-link-group:last-child{margin-right:0}
+        .footer-link-heading{font-size:8pt;text-transform:uppercase;letter-spacing:2px;color:#fff;font-weight:600;margin-bottom:16px}
+        .footer-link-group a{display:block;color:#475569;text-decoration:none;font-size:9.5pt;margin-bottom:10px;transition:color .2s}
+        .footer-link-group a:hover{color:#cbd5e1}
+        .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:28px;font-size:8.5pt;color:#334155}
+        .footer-bottom-right{font-family:"Times New Roman",Times,serif;font-style:italic;color:#334155}
 
-        /* Custom Premium Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #f1ede4;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 20px 40px;
-            pointer-events: none;
-        }
-
-        .nav-container {
-            max-width: 1300px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-        }
-
-        /* Logo — always top-left, fades on scroll */
-        .nav-logo {
-            font-size: 13pt;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            color: #0f172a;
-            text-decoration: none;
-            pointer-events: auto;
-            transition: opacity 0.4s ease, transform 0.4s ease;
-        }
-
-        nav.scrolled .nav-logo {
-            opacity: 0;
-            pointer-events: none;
-            transform: translateY(-4px);
-        }
-
-        /* Glass pill — always centered absolutely so logo disappearing doesn't shift it */
-        .nav-links {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            background: rgba(255,255,255,0.55);
-            backdrop-filter: blur(20px) saturate(180%);
-            -webkit-backdrop-filter: blur(20px) saturate(180%);
-            border: 1px solid rgba(255,255,255,0.7);
-            border-radius: 999px;
-            padding: 5px 8px;
-            box-shadow: 0 4px 24px rgba(15,23,42,0.08), inset 0 1px 0 rgba(255,255,255,0.8);
-            pointer-events: auto;
-            opacity: 1;
-            transition: opacity 0.3s ease, background 0.4s ease, box-shadow 0.4s ease;
-        }
-
-        nav.scrolled .nav-links {
-            background: rgba(250,248,245,0.82);
-            box-shadow: 0 8px 32px rgba(15,23,42,0.12), inset 0 1px 0 rgba(255,255,255,0.9);
-        }
-
-        nav.nav-hidden .nav-links {
-            opacity: 0;
-            pointer-events: none;
-        }
-
-        .nav-links a {
-            color: #334155;
-            text-decoration: none;
-            font-size: 9pt;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-            padding: 6px 14px;
-            border-radius: 999px;
-            transition: background 0.2s, color 0.2s;
-            white-space: nowrap;
-        }
-
-        .nav-links a:hover {
-            background: rgba(15,23,42,0.07);
-            color: #0f172a;
-        }
-
-        /* Back to Top */
-        #back-to-top {
-            position: fixed;
-            bottom: 36px;
-            right: 36px;
-            width: 44px;
-            height: 44px;
-            background: #0f172a;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transform: translateY(10px);
-            transition: opacity 0.3s, transform 0.3s;
-            z-index: 9999;
-            box-shadow: 0 4px 14px rgba(15,23,42,0.25);
-        }
-        #back-to-top.visible { opacity: 1; transform: translateY(0); }
-        #back-to-top:hover { background: #1e293b; }
-
-        /* Hero / Above the Fold Section */
-        .hero-section {
-            max-width: 1300px;
-            margin: 150px auto 40px auto;
-            padding: 0 40px;
-        }
-
-        .hero-table {
-            display: table;
-            width: 100%;
-            table-layout: fixed;
-        }
-
-        .hero-left {
-            display: table-cell;
-            width: 60%;
-            vertical-align: middle;
-            padding-right: 60px;
-        }
-
-        .hero-right {
-            display: table-cell;
-            width: 40%;
-            vertical-align: middle;
-            text-align: right;
-        }
-
-        .badge-container {
-            margin-bottom: 16px;
-        }
-
-        .branding-badge {
-            display: inline-block;
-            border: 1px solid #0f172a;
-            padding: 5px 14px;
-            font-size: 8.5pt;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-radius: 4px;
-            font-weight: 600;
-            background-color: #0f172a;
-            color: #ffffff;
-        }
-
-        .stanford-badge {
-            display: inline-block;
-            border: 1px solid #8c1515; /* Cardinal Red for Stanford context */
-            padding: 5px 14px;
-            font-size: 8.5pt;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            border-radius: 4px;
-            font-weight: 600;
-            background-color: #ffffff;
-            color: #8c1515;
-            margin-left: 8px;
-        }
-
-        h1 {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 38pt;
-            font-weight: 400;
-            color: #0f172a;
-            margin: 0 0 15px 0;
-            line-height: 1.15;
-            letter-spacing: -0.5px;
-        }
-
-        .subtitle {
-            font-family: 'Times New Roman', Times, serif;
-            font-style: italic;
-            font-size: 16pt;
-            color: #475569;
-            margin-bottom: 25px;
-        }
-
-        .intro-text {
-            font-size: 11pt;
-            color: #334155;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        /* Profile Snapshot Box */
-        .profile-snapshot {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 24px;
-            box-shadow: 0 4px 20px rgba(15, 23, 42, 0.02);
-            display: table;
-            width: 100%;
-        }
-
-        .snapshot-cell {
-            display: table-cell;
-            width: 33.33%;
-            border-right: 1px solid #e2e8f0;
-            padding: 0 20px;
-        }
-        .snapshot-cell:first-child { padding-left: 0; }
-        .snapshot-cell:last-child { border-right: none; padding-right: 0; }
-
-        .snapshot-val {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20pt;
-            font-weight: bold;
-            color: #0f172a;
-            display: block;
-        }
-
-        .snapshot-label {
-            font-size: 8.5pt;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #64748b;
-            margin-top: 4px;
-            display: block;
-            font-weight: 600;
-        }
-
-        /* Hero Right Image Box */
-        .mascot-container {
-            display: inline-block;
-            width: 100%;
-            max-width: 420px;
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            padding: 16px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
-            text-align: center;
-        }
-
-        .custom-profile-img {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            border-radius: 8px;
-            background-color: #f8fafc;
-            display: block;
-            border: 1px dashed #cbd5e1;
-        }
-
-        .mascot-caption {
-            font-family: 'Times New Roman', Times, serif;
-            font-style: italic;
-            font-size: 11pt;
-            color: #475569;
-            margin-top: 12px;
-        }
-
-        /* General Section Construction */
-        section {
-            max-width: 1300px;
-            margin: 100px auto;
-            padding: 0 40px;
-        }
-
-        .section-header {
-            border-left: 3px solid #0f172a;
-            padding-left: 18px;
-            margin-bottom: 45px;
-        }
-
-        .section-header h2 {
-            font-size: 18pt;
-            font-weight: 600;
-            margin: 0;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: #0f172a;
-        }
-
-        .section-header p {
-            margin: 6px 0 0 0;
-            font-style: italic;
-            font-family: 'Times New Roman', Times, serif;
-            color: #64748b;
-            font-size: 13pt;
-        }
-
-        /* --- VIDEO LAB FRAMEWORK --- */
-
-        /* 1. Feature Layer: Two Big Video Cards */
-        .feature-videos-row {
-            display: table;
-            width: 100%;
-            table-layout: fixed;
-            margin-bottom: 50px;
-        }
-
-        .feature-video-col {
-            display: table-cell;
-            width: 50%;
-            padding-right: 25px;
-            vertical-align: top;
-        }
-        .feature-video-col:last-child { padding-right: 0; padding-left: 25px; }
-
-        .big-video-card {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-        .big-video-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(15, 23, 42, 0.08);
-        }
-
-        .big-video-meta {
-            margin-top: 20px;
-        }
-
-        .big-video-title {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            font-size: 14pt;
-            font-weight: 600;
-            color: #0f172a;
-            margin: 0 0 10px 0;
-        }
-
-        .big-video-desc {
-            font-size: 10pt;
-            color: #475569;
-            line-height: 1.6;
-        }
-
-        /* 2. Secondary Layer: Small Compact YouTube-Style Grid Rows */
-        .tiny-videos-grid {
-            display: block;
-            width: 100%;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 40px;
-        }
-
-        .tiny-grid-row {
-            display: table;
-            width: 100%;
-            table-layout: fixed;
-            margin-bottom: 35px;
-        }
-
-        .tiny-grid-col {
-            display: table-cell;
-            width: 25%;
-            padding-right: 18px;
-            vertical-align: top;
-        }
-        .tiny-grid-col:last-child { padding-right: 0; }
-
-        .tiny-video-card {
-            background: none;
-            border: none;
-        }
-
-        .tiny-video-title {
-            font-size: 10pt;
-            font-weight: 600;
-            color: #0f172a;
-            margin: 12px 0 4px 0;
-            line-height: 1.4;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            -webkit-overflow: hidden;
-            overflow: hidden;
-        }
-
-        .tiny-video-stats {
-            font-size: 8.5pt;
-            color: #64748b;
-            line-height: 1.4;
-        }
-
-        /* --- PRODUCTION REPOSITORIES SECTION --- */
-        .project-row {
-            display: table;
-            width: 100%;
-            table-layout: fixed;
-            margin-bottom: 20px;
-        }
-
-        .project-col {
-            display: table-cell;
-            width: 33.33%;
-            padding-right: 20px;
-            vertical-align: top;
-        }
-        .project-col:last-child { padding-right: 0; }
-
-        .project-card {
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            padding: 24px;
-            height: 100%;
-            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.01);
-        }
-
-        .project-card:hover {
-            box-shadow: 0 10px 20px rgba(15, 23, 42, 0.04);
-        }
-
-        .project-title {
-            font-size: 13pt;
-            font-weight: 600;
-            color: #0f172a;
-            margin: 0 0 8px 0;
-        }
-
-        .project-stars {
-            font-family: monospace;
-            font-size: 9pt;
-            color: #0284c7;
-            font-weight: 600;
-            margin-bottom: 12px;
-            display: block;
-        }
-
-        .project-desc {
-            font-size: 9.5pt;
-            color: #475569;
-            line-height: 1.6;
-            margin-bottom: 16px;
-        }
-
-        .tech-pill {
-            display: inline-block;
-            background-color: #f1f5f9;
-            color: #475569;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-size: 8pt;
-            font-family: monospace;
-            margin-right: 4px;
-            margin-bottom: 4px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0f172a;
-            color: #64748b;
-            border-top: 1px solid #1e293b;
-            margin-top: 60px;
-        }
-        .footer-inner { max-width: 1300px; margin: 0 auto; padding: 70px 40px 36px 40px; }
-        .footer-top { display: table; width: 100%; table-layout: fixed; padding-bottom: 50px; border-bottom: 1px solid #1e293b; }
-        .footer-brand-col { display: table-cell; width: 38%; vertical-align: top; padding-right: 60px; }
-        .footer-wordmark { font-family: "Times New Roman", Times, serif; font-size: 22pt; font-weight: 400; color: #ffffff; letter-spacing: -0.5px; margin-bottom: 16px; }
-        .footer-tagline { font-size: 9.5pt; color: #475569; line-height: 1.8; margin: 0; }
-        .footer-links-col { display: table-cell; width: 62%; vertical-align: top; }
-        .footer-link-group { display: inline-block; vertical-align: top; width: 31%; margin-right: 3%; }
-        .footer-link-group:last-child { margin-right: 0; }
-        .footer-link-heading { font-size: 8pt; text-transform: uppercase; letter-spacing: 2px; color: #ffffff; font-weight: 600; margin-bottom: 16px; }
-        .footer-link-group a { display: block; color: #475569; text-decoration: none; font-size: 9.5pt; margin-bottom: 10px; transition: color 0.2s; }
-        .footer-link-group a:hover { color: #cbd5e1; }
-        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; font-size: 8.5pt; color: #334155; }
-        .footer-bottom-right { font-family: "Times New Roman", Times, serif; font-style: italic; color: #334155; }
-
-        /* Isolated Micro-Tile Placeholder Framework */
+        /* ── Optimised YT Lazy Loader ─────────────────────────────────────────
+           • Thumbnail pulled from YouTube CDN — no local image upload needed
+           • No iframe rendered until user clicks — fast page load with many tiles
+           • Custom play button — no YouTube branding / giant red button
+        ──────────────────────────────────────────────────────────────────────── */
         .yt-lazy {
             position: relative;
             width: 100%;
-            aspect-ratio: 16/9;
-            background: #1e293b; /* Premium minimal solid slate placeholder */
+            aspect-ratio: 16 / 9;
+            background: #0f172a;
             border-radius: 6px;
             overflow: hidden;
             cursor: pointer;
@@ -525,17 +101,61 @@ permalink: /
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: opacity 0.2s ease;
+            transition: transform 0.2s ease, opacity 0.2s ease;
         }
-        .yt-lazy:hover img { 
-            opacity: 0.8;
+        .yt-lazy:hover img {
+            transform: scale(1.03);
+            opacity: 0.82;
+        }
+        .yt-play-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+        }
+        .yt-play-btn {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.62);
+            border: 1.5px solid rgba(255, 255, 255, 0.28);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.15s ease, transform 0.15s ease;
+        }
+        /* Smaller play button for tiny grid tiles */
+        .tiny-video-card .yt-play-btn {
+            width: 34px;
+            height: 34px;
+        }
+        .yt-lazy:hover .yt-play-btn {
+            background: rgba(0, 0, 0, 0.88);
+            transform: scale(1.1);
+        }
+        /* Pure-CSS triangle arrow — zero dependencies */
+        .yt-play-btn::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 7px 0 7px 13px;
+            border-color: transparent transparent transparent #ffffff;
+            margin-left: 3px;
+        }
+        .tiny-video-card .yt-play-btn::after {
+            border-width: 5px 0 5px 10px;
+            margin-left: 2px;
         }
         .yt-lazy iframe {
             position: absolute;
-            top: 0; left: 0;
-            width: 100%; height: 100%;
+            inset: 0;
+            width: 100%;
+            height: 100%;
             border: 0;
-            background: #000;
         }
 </style>
 
@@ -563,59 +183,21 @@ var btn = document.getElementById('back-to-top');
 var hideTimer = null;
 var isHoveringLinks = false;
 var isScrolling = false;
-
-navLinks.addEventListener('mouseenter', function() {
-    isHoveringLinks = true;
-    clearTimeout(hideTimer);
-    nav.classList.remove('nav-hidden');
-});
-
-navLinks.addEventListener('mouseleave', function() {
-    isHoveringLinks = false;
-    if (isScrolling && window.scrollY > 60) {
-        scheduleHide();
-    }
-});
-
-function scheduleHide() {
-    clearTimeout(hideTimer);
-    hideTimer = setTimeout(function() {
-        if (!isHoveringLinks) {
-            nav.classList.add('nav-hidden');
-            isScrolling = false;
-        }
-    }, 1000);
-}
-
+navLinks.addEventListener('mouseenter', function() { isHoveringLinks = true; clearTimeout(hideTimer); nav.classList.remove('nav-hidden'); });
+navLinks.addEventListener('mouseleave', function() { isHoveringLinks = false; if (isScrolling && window.scrollY > 60) { scheduleHide(); } });
+function scheduleHide() { clearTimeout(hideTimer); hideTimer = setTimeout(function() { if (!isHoveringLinks) { nav.classList.add('nav-hidden'); isScrolling = false; } }, 1000); }
 window.addEventListener('scroll', function() {
-    var y = window.scrollY;
-    isScrolling = true;
-
-    if (y > 60) {
-        nav.classList.add('scrolled');
-    } else {
-        clearTimeout(hideTimer);
-        isScrolling = false;
-        isHoveringLinks = false;
-        nav.classList.remove('scrolled');
-        nav.classList.remove('nav-hidden');
-        btn.classList.remove('visible');
-        return;
-    }
-
+    var y = window.scrollY; isScrolling = true;
+    if (y > 60) { nav.classList.add('scrolled'); } else { clearTimeout(hideTimer); isScrolling = false; isHoveringLinks = false; nav.classList.remove('scrolled'); nav.classList.remove('nav-hidden'); btn.classList.remove('visible'); return; }
     btn.classList.toggle('visible', y > 300);
     nav.classList.remove('nav-hidden');
-
-    if (!isHoveringLinks) {
-        scheduleHide();
-    }
+    if (!isHoveringLinks) { scheduleHide(); }
 });
     </script>
 
-    <!-- Above the Fold / Hero Container -->
+    <!-- Hero -->
     <div class="hero-section">
         <div class="hero-table">
-            <!-- Left Narrative Context -->
             <div class="hero-left">
                 <div class="badge-container">
                     <span class="branding-badge">Independent AI Research Platform</span>
@@ -627,8 +209,6 @@ window.addEventListener('scroll', function() {
                     Welcome to qxresearch AI. This platform acts as a high-fidelity systems engineering hub tracking structural AI applications. 
                     Every walkthrough bridges rigorous core math into completely transparent, open-source code executions—built to provide an ironclad profile background for graduate admissions committees and modern software clients.
                 </p>
-                
-                <!-- Profile Snapshot Block -->
                 <div class="profile-snapshot">
                     <div class="snapshot-cell">
                         <span class="snapshot-val">2.6K+</span>
@@ -644,8 +224,6 @@ window.addEventListener('scroll', function() {
                     </div>
                 </div>
             </div>
-
-            <!-- Right Visual Frame -->
             <div class="hero-right">
                 <div class="mascot-container">
                     <img class="custom-profile-img" src="/images/logo.jpg" alt="qxresearch Platform Hub">
@@ -655,7 +233,7 @@ window.addEventListener('scroll', function() {
         </div>
     </div>
 
-    <!-- Scrollable Video Engineering Content Lab -->
+    <!-- Video Lab -->
     <section id="video-lab">
         <div class="section-header">
             <h2>Videos & Deep Dives</h2>
@@ -664,12 +242,13 @@ window.addEventListener('scroll', function() {
 
         <!-- Tier 1: Two Large Featured Video Cards -->
         <div class="feature-videos-row">
+
             <!-- Large Video 1 -->
             <div class="feature-video-col">
                 <div class="big-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                        <!-- Left blank safely to show dark slate placeholder; drop local path in src="" anytime -->
-                        <img src="" alt="Transformer Architecture Walkthrough" loading="lazy">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Transformer Architecture Walkthrough" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
                     <div class="big-video-meta">
                         <h3 class="big-video-title">Transformer Architecture: Under the Hood</h3>
@@ -681,8 +260,9 @@ window.addEventListener('scroll', function() {
             <!-- Large Video 2 -->
             <div class="feature-video-col">
                 <div class="big-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                        <img src="" alt="LLM Fine Tuning Walkthrough" loading="lazy">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="LLM Fine Tuning Walkthrough" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
                     <div class="big-video-meta">
                         <h3 class="big-video-title">LLM Fine-Tuning Math: A Field Guide</h3>
@@ -690,51 +270,49 @@ window.addEventListener('scroll', function() {
                     </div>
                 </div>
             </div>
+
         </div>
 
-        <!-- Tier 2: Compact YouTube-Style Grid Rows -->
+        <!-- Tier 2: Compact Grid -->
         <div class="tiny-videos-grid">
-            
+
             <!-- Grid Row 1 -->
             <div class="tiny-grid-row">
-                <!-- Tiny Video 1 -->
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="" alt="AdamW Optimizer Video" loading="lazy">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="AdamW Optimizer Video" loading="lazy" decoding="async">
+                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
                         <h4 class="tiny-video-title">AdamW Optimizer and Loss Curves Under the Hood</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Rigorous Math Deep Dive</div>
                     </div>
                 </div>
-
-                <!-- Tiny Video 2 -->
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="" alt="Object Tracking Video" loading="lazy">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Object Tracking Video" loading="lazy" decoding="async">
+                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
                         <h4 class="tiny-video-title">Real-Time Object Tracking & Coordinate Vectorization</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Computer Vision Series</div>
                     </div>
                 </div>
-
-                <!-- Tiny Video 3 -->
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="" alt="Array Calculus Video" loading="lazy">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Array Calculus Video" loading="lazy" decoding="async">
+                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
                         <h4 class="tiny-video-title">Pure Array Calculus Matrix Optimization Engine</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>From-Scratch Frameworks</div>
                     </div>
                 </div>
-
-                <!-- Tiny Video 4 -->
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="" alt="Parallel Computing Video" loading="lazy">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Parallel Computing Video" loading="lazy" decoding="async">
+                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
                         <h4 class="tiny-video-title">Parallel Computing Loops & Shared GPU Kernels</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>High Performance AI</div>
@@ -744,44 +322,41 @@ window.addEventListener('scroll', function() {
 
             <!-- Grid Row 2 -->
             <div class="tiny-grid-row">
-                <!-- Tiny Video 5 -->
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="" alt="Instruct Tuning Video" loading="lazy">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Instruct Tuning Video" loading="lazy" decoding="async">
+                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
                         <h4 class="tiny-video-title">Instruct Tuning & Masked Token Loss Arrays</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>LLM Engineering Lab</div>
                     </div>
                 </div>
-
-                <!-- Tiny Video 6 -->
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="" alt="Token Streaming Video" loading="lazy">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Token Streaming Video" loading="lazy" decoding="async">
+                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
                         <h4 class="tiny-video-title">Token Streaming Pipes & Live Application Interface</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Systems Engineering</div>
                     </div>
                 </div>
-
-                <!-- Tiny Video 7 -->
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="" alt="Diffusion Models Video" loading="lazy">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Diffusion Models Video" loading="lazy" decoding="async">
+                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
                         <h4 class="tiny-video-title">Understanding Diffusion and Mathematical Noise Loops</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Generative Frameworks</div>
                     </div>
                 </div>
-
-                <!-- Tiny Video 8 -->
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="" alt="Vector Storage Video" loading="lazy">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="ytLoad(this)">
+                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Vector Storage Video" loading="lazy" decoding="async">
+                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
                         <h4 class="tiny-video-title">Vector Storage Implementations and Query Mechanics</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Database Internals</div>
@@ -792,93 +367,60 @@ window.addEventListener('scroll', function() {
         </div>
     </section>
 
-    <!-- Production Open Source Systems Framework Section -->
+    <!-- Open Source -->
     <section id="open-source">
         <div class="section-header">
             <h2>Verified Open Source Artifacts</h2>
             <p>Production frameworks referenced across international engineering ecosystems</p>
         </div>
-
         <div class="project-row">
-            <!-- Project 1 -->
             <div class="project-col">
                 <div class="project-card">
                     <h3 class="project-title">Open-Source LLM Activation Monitor</h3>
                     <span class="project-stars">★ 1,420 Stars on GitHub</span>
                     <p class="project-desc">A deep visualization array built inside lightweight Python logic tracking backpropagation updates along layer weights during live fine-tuning operations.</p>
-                    <div>
-                        <span class="tech-pill">Python Core</span>
-                        <span class="tech-pill">PyTorch Matrix</span>
-                        <span class="tech-pill">CUDA Threads</span>
-                    </div>
+                    <div><span class="tech-pill">Python Core</span><span class="tech-pill">PyTorch Matrix</span><span class="tech-pill">CUDA Threads</span></div>
                 </div>
             </div>
-
-            <!-- Project 2 -->
             <div class="project-col">
                 <div class="project-card">
                     <h3 class="project-title">Asynchronous Real-Time Tracker UI</h3>
                     <span class="project-stars">★ 740 Stars on GitHub</span>
                     <p class="project-desc">Industrial-grade desktop tracking interface running non-blocking multi-threaded pipeline logic using custom worker frames for computer vision processing.</p>
-                    <div>
-                        <span class="tech-pill">Python</span>
-                        <span class="tech-pill">PyQt6 System</span>
-                        <span class="tech-pill">OpenCV Array</span>
-                    </div>
+                    <div><span class="tech-pill">Python</span><span class="tech-pill">PyQt6 System</span><span class="tech-pill">OpenCV Array</span></div>
                 </div>
             </div>
-
-            <!-- Project 3 -->
             <div class="project-col">
                 <div class="project-card">
                     <h3 class="project-title">Foundation Array Math Engine</h3>
                     <span class="project-stars">★ 440 Stars on GitHub</span>
                     <p class="project-desc">An experimental multi-layer neural network runtime tracing absolute activation dynamics relying completely on primitive mathematical matrices.</p>
-                    <div>
-                        <span class="tech-pill">Python Core</span>
-                        <span class="tech-pill">NumPy Vector</span>
-                        <span class="tech-pill">Calculus Arrays</span>
-                    </div>
+                    <div><span class="tech-pill">Python Core</span><span class="tech-pill">NumPy Vector</span><span class="tech-pill">Calculus Arrays</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact -->
     <section id="contact" style="max-width:1300px;margin:80px auto;padding:0 40px;">
         <div style="border-left:3px solid #0f172a;padding-left:18px;margin-bottom:45px;">
             <h2 style="font-size:18pt;font-weight:600;margin:0;text-transform:uppercase;letter-spacing:1.5px;color:#0f172a;">Contact</h2>
             <p style="margin:6px 0 0 0;font-style:italic;font-family:'Times New Roman',Times,serif;color:#64748b;font-size:13pt;">Get in touch with the qxresearch team</p>
         </div>
-        <div style="display:table;width:100%;table-layout:fixed;gap:0;">
+        <div style="display:table;width:100%;table-layout:fixed;">
             <div style="display:table-cell;width:50%;vertical-align:top;padding-right:40px;">
-                <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:36px;box-shadow:0 4px 12px rgba(15,23,42,0.01);">
+                <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:36px;box-shadow:0 4px 12px rgba(15,23,42,.01);">
                     <div style="font-family:'Times New Roman',Times,serif;font-size:18pt;font-weight:400;color:#0f172a;margin-bottom:12px;">Let's collaborate</div>
                     <p style="font-size:10.5pt;color:#475569;line-height:1.8;margin:0 0 28px 0;">We are always looking for passionate researchers, developers, and students to collaborate on cutting-edge AI projects. Reach out with your ideas or proposals.</p>
                     <a href="mailto:qxresearch20@gmail.com" style="display:inline-block;background:#0f172a;color:#fff;text-decoration:none;padding:12px 28px;border-radius:6px;font-size:9.5pt;font-weight:600;letter-spacing:1px;text-transform:uppercase;transition:background 0.2s;">qxresearch20@gmail.com</a>
                 </div>
             </div>
             <div style="display:table-cell;width:50%;vertical-align:top;padding-left:40px;">
-                <div style="background:#ffffff;border:1px solid #e2e8f0;border-radius:8px;padding:36px;box-shadow:0 4px 12px rgba(15,23,42,0.01);">
+                <div style="background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:36px;box-shadow:0 4px 12px rgba(15,23,42,.01);">
                     <div style="font-family:'Times New Roman',Times,serif;font-size:18pt;font-weight:400;color:#0f172a;margin-bottom:24px;">Find us online</div>
-                    <div style="margin-bottom:18px;">
-                        <a href="https://github.com/qxresearch" target="_blank" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;border-bottom:1px solid #f1f5f9;transition:color 0.2s;">
-                            <span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">GitHub</span>
-                            <span>github.com/qxresearch</span>
-                        </a>
-                    </div>
-                    <div style="margin-bottom:18px;">
-                        <a href="https://linkedin.com/company/qxresearch" target="_blank" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;border-bottom:1px solid #f1f5f9;transition:color 0.2s;">
-                            <span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">LinkedIn</span>
-                            <span>linkedin.com/company/qxresearch</span>
-                        </a>
-                    </div>
-                    <div>
-                        <a href="/openings" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;transition:color 0.2s;">
-                            <span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">Openings</span>
-                            <span>View open positions</span>
-                        </a>
-                    </div>
+                    <div style="margin-bottom:18px;"><a href="https://github.com/qxresearch" target="_blank" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;border-bottom:1px solid #f1f5f9;transition:color 0.2s;"><span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">GitHub</span><span>github.com/qxresearch</span></a></div>
+                    <div style="margin-bottom:18px;"><a href="https://linkedin.com/company/qxresearch" target="_blank" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;border-bottom:1px solid #f1f5f9;transition:color 0.2s;"><span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">LinkedIn</span><span>linkedin.com/company/qxresearch</span></a></div>
+                    <div><a href="/openings" style="display:flex;align-items:center;gap:12px;text-decoration:none;color:#334155;font-size:10pt;font-weight:500;padding:14px 0;transition:color 0.2s;"><span style="font-family:monospace;font-size:9pt;background:#f1f5f9;padding:4px 10px;border-radius:4px;">Openings</span><span>View open positions</span></a></div>
                 </div>
             </div>
         </div>
@@ -921,17 +463,15 @@ window.addEventListener('scroll', function() {
         </div>
     </footer>
 
+    <!-- ── Single shared ytLoad function for ALL tiles ── -->
     <script>
-        document.querySelectorAll('.yt-lazy').forEach(function(el) {
-            el.addEventListener('click', function() {
-                var vid = el.getAttribute('data-vid');
-                var iframe = document.createElement('iframe');
-                iframe.src = 'https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0';
-                iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-                iframe.allowFullscreen = true;
-                iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;';
-                el.innerHTML = '';
-                el.appendChild(iframe);
-            });
-        });
+    function ytLoad(el) {
+        var vid = el.dataset.vid;
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0&controls=1';
+        iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+        el.innerHTML = '';
+        el.appendChild(iframe);
+    }
     </script>
