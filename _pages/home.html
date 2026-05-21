@@ -330,26 +330,6 @@ permalink: /
         }
 
         /* --- VIDEO LAB FRAMEWORK --- */
-        
-        /* Video Container optimized to drop memory and layout overhead */
-        .video-player-container {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            background-color: #000000;
-            border-radius: 6px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        }
-
-        .video-player-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
 
         /* 1. Feature Layer: Two Big Video Cards */
         .feature-videos-row {
@@ -522,10 +502,6 @@ permalink: /
         .footer-wordmark { font-family: "Times New Roman", Times, serif; font-size: 22pt; font-weight: 400; color: #ffffff; letter-spacing: -0.5px; margin-bottom: 16px; }
         .footer-tagline { font-size: 9.5pt; color: #475569; line-height: 1.8; margin: 0; }
         .footer-links-col { display: table-cell; width: 62%; vertical-align: top; }
-        .footer-brand-col { display: table-cell; width: 38%; vertical-align: top; padding-right: 60px; }
-        .footer-wordmark { font-family: "Times New Roman", Times, serif; font-size: 22pt; font-weight: 400; color: #ffffff; letter-spacing: -0.5px; margin-bottom: 16px; }
-        .footer-tagline { font-size: 9.5pt; color: #475569; line-height: 1.8; margin: 0; }
-        .footer-links-col { display: table-cell; width: 62%; vertical-align: top; }
         .footer-link-group { display: inline-block; vertical-align: top; width: 31%; margin-right: 3%; }
         .footer-link-group:last-child { margin-right: 0; }
         .footer-link-heading { font-size: 8pt; text-transform: uppercase; letter-spacing: 2px; color: #ffffff; font-weight: 600; margin-bottom: 16px; }
@@ -534,12 +510,12 @@ permalink: /
         .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; font-size: 8.5pt; color: #334155; }
         .footer-bottom-right { font-family: "Times New Roman", Times, serif; font-style: italic; color: #334155; }
 
-        /* YouTube Lazy Load — Simplified & Clean Minimalism */
+        /* YouTube Lazy Load — High-Performance Minimalist Engine */
         .yt-lazy {
             position: relative;
             width: 100%;
             aspect-ratio: 16/9;
-            background: #000;
+            background: #1e293b;
             border-radius: 6px;
             overflow: hidden;
             cursor: pointer;
@@ -549,16 +525,18 @@ permalink: /
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: opacity 0.3s ease;
+            transition: filter 0.2s ease, opacity 0.2s ease;
         }
+        /* Minimalist background dark hue adjustment layout during link tracking interaction */
         .yt-lazy:hover img { 
-            opacity: 0.85; 
+            filter: brightness(0.75);
         }
         .yt-lazy iframe {
             position: absolute;
             top: 0; left: 0;
             width: 100%; height: 100%;
             border: 0;
+            background: #000;
         }
 </style>
 
@@ -951,7 +929,7 @@ window.addEventListener('scroll', function() {
                 iframe.src = 'https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0';
                 iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
                 iframe.allowFullscreen = true;
-                iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;z-index:10;';
+                iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:0;';
                 el.innerHTML = '';
                 el.appendChild(iframe);
             });
