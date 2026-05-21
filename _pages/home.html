@@ -510,12 +510,12 @@ permalink: /
         .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; font-size: 8.5pt; color: #334155; }
         .footer-bottom-right { font-family: "Times New Roman", Times, serif; font-style: italic; color: #334155; }
 
-        /* Decoupled Static Image Grid Framework */
+        /* Isolated Micro-Tile Placeholder Framework */
         .yt-lazy {
             position: relative;
             width: 100%;
             aspect-ratio: 16/9;
-            background: #1e293b;
+            background: #1e293b; /* Premium minimal solid slate placeholder */
             border-radius: 6px;
             overflow: hidden;
             cursor: pointer;
@@ -525,10 +525,10 @@ permalink: /
             height: 100%;
             object-fit: cover;
             display: block;
-            transition: filter 0.2s ease;
+            transition: opacity 0.2s ease;
         }
         .yt-lazy:hover img { 
-            filter: brightness(0.8);
+            opacity: 0.8;
         }
         .yt-lazy iframe {
             position: absolute;
@@ -668,8 +668,8 @@ window.addEventListener('scroll', function() {
             <div class="feature-video-col">
                 <div class="big-video-card">
                     <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                        <!-- Replaced with clean local repository paths to eliminate the red icon and network lag -->
-                        <img src="/images/transformer-hood.jpg" alt="Transformer Architecture Walkthrough" loading="lazy">
+                        <!-- Left blank safely to show dark slate placeholder; drop local path in src="" anytime -->
+                        <img src="" alt="Transformer Architecture Walkthrough" loading="lazy">
                     </div>
                     <div class="big-video-meta">
                         <h3 class="big-video-title">Transformer Architecture: Under the Hood</h3>
@@ -682,7 +682,7 @@ window.addEventListener('scroll', function() {
             <div class="feature-video-col">
                 <div class="big-video-card">
                     <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                        <img src="/images/fine-tuning-math.jpg" alt="LLM Fine Tuning Walkthrough" loading="lazy">
+                        <img src="" alt="LLM Fine Tuning Walkthrough" loading="lazy">
                     </div>
                     <div class="big-video-meta">
                         <h3 class="big-video-title">LLM Fine-Tuning Math: A Field Guide</h3>
@@ -701,7 +701,7 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="/images/adamw-optimizer.jpg" alt="AdamW Optimizer Video" loading="lazy">
+                            <img src="" alt="AdamW Optimizer Video" loading="lazy">
                         </div>
                         <h4 class="tiny-video-title">AdamW Optimizer and Loss Curves Under the Hood</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Rigorous Math Deep Dive</div>
@@ -712,7 +712,7 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="/images/object-tracking.jpg" alt="Object Tracking Video" loading="lazy">
+                            <img src="" alt="Object Tracking Video" loading="lazy">
                         </div>
                         <h4 class="tiny-video-title">Real-Time Object Tracking & Coordinate Vectorization</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Computer Vision Series</div>
@@ -723,7 +723,7 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="/images/array-calculus.jpg" alt="Array Calculus Video" loading="lazy">
+                            <img src="" alt="Array Calculus Video" loading="lazy">
                         </div>
                         <h4 class="tiny-video-title">Pure Array Calculus Matrix Optimization Engine</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>From-Scratch Frameworks</div>
@@ -734,7 +734,7 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="/images/parallel-computing.jpg" alt="Parallel Computing Video" loading="lazy">
+                            <img src="" alt="Parallel Computing Video" loading="lazy">
                         </div>
                         <h4 class="tiny-video-title">Parallel Computing Loops & Shared GPU Kernels</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>High Performance AI</div>
@@ -748,7 +748,7 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="/images/instruct-tuning.jpg" alt="Instruct Tuning Video" loading="lazy">
+                            <img src="" alt="Instruct Tuning Video" loading="lazy">
                         </div>
                         <h4 class="tiny-video-title">Instruct Tuning & Masked Token Loss Arrays</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>LLM Engineering Lab</div>
@@ -759,7 +759,7 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="/images/token-streaming.jpg" alt="Token Streaming Video" loading="lazy">
+                            <img src="" alt="Token Streaming Video" loading="lazy">
                         </div>
                         <h4 class="tiny-video-title">Token Streaming Pipes & Live Application Interface</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Systems Engineering</div>
@@ -770,7 +770,7 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="/images/diffusion-noise.jpg" alt="Diffusion Models Video" loading="lazy">
+                            <img src="" alt="Diffusion Models Video" loading="lazy">
                         </div>
                         <h4 class="tiny-video-title">Understanding Diffusion and Mathematical Noise Loops</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Generative Frameworks</div>
@@ -781,7 +781,7 @@ window.addEventListener('scroll', function() {
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
                         <div class="yt-lazy" data-vid="beEBeQw5tpc">
-                            <img src="/images/vector-storage.jpg" alt="Vector Storage Video" loading="lazy">
+                            <img src="" alt="Vector Storage Video" loading="lazy">
                         </div>
                         <h4 class="tiny-video-title">Vector Storage Implementations and Query Mechanics</h4>
                         <div class="tiny-video-stats">qxresearch AI<br>Database Internals</div>
