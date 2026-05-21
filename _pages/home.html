@@ -541,24 +541,26 @@ permalink: /
             margin-bottom: 4px;
         }
 
-        /* Elegant Footer Area */
+        /* Footer */
         footer {
             background-color: #0f172a;
-            color: #94a3b8;
-            padding: 60px 40px;
-            text-align: center;
-            font-size: 9.5pt;
+            color: #64748b;
             border-top: 1px solid #1e293b;
+            margin-top: 60px;
         }
-
-        .footer-brand {
-            color: #ffffff;
-            font-size: 11pt;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 12px;
-            font-weight: 700;
-        }
+        .footer-inner { max-width: 1300px; margin: 0 auto; padding: 70px 40px 36px 40px; }
+        .footer-top { display: table; width: 100%; table-layout: fixed; padding-bottom: 50px; border-bottom: 1px solid #1e293b; }
+        .footer-brand-col { display: table-cell; width: 38%; vertical-align: top; padding-right: 60px; }
+        .footer-wordmark { font-family: "Times New Roman", Times, serif; font-size: 22pt; font-weight: 400; color: #ffffff; letter-spacing: -0.5px; margin-bottom: 16px; }
+        .footer-tagline { font-size: 9.5pt; color: #475569; line-height: 1.8; margin: 0; }
+        .footer-links-col { display: table-cell; width: 62%; vertical-align: top; }
+        .footer-link-group { display: inline-block; vertical-align: top; width: 31%; margin-right: 3%; }
+        .footer-link-group:last-child { margin-right: 0; }
+        .footer-link-heading { font-size: 8pt; text-transform: uppercase; letter-spacing: 2px; color: #ffffff; font-weight: 600; margin-bottom: 16px; }
+        .footer-link-group a { display: block; color: #475569; text-decoration: none; font-size: 9.5pt; margin-bottom: 10px; transition: color 0.2s; }
+        .footer-link-group a:hover { color: #cbd5e1; }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 28px; font-size: 8.5pt; color: #334155; }
+        .footer-bottom-right { font-family: "Times New Roman", Times, serif; font-style: italic; color: #334155; }
 </style>
 
 
@@ -566,15 +568,8 @@ permalink: /
     <nav>
         <div class="nav-container">
             <a href="/" class="nav-logo">
-                <img src="/images/logo.png" alt="qxresearch" onerror="this.style.display='none'">
                 <span class="nav-logo-text">qxresearch</span>
             </a>
-            <div class="nav-search">
-                <div class="nav-search-inner">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"/></svg>
-                    <input type="text" placeholder="Search research, videos, projects...">
-                </div>
-            </div>
             <div class="nav-links">
                 <a href="#video-lab">Videos</a>
                 <a href="#open-source">Open Source</a>
@@ -827,11 +822,39 @@ permalink: /
         </div>
     </section>
 
-    <!-- Professional Footer Area -->
+    <!-- Footer -->
     <footer>
-        <div class="footer-brand">qxresearch AI</div>
-        <p>Independent Platform for Advanced Deep Learning Infrastructure & Machine Learning Systems</p>
-        <p style="font-size: 8pt; color: #475569; margin-top: 25px;">
-            &copy; 2026 qxresearch AI. All Rights Reserved.
-        </p>
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand-col">
+                    <div class="footer-wordmark">qxresearch</div>
+                    <p class="footer-tagline">Independent AI Research Platform.<br>Machine Learning &middot; Deep Learning &middot; Computer Vision.</p>
+                </div>
+                <div class="footer-links-col">
+                    <div class="footer-link-group">
+                        <div class="footer-link-heading">Platform</div>
+                        <a href="#video-lab">Videos & Deep Dives</a>
+                        <a href="#open-source">Open Source</a>
+                        <a href="/research">Research</a>
+                        <a href="/publications">Publications</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <div class="footer-link-heading">Community</div>
+                        <a href="/team">Team</a>
+                        <a href="/openings">Openings</a>
+                        <a href="https://github.com/qxresearch" target="_blank">GitHub</a>
+                        <a href="https://linkedin.com/company/qxresearch" target="_blank">LinkedIn</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <div class="footer-link-heading">Contact</div>
+                        <a href="mailto:qxresearch20@gmail.com">qxresearch20@gmail.com</a>
+                        <a href="/openings">Join the Lab</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 qxresearch. All rights reserved.</span>
+                <span class="footer-bottom-right">Built for researchers, by researchers.</span>
+            </div>
+        </div>
     </footer>
