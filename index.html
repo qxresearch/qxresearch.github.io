@@ -13,7 +13,7 @@
         body { margin:0;padding:0;background-color:#faf8f5;color:#1e293b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased; }
         ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#f1ede4}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#94a3b8}
         
-        nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:20px 40px;pointer-events:none}
+        nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:20px;pointer-events:none}
         .nav-container{max-width:1300px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;position:relative}
         .nav-logo{font-size:13pt;font-weight:700;letter-spacing:.5px;color:#0f172a;text-decoration:none;pointer-events:auto;transition:opacity .4s ease,transform .4s ease}
         nav.scrolled .nav-logo{opacity:0;pointer-events:none;transform:translateY(-4px)}
@@ -23,31 +23,132 @@
         .nav-links a{color:#334155;text-decoration:none;font-size:9pt;font-weight:500;letter-spacing:.3px;padding:6px 14px;border-radius:999px;transition:background .2s,color .2s;white-space:nowrap}
         .nav-links a:hover{background:rgba(15,23,42,.07);color:#0f172a}
         
-        #back-to-top{position:fixed;bottom:36px;right:36px;width:44px;height:44px;background:#0f172a;color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(10px);transition:opacity .3s,transform .3s;z-index:9999;box-shadow:0 4px 14px rgba(15,23,42,.25)}
+        #back-to-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:#0f172a;color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(10px);transition:opacity .3s,transform .3s;z-index:9999;box-shadow:0 4px 14px rgba(15,23,42,.25)}
         #back-to-top.visible{opacity:1;transform:translateY(0)}#back-to-top:hover{background:#1e293b}
         
-        .hero-section{max-width:1300px;margin:150px auto 40px;padding:0 40px}
-        .hero-table{display:table;width:100%;table-layout:fixed}
-        .hero-left{display:table-cell;width:60%;vertical-align:middle;padding-right:60px}
-        .hero-right{display:table-cell;width:40%;vertical-align:middle;text-align:right}
-        .badge-container{margin-bottom:16px}
+        /* Responsive Hero Layout Configuration */
+        .hero-section{max-width:1300px;margin:140px auto 40px;padding:0 24px}
+        .hero-table{display:flex;width:100%;align-items:center;justify-content:space-between;gap:40px}
+        .hero-left{width:60%;flex-shrink: 1;}
+        .hero-right{width:40%;display:flex;justify-content:flex-end;align-items:center}
+        .badge-container{margin-bottom:16px;display:flex;flex-wrap:wrap;gap:8px}
         .branding-badge{display:inline-block;border:1px solid #0f172a;padding:5px 14px;font-size:8.5pt;text-transform:uppercase;letter-spacing:2px;border-radius:4px;font-weight:600;background-color:#0f172a;color:#fff}
-        .stanford-badge{display:inline-block;border:1px solid #8c1515;padding:5px 14px;font-size:8.5pt;text-transform:uppercase;letter-spacing:1.5px;border-radius:4px;font-weight:600;background-color:#fff;color:#8c1515;margin-left:8px}
+        .stanford-badge{display:inline-block;border:1px solid #8c1515;padding:5px 14px;font-size:8.5pt;text-transform:uppercase;letter-spacing:1.5px;border-radius:4px;font-weight:600;background-color:#fff;color:#8c1515}
         h1{font-family:"Times New Roman",Times,serif;font-size:38pt;font-weight:400;color:#0f172a;margin:0 0 15px;line-height:1.15;letter-spacing:-.5px}
         .subtitle{font-family:"Times New Roman",Times,serif;font-style:italic;font-size:16pt;color:#475569;margin-bottom:25px}
         .intro-text{font-size:11pt;color:#334155;line-height:1.8;margin-bottom:30px}
         
-        .profile-snapshot{background-color:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:24px;box-shadow:0 4px 20px rgba(15,23,42,.02);display:table;width:100%}
-        .snapshot-cell{display:table-cell;width:33.33%;border-right:1px solid #e2e8f0;padding:0 20px}
-        .snapshot-cell:first-child{padding-left:0}.snapshot-cell:last-child{border-right:none;padding-right:0}
-        .snapshot-val{font-family:"Times New Roman",Times,serif;font-size:20pt;font-weight:bold;color:#0f172a;display:block}
-        .snapshot-label{font-size:8.5pt;text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-top:4px;display:block;font-weight:600}
+        /* Optimized Profile Snapshot Wrapper with Strict Grid Centering */
+        .profile-snapshot{background-color:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:24px;box-shadow:0 4px 20px rgba(15,23,42,.02);display:flex;width:100%;justify-content:space-between;gap:12px}
+        .snapshot-cell{flex: 1; border-right:1px solid #e2e8f0;padding:0 16px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
+        .snapshot-cell:first-child{padding-left:0;}
+        .snapshot-cell:last-child{border-right:none;padding-right:0;}
+        .snapshot-val{font-family:"Times New Roman",Times,serif;font-size:clamp(14pt, 2.5vw, 20pt);font-weight:bold;color:#0f172a;display:block;line-height:1.2;white-space:nowrap;text-align:center}
+        .snapshot-label{font-size:clamp(7.5pt, 1.2vw, 8.5pt);text-transform:uppercase;letter-spacing:1px;color:#64748b;margin-top:6px;display:block;font-weight:600;line-height:1.3;text-align:center}
         
-        .mascot-container{display:inline-block;width:100%;max-width:420px;background-color:#fff;border:1px solid #e2e8f0;padding:16px;border-radius:12px;box-shadow:0 10px 30px rgba(15,23,42,.04);text-align:center}
-        .custom-profile-img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;border-radius:8px;background-color:#f8fafc;display:block;border:1px dashed #cbd5e1}
-        .mascot-caption{font-family:"Times New Roman",Times,serif;font-style:italic;font-size:11pt;color:#475569;margin-top:12px}
+        /* Premium Apple Liquid Retina Mascot Display Container */
+        .mascot-container {
+            width: 100%;
+            max-width: 360px;
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            padding: 20px;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(15, 23, 42, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            text-align: center;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .mascot-container:hover {
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+        }
         
-        section{max-width:1300px;margin:100px auto;padding:0 40px}
+        /* Interactive Asset Frame containing the Liquid Retina Actions Overlay */
+        .mascot-viewport-frame {
+            position: relative;
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        .custom-profile-img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            background-color: #fcfbfa;
+            display: block;
+            border: 1px solid rgba(15, 23, 42, 0.04);
+            box-shadow: inset 0 2px 8px rgba(15, 23, 42, 0.02);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .mascot-container:hover .custom-profile-img {
+            transform: scale(1.005);
+        }
+
+        /* Fluid Slide-Up Retina Interface Panel Overlay */
+        .mascot-retina-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(250, 248, 245, 0.15);
+            backdrop-filter: blur(12px) saturate(140%);
+            -webkit-backdrop-filter: blur(12px) saturate(140%);
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(12px);
+            transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                        transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .mascot-container:hover .mascot-retina-overlay {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        /* Minimalist Liquid Retina Action Icon Anchors */
+        .retina-mascot-btn {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #334155;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+            text-decoration: none;
+            transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1), 
+                        background-color 0.2s, 
+                        color 0.2s, 
+                        box-shadow 0.2s;
+        }
+        .retina-mascot-btn:hover {
+            transform: scale(1.12) translateY(-2px);
+            background: #0f172a;
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(15, 23, 42, 0.16);
+        }
+        .retina-mascot-btn svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        .mascot-caption {
+            font-family: "Times New Roman", Times, serif;
+            font-style: italic;
+            font-size: 11.5pt;
+            color: #334155;
+            margin-top: 16px;
+            letter-spacing: 0.2px;
+        }
+        
+        section{max-width:1300px;margin:100px auto;padding:0 24px}
         .section-header{border-left:3px solid #0f172a;padding-left:18px;margin-bottom:45px}
         .section-header h2{font-size:18pt;font-weight:600;margin:0;text-transform:uppercase;letter-spacing:1.5px;color:#0f172a}
         .section-header p{margin:6px 0 0;font-style:italic;font-family:"Times New Roman",Times,serif;color:#64748b;font-size:13pt}
@@ -91,27 +192,23 @@
             box-shadow: 0 20px 50px rgba(15, 23, 42, 0.02);
             z-index: 5; 
         }
-        .feature-videos-row{display:table;width:100%;table-layout:fixed}
-        .feature-video-col{display:table-cell;width:50%;padding-right:20px;vertical-align:top}
-        .feature-video-col:last-child{padding-right:0;padding-left:20px}
+        .feature-videos-row{display:flex;width:100%;gap:40px}
+        .feature-video-col{width:50%;vertical-align:top}
         
         .big-video-card{background: none; border: none; padding: 0;}
         .big-video-meta{margin-top:24px}
         .big-video-title{font-family:"Times New Roman",Times,serif;font-size:17pt;font-weight:400;color:#0f172a;margin:0 0 12px;letter-spacing:-.2px}
         .big-video-desc{font-size:10pt;color:#475569;line-height:1.7;font-weight:400;letter-spacing:0.1px}
         
+        /* Fluid Grids Replace Strict Rigid Tables */
         .tiny-videos-grid{display:block;width:100%;border-top:1px solid #e2e8f0;padding-top:40px}
-        .tiny-grid-row{display:table;width:100%;table-layout:fixed;margin-bottom:35px}
-        .tiny-grid-col{display:table-cell;width:25%;padding-right:18px;vertical-align:top}
-        .tiny-grid-col:last-child{padding-right:0}
-        .tiny-video-card{background:none;border:none}
+        .tiny-grid-row{display:grid;grid-template-columns: repeat(4, 1fr);gap:24px;margin-bottom:35px}
+        .tiny-video-card{background:none;border:none;width:100%}
         .tiny-video-title{font-size:10pt;font-weight:600;color:#0f172a;margin:12px 0 4px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
         .tiny-video-stats{font-size:8.5pt;color:#64748b;line-height:1.4}
         
-        .project-row{display:table;width:100%;table-layout:fixed;margin-bottom:20px}
-        .project-col{display:table-cell;width:33.33%;padding-right:20px;vertical-align:top}
-        .project-col:last-child{padding-right:0}
-        .project-card{background-color:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:24px;height:100%;box-shadow:0 4px 12px rgba(15,23,42,.01)}
+        .project-row{display:grid;grid-template-columns: repeat(3, 1fr);gap:24px;margin-bottom:20px}
+        .project-card{background-color:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:24px;height:100%;box-shadow:0 4px 12px rgba(15,23,42,.01);display:flex;flex-direction:column;justify-content:space-between}
         .project-card:hover{box-shadow:0 10px 20px rgba(15, 23, 42, 0.04)}
         .project-title{font-size:13pt;font-weight:600;color:#0f172a;margin:0 0 8px}
         .project-stars{font-family:monospace;font-size:9pt;color:#0284c7;font-weight:600;margin-bottom:12px;display:block}
@@ -131,9 +228,7 @@
             margin: 0 auto;
             transition: box-shadow 0.3s ease;
         }
-        .retina-luxe-card:hover {
-            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.03);
-        }
+        .retina-luxe-card:hover { box-shadow: 0 15px 35px rgba(15, 23, 42, 0.03); }
         .retina-card-content { position: relative; z-index: 2; }
         .retina-headline { font-family: "Times New Roman", Times, serif; font-size: 20pt; font-weight: 400; color: #0f172a; margin-bottom: 24px; text-align: center; }
         
@@ -263,7 +358,7 @@
             margin-left: 2px;
         }
 
-        /* ── Liquid Retina Lightbox Engine - Ultra-Smooth Close System ───────── */
+        /* ── Liquid Retina Lightbox Engine ───────────────────────────────────── */
         #retina-lightbox {
             position: fixed;
             inset: 0;
@@ -276,7 +371,6 @@
             justify-content: center;
             opacity: 0;
             pointer-events: none;
-            /* Combined transition handles properties uniformly without context flashing */
             transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
                         backdrop-filter 0.5s cubic-bezier(0.16, 1, 0.3, 1),
                         -webkit-backdrop-filter 0.5s cubic-bezier(0.16, 1, 0.3, 1);
@@ -312,8 +406,8 @@
         }
         .lightbox-close {
             position: absolute;
-            top: 40px;
-            right: 40px;
+            top: 24px;
+            right: 24px;
             width: 48px;
             height: 48px;
             border-radius: 50%;
@@ -334,14 +428,41 @@
             opacity: 1;
             transform: scale(1);
         }
-        .lightbox-close:hover {
-            background: #f8fafc;
-            transform: scale(1.05);
-            box-shadow: 0 6px 16px rgba(15, 23, 42, 0.1);
+        .lightbox-close svg { width: 20px; height: 20px; }
+
+        /* ── Non-Destructive Fluid Media Queries for Smaller Form Factors ── */
+        @media (max-width: 1024px) {
+            h1 { font-size: 32pt; }
+            .hero-table { gap: 24px; }
+            .hero-left { width: 55%; }
+            .hero-right { width: 45%; }
+            .tiny-grid-row { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .project-row { grid-template-columns: repeat(2, 1fr); gap: 20px; }
         }
-        .lightbox-close svg {
-            width: 20px;
-            height: 20px;
+        
+        @media (max-width: 768px) {
+            nav { padding: 15px 20px; }
+            .hero-table { flex-direction: column-reverse; text-align: center; gap: 32px; }
+            .hero-left, .hero-right { width: 100%; display: flex; flex-direction: column; align-items: center; }
+            .badge-container { justify-content: center; }
+            .profile-snapshot { padding: 20px 16px; gap: 8px; }
+            .snapshot-cell { padding: 0 8px; }
+            .snapshot-cell:first-child { text-align: center; align-items: center; }
+            .snapshot-cell:last-child { text-align: center; align-items: center; }
+            .feature-videos-row { flex-direction: column; gap: 32px; }
+            .feature-video-col { width: 100%; }
+            .lightbox-close { top: 16px; right: 16px; }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 26pt; }
+            .subtitle { font-size: 14pt; }
+            .tiny-grid-row { grid-template-columns: 1fr; }
+            .project-row { grid-template-columns: 1fr; }
+            .profile-snapshot { flex-direction: column; gap: 16px; align-items: center; }
+            .snapshot-cell { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; align-items: center; text-align: center; }
+            .snapshot-cell:last-child { border-bottom: none; padding-bottom: 0; }
+            .custom-footer-bar { flex-direction: column; gap: 10px; text-align: center; }
         }
     </style>
 </head>
@@ -410,7 +531,21 @@
             </div>
             <div class="hero-right">
                 <div class="mascot-container">
-                    <img class="custom-profile-img" src="/images/logo.jpg" alt="qxresearch Platform Hub">
+                    <div class="mascot-viewport-frame">
+                        <img class="custom-profile-img" src="images/logo.png" alt="qxresearch Platform Hub">
+                        
+                        <div class="mascot-retina-overlay">
+                            <a href="https://github.com/qxresearch" target="_blank" class="retina-mascot-btn" title="GitHub">
+                                <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            </a>
+                            <a href="https://youtube.com/" target="_blank" class="retina-mascot-btn" title="YouTube">
+                                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                            </a>
+                            <a href="https://linkedin.com/company/qxresearch" target="_blank" class="retina-mascot-btn" title="LinkedIn">
+                                <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </div>
+                    </div>
                     <div class="mascot-caption">qxresearch Platform Hub</div>
                 </div>
             </div>
@@ -462,45 +597,37 @@
         <div class="tiny-videos-grid">
 
             <div class="tiny-grid-row">
-                <div class="tiny-grid-col">
-                    <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
-                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="AdamW Optimizer Video" loading="lazy" decoding="async">
-                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
-                        </div>
-                        <h4 class="tiny-video-title">AdamW Optimizer and Loss Curves Under the Hood</h4>
-                        <div class="tiny-video-stats">qxresearch AI<br>Rigorous Math Deep Dive</div>
+                <div class="tiny-video-card">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="AdamW Optimizer Video" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
+                    <h4 class="tiny-video-title">AdamW Optimizer and Loss Curves Under the Hood</h4>
+                    <div class="tiny-video-stats">qxresearch AI<br>Rigorous Math Deep Dive</div>
                 </div>
-                <div class="tiny-grid-col">
-                    <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
-                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Object Tracking Video" loading="lazy" decoding="async">
-                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
-                        </div>
-                        <h4 class="tiny-video-title">Real-Time Object Tracking & Coordinate Vectorization</h4>
-                        <div class="tiny-video-stats">qxresearch AI<br>Computer Vision Series</div>
+                <div class="tiny-video-card">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Object Tracking Video" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
+                    <h4 class="tiny-video-title">Real-Time Object Tracking & Coordinate Vectorization</h4>
+                    <div class="tiny-video-stats">qxresearch AI<br>Computer Vision Series</div>
                 </div>
-                <div class="tiny-grid-col">
-                    <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
-                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Array Calculus Video" loading="lazy" decoding="async">
-                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
+                <div class="tiny-video-card">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Array Calculus Video" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
-                        <h4 class="tiny-video-title">Pure Array Calculus Matrix Optimization Engine</h4>
-                        <div class="tiny-video-stats">qxresearch AI<br>From-Scratch Frameworks</div>
-                    </div>
+                    <h4 class="tiny-video-title">Pure Array Calculus Matrix Optimization Engine</h4>
+                    <div class="tiny-video-stats">qxresearch AI<br>From-Scratch Frameworks</div>
                 </div>
-                <div class="tiny-grid-col">
-                    <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
-                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Parallel Computing Video" loading="lazy" decoding="async">
-                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
-                        </div>
-                        <h4 class="tiny-video-title">Parallel Computing Loops & Shared GPU Kernels</h4>
-                        <div class="tiny-video-stats">qxresearch AI<br>High Performance AI</div>
+                <div class="tiny-video-card">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Parallel Computing Video" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
+                    <h4 class="tiny-video-title">Parallel Computing Loops & Shared GPU Kernels</h4>
+                    <div class="tiny-video-stats">qxresearch AI<br>High Performance AI</div>
                 </div>
             </div>
 
@@ -515,35 +642,29 @@
                         <div class="tiny-video-stats">qxresearch AI<br>LLM Engineering Lab</div>
                     </div>
                 </div>
-                <div class="tiny-grid-col">
-                    <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
-                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Token Streaming Video" loading="lazy" decoding="async">
-                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
-                        </div>
-                        <h4 class="tiny-video-title">Token Streaming Pipes & Live Application Interface</h4>
-                        <div class="tiny-video-stats">qxresearch AI<br>Systems Engineering</div>
+                <div class="tiny-video-card">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Token Streaming Video" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
+                    <h4 class="tiny-video-title">Token Streaming Pipes & Live Application Interface</h4>
+                    <div class="tiny-video-stats">qxresearch AI<br>Systems Engineering</div>
                 </div>
-                <div class="tiny-grid-col">
-                    <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
-                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Diffusion Models Video" loading="lazy" decoding="async">
-                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
-                        </div>
-                        <h4 class="tiny-video-title">Understanding Diffusion and Mathematical Noise Loops</h4>
-                        <div class="tiny-video-stats">qxresearch AI<br>Generative Frameworks</div>
+                <div class="tiny-video-card">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Diffusion Models Video" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
+                    <h4 class="tiny-video-title">Understanding Diffusion and Mathematical Noise Loops</h4>
+                    <div class="tiny-video-stats">qxresearch AI<br>Generative Frameworks</div>
                 </div>
-                <div class="tiny-grid-col">
-                    <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
-                            <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Vector Storage Video" loading="lazy" decoding="async">
-                            <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
-                        </div>
-                        <h4 class="tiny-video-title">Vector Storage Implementations and Query Mechanics</h4>
-                        <div class="tiny-video-stats">qxresearch AI<br>Database Internals</div>
+                <div class="tiny-video-card">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                        <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Vector Storage Video" loading="lazy" decoding="async">
+                        <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
+                    <h4 class="tiny-video-title">Vector Storage Implementations and Query Mechanics</h4>
+                    <div class="tiny-video-stats">qxresearch AI<br>Database Internals</div>
                 </div>
             </div>
 
@@ -556,34 +677,34 @@
             <p>Production frameworks referenced across international engineering ecosystems</p>
         </div>
         <div class="project-row">
-            <div class="project-col">
-                <div class="project-card">
+            <div class="project-card">
+                <div>
                     <h3 class="project-title">Open-Source LLM Activation Monitor</h3>
                     <span class="project-stars">★ 1,420 Stars on GitHub</span>
                     <p class="project-desc">A deep visualization array built inside lightweight Python logic tracking backpropagation updates along layer weights during live fine-tuning operations.</p>
-                    <div><span class="tech-pill">Python Core</span><span class="tech-pill">PyTorch Matrix</span><span class="tech-pill">CUDA Threads</span></div>
                 </div>
+                <div><span class="tech-pill">Python Core</span><span class="tech-pill">PyTorch Matrix</span><span class="tech-pill">CUDA Threads</span></div>
             </div>
-            <div class="project-col">
-                <div class="project-card">
+            <div class="project-card">
+                <div>
                     <h3 class="project-title">Asynchronous Real-Time Tracker UI</h3>
                     <span class="project-stars">★ 740 Stars on GitHub</span>
                     <p class="project-desc">Industrial-grade desktop tracking interface running non-blocking multi-threaded pipeline logic using custom worker frames for computer vision processing.</p>
-                    <div><span class="tech-pill">Python</span><span class="tech-pill">PyQt6 System</span><span class="tech-pill">OpenCV Array</span></div>
                 </div>
+                <div><span class="tech-pill">Python</span><span class="tech-pill">PyQt6 System</span><span class="tech-pill">OpenCV Array</span></div>
             </div>
-            <div class="project-col">
-                <div class="project-card">
+            <div class="project-card">
+                <div>
                     <h3 class="project-title">Foundation Array Math Engine</h3>
                     <span class="project-stars">★ 440 Stars on GitHub</span>
                     <p class="project-desc">An experimental multi-layer neural network runtime tracing absolute activation dynamics relying completely on primitive mathematical matrices.</p>
-                    <div><span class="tech-pill">Python Core</span><span class="tech-pill">NumPy Vector</span><span class="tech-pill">Calculus Arrays</span></div>
                 </div>
+                <div><span class="tech-pill">Python Core</span><span class="tech-pill">NumPy Vector</span><span class="tech-pill">Calculus Arrays</span></div>
             </div>
         </div>
     </section>
 
-    <section id="contact" style="max-width:1300px;margin:80px auto 40px;padding:0 40px;">
+    <section id="contact" style="max-width:1300px;margin:80px auto 40px;padding:0 24px;">
         <div style="border-left:3px solid #0f172a;padding-left:18px;margin-bottom:45px;">
             <h2 style="font-size:18pt;font-weight:600;margin:0;text-transform:uppercase;letter-spacing:1.5px;color:#0f172a;">Contact</h2>
             <p style="margin:6px 0 0 0;font-style:italic;font-family:'Times New Roman',Times,serif;color:#64748b;font-size:13pt;">Get in touch with the qxresearch team</p>
@@ -595,7 +716,7 @@
                 
                 <a href="mailto:qxresearch20@gmail.com" class="retina-row-link">
                     <span class="retina-row-badge" style="background: #0f172a; color: #fff;">Email</span>
-                    <span style="font-weight: 600; color: #0f172a;">qxresearch20@gmail.com</span>
+                    <span style="font-weight: 600; color: #0f172a; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-left: 8px;">qxresearch20@gmail.com</span>
                 </a>
                 
                 <a href="https://github.com/qxresearch" target="_blank" class="retina-row-link">
@@ -645,13 +766,10 @@
             var lightbox = document.getElementById('retina-lightbox');
             var target = document.getElementById('lightbox-video-target');
             
-            // Step 1: Remove active class to trigger the smooth CSS scale-down and opacity decay
             lightbox.classList.remove('active');
             document.body.style.overflow = ''; 
             
-            // Step 2: Leave iframe data entirely intact during the 500ms exit layout glide
             setTimeout(function() {
-                // Confirm it is hidden before clearing innerHTML, preventing render flickering
                 if (!lightbox.classList.contains('active')) {
                     target.innerHTML = '';
                 }
