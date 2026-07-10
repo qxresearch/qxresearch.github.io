@@ -4,13 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>qxresearch AI</title>
-    <meta name="description" content="qxresearch AI — Independent AI Research Platform">
+    <meta name="description" content="qxresearch AI — Independent AI Research Platform featuring rigorous architectural math deep dives, systems engineering pipelines, and verified open-source models.">
     
     <link rel="icon" type="image/x-icon" href="images/tag.ico">
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "qxresearch AI",
+      "description": "High-fidelity systems engineering hub tracking structural AI applications and advanced deep learning matrix frameworks.",
+      "url": "https://github.com/qxresearch",
+      "knowsAbout": [
+        "Deep Learning Architecture",
+        "Array Calculus Matrix Optimization",
+        "Parallel Computing & GPU Kernels",
+        "Transformer Architecture Parameter Tracing"
+      ],
+      "award": [
+        "3x Stanford University Code in Place Section Leader",
+        "GitHub Starstruck Achievement",
+        "GitHub Pull Shark Achievement"
+      ],
+      "publishingPrinciples": [
+        {
+          "@type": "DigitalDocument",
+          "name": "Stanford Verifiable Credential 2023",
+          "url": "https://digitalcredential.stanford.edu/check/B506EC9312CFC25A9645B34A9B9A005E1B68099F49F5DBC8B0F28FCD9525C59Cb2Nma3dPOVN6QjQwMW9vNWhpaENsZGNnck5BOFF0d3lqbnZERmpuT0tpVEtiNWZQ"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "GitHub Pull Shark Achievement Verification",
+          "url": "https://github.com/users/xiaowuc2/achievements/pull-shark"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Stanford Verifiable Credential 2024",
+          "url": "https://digitalcredential.stanford.edu/check/3982BDBD161DEF46611BC710E035563CC42649AC34B858F517E2E111DF99912EWGZlcG0xRTdGclZ2NWVZL2xmU3g3SVpINGdwQzVXYktMY1dlSHVBK0pDeGlveU1t"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "GitHub Starstruck Achievement Verification",
+          "url": "https://github.com/users/xiaowuc2/achievements/starstruck"
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "Stanford Verifiable Credential 2026",
+          "url": "https://digitalcredential.stanford.edu/check/F934A7045CF27E45B43CD4D0F3725D57236C4907C77BE4719C0DAA4171555F1CZXU5UG1qdWR6ZkZSclg2MVFid0I4dGdxYU9qRTFnaUxUeGVIWmtwUXBHSXh3ZVNs"
+        }
+      ]
+    }
+    </script>
+
     <style>
         *, *::before, *::after { box-sizing: border-box; }
-        body { margin:0;padding:0;background-color:#faf8f5;color:#1e293b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased; }
+        html {
+            scrollbar-gutter: stable !important;
+        }
+        body { 
+            margin:0;padding:0;background-color:#faf8f5;color:#1e293b;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;overflow-x:hidden;line-height:1.6;-webkit-font-smoothing:antialiased;
+        }
+        
+        /* Native, math-free scroll lock boundary setup */
+        body.modal-open {
+            overflow: hidden !important;
+        }
+
         ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#f1ede4}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#94a3b8}
         
         nav{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:20px;pointer-events:none}
@@ -23,7 +82,7 @@
         .nav-links a{color:#334155;text-decoration:none;font-size:9pt;font-weight:500;letter-spacing:.3px;padding:6px 14px;border-radius:999px;transition:background .2s,color .2s;white-space:nowrap}
         .nav-links a:hover{background:rgba(15,23,42,.07);color:#0f172a}
         
-        #back-to-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:#0f172a;color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(10px);transition:opacity .3s,transform .3s;z-index:9999;box-shadow:0 4px 14px rgba(15,23,42,.25)}
+        #back-to-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;background:#0f172a;color:#fff;border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(10px);transition:opacity .3s,transform .3s;z-index:9999;box-shadow:0 4px 14px rgba(15, 23, 42,.25)}
         #back-to-top.visible{opacity:1;transform:translateY(0)}#back-to-top:hover{background:#1e293b}
         
         /* Responsive Hero Layout Configuration */
@@ -50,25 +109,26 @@
         .mascot-container {
             width: 100%;
             max-width: 360px;
-            background: #ffffff;
-            border: 1px solid rgba(15, 23, 42, 0.08);
-            padding: 20px;
-            border-radius: 24px;
-            box-shadow: 0 10px 40px rgba(15, 23, 42, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.6);
-            text-align: center;
-            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .mascot-container:hover {
-            transform: translateY(-6px) scale(1.01);
-            box-shadow: 0 25px 60px rgba(15, 23, 42, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
         
         /* Interactive Asset Frame containing the Liquid Retina Actions Overlay */
         .mascot-viewport-frame {
             position: relative;
             width: 100%;
-            border-radius: 16px;
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            padding: 20px;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(15, 23, 42, 0.03), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+            text-align: center;
             overflow: hidden;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .mascot-viewport-frame:hover {
+            box-shadow: 0 20px 45px rgba(15, 23, 42, 0.06);
         }
         .custom-profile-img {
             width: 100%;
@@ -78,17 +138,22 @@
             background-color: #fcfbfa;
             display: block;
             border: 1px solid rgba(15, 23, 42, 0.04);
+            border-radius: 14px;
             box-shadow: inset 0 2px 8px rgba(15, 23, 42, 0.02);
             transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
-        .mascot-container:hover .custom-profile-img {
+        .mascot-viewport-frame:hover .custom-profile-img {
             transform: scale(1.005);
         }
 
         /* Fluid Slide-Up Retina Interface Panel Overlay */
         .mascot-retina-overlay {
             position: absolute;
-            inset: 0;
+            inset: 20px;
+            border-radius: 14px;
             background: rgba(250, 248, 245, 0.15);
             backdrop-filter: blur(12px) saturate(140%);
             -webkit-backdrop-filter: blur(12px) saturate(140%);
@@ -103,7 +168,7 @@
             transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
                         transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        .mascot-container:hover .mascot-retina-overlay {
+        .mascot-viewport-frame:hover .mascot-retina-overlay {
             opacity: 1;
             pointer-events: auto;
             transform: translateY(0);
@@ -128,7 +193,7 @@
                         box-shadow 0.2s;
         }
         .retina-mascot-btn:hover {
-            transform: scale(1.12) translateY(-2px);
+            transform: scale(1.12);
             background: #0f172a;
             color: #ffffff;
             box-shadow: 0 8px 20px rgba(15, 23, 42, 0.16);
@@ -147,7 +212,69 @@
             margin-top: 16px;
             letter-spacing: 0.2px;
         }
+
+        /* ─── Rectangular Multi-Credential Bar (Optimized for 5 items) ─── */
+        .credential-stamp-bar {
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            padding: 14px 10px;
+            border-radius: 18px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.02);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .credential-stamp-bar:hover {
+            box-shadow: 0 15px 35px rgba(15, 23, 42, 0.04);
+        }
         
+        .badge-stamp-node {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            outline: none;
+            gap: 4px;
+            flex: 1;
+            min-width: 0;
+        }
+        .badge-stamp-node img {
+            width: 42px;
+            height: 42px;
+            object-fit: contain;
+            border: none;
+            outline: none;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), filter 0.3s ease;
+        }
+        .stamp-year-label {
+            font-size: 7pt;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            color: #64748b;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            text-align: center;
+        }
+        .badge-stamp-node:hover img {
+            transform: scale(1.1);
+        }
+        .badge-stamp-node.stanford-node:hover img {
+            filter: drop-shadow(0 6px 12px rgba(140, 21, 21, 0.15));
+        }
+        .badge-stamp-node.stanford-node:hover .stamp-year-label {
+            color: #8c1515;
+        }
+        .badge-stamp-node.github-node:hover img {
+            filter: drop-shadow(0 6px 12px rgba(15, 23, 42, 0.12));
+        }
+        .badge-stamp-node.github-node:hover .stamp-year-label {
+            color: #0f172a;
+        }
+
         section{max-width:1300px;margin:100px auto;padding:0 24px}
         .section-header{border-left:3px solid #0f172a;padding-left:18px;margin-bottom:45px}
         .section-header h2{font-size:18pt;font-weight:600;margin:0;text-transform:uppercase;letter-spacing:1.5px;color:#0f172a}
@@ -215,6 +342,60 @@
         .project-desc{font-size:9.5pt;color:#475569;line-height:1.6;margin-bottom:16px}
         .tech-pill{display:inline-block;background-color:#f1f5f9;color:#475569;padding:3px 8px;border-radius:4px;font-size:8pt;font-family:monospace;margin-right:4px;margin-bottom:4px}
         
+        /* ── Architecture Roadmap Architectural Configurations ── */
+        .roadmap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; width: 100%; }
+        .roadmap-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; cursor: pointer; transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1); display: flex; flex-direction: column; }
+        .roadmap-card:hover { box-shadow: 0 22px 45px rgba(15, 23, 42, 0.08); }
+        
+        /* Unified Widescreen Aspect Ratios */
+        .roadmap-poster { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid rgba(15, 23, 42, 0.06); transition: transform 0.5s ease; will-change: transform; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+        .roadmap-card:hover .roadmap-poster { transform: scale(1.02); }
+        .roadmap-card-body { padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .roadmap-tag { font-family: monospace; font-size: 8pt; text-transform: uppercase; letter-spacing: 1.5px; color: #0284c7; font-weight: 700; margin-bottom: 8px; display: block; }
+        .roadmap-card-title { font-family: "Times New Roman", Times, serif; font-size: 15pt; font-weight: 400; color: #0f172a; margin: 0 0 10px; line-height: 1.3; }
+        .roadmap-action-label { font-size: 8.5pt; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #0f172a; display: flex; align-items: center; gap: 6px; margin-top: 14px; }
+        .roadmap-action-label::after { content: '→'; font-family: system-ui; transition: transform 0.2s ease; }
+        .roadmap-card:hover .roadmap-action-label::after { transform: translateX(4px); }
+
+        /* ── Dynamic Roadmap Module Modal Box Overlay ── */
+        #roadmap-modal-overlay { position: fixed; inset: 0; background: rgba(250, 248, 245, 0); backdrop-filter: blur(0px) saturate(100%); -webkit-backdrop-filter: blur(0px) saturate(100%); z-index: 10010; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), backdrop-filter 0.5s cubic-bezier(0.16, 1, 0.3, 1), -webkit-backdrop-filter 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+        #roadmap-modal-overlay.active { opacity: 1; pointer-events: auto; background: rgba(250, 248, 245, 0.35); backdrop-filter: blur(35px) saturate(210%); -webkit-backdrop-filter: blur(35px) saturate(210%); }
+        .roadmap-modal-box { width: 92%; max-width: 1200px; max-height: 85vh; background: #ffffff; border: 1px solid #e2e8f0; border-radius: 24px; box-shadow: 0 40px 90px rgba(15, 23, 42, 0.15); overflow-y: auto; padding: 40px; transform: scale(0.94) translateY(10px); opacity: 0; transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease; position: relative; }
+        #roadmap-modal-overlay.active .roadmap-modal-box { transform: scale(1) translateY(0); opacity: 1; }
+        .roadmap-modal-close { position: absolute; top: 24px; right: 24px; width: 44px; height: 44px; border-radius: 50%; background: #faf8f5; border: 1px solid #e2e8f0; cursor: pointer; display: flex; align-items: center; justify-content: center; color: #0f172a; box-shadow: 0 4px 10px rgba(15,23,42,0.04); transition: background 0.2s, transform 0.2s; z-index: 10; }
+        .roadmap-modal-close:hover { background: #0f172a; color: #ffffff; transform: scale(1.05); }
+        .roadmap-modal-close svg { width: 18px; height: 18px; }
+        .roadmap-modal-header { border-bottom: 1px solid #e2e8f0; padding-bottom: 24px; margin-bottom: 32px; }
+        .roadmap-modal-module-tag { font-family: monospace; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 2px; color: #0284c7; font-weight: 700; margin-bottom: 6px; display: block; }
+        .roadmap-modal-title { font-family: "Times New Roman", Times, serif; font-size: 24pt; font-weight: 400; color: #0f172a; margin: 0; }
+        
+        .track-box-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+        .track-box-card { background: #faf8f5; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; cursor: pointer; display: flex; gap: 24px; transition: background 0.3s, border-color 0.3s, transform 0.3s; align-items: center; }
+        .track-box-card:hover { background: #ffffff; border-color: #cbd5e1; box-shadow: 0 8px 24px rgba(15, 23, 42, 0.03); }
+        
+        /* Premium Widescreen Inner Thumbnail Frame Configuration */
+        .track-box-thumb-container { width: 160px; height: 90px; aspect-ratio: 16 / 9; flex-shrink: 0; border-radius: 8px; overflow: hidden; position: relative; background: #0f172a; border: 1px solid rgba(15, 23, 42, 0.06); box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04); }
+        .track-box-thumb-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        
+        /* Minimalist curriculum node coordinate labels */
+        .track-box-matrix-badge { position: absolute; bottom: 6px; left: 6px; background: rgba(15, 23, 42, 0.72); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #ffffff; font-family: monospace; font-size: 7pt; font-weight: 600; padding: 3px 6px; border-radius: 4px; letter-spacing: 0.5px; border: 1px solid rgba(255, 255, 255, 0.1); text-transform: uppercase; z-index: 4; pointer-events: none; }
+        
+        .track-box-play-ico { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(15, 23, 42, 0.25); color: #ffffff; opacity: 0; transition: opacity 0.25s ease; z-index: 3; }
+        .track-box-card:hover .track-box-play-ico { opacity: 1; }
+        .track-box-play-ico::after { content: ''; display: block; width: 0; height: 0; border-style: solid; border-width: 6px 0 6px 10px; border-color: transparent transparent transparent #ffffff; }
+        
+        .track-box-content { flex-grow: 1; min-width: 0; padding-top: 2px; }
+        .track-box-number { font-family: monospace; font-size: 8pt; font-weight: 700; color: #64748b; text-transform: uppercase; display: block; margin-bottom: 4px; letter-spacing: 0.5px; }
+        .track-box-academic-title { font-size: 11.5pt; font-weight: 600; color: #0f172a; margin: 0 0 8px; line-height: 1.4; letter-spacing: -0.1px; }
+        .track-box-desc { font-size: 9pt; color: #475569; line-height: 1.6; margin: 0; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+
+        /* ── Academic Reference Section Design ── */
+        .academic-citation-box { background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 32px; margin-top: 60px; box-shadow: 0 4px 15px rgba(15,23,42,0.01); }
+        .academic-citation-title { font-size: 11pt; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: #0f172a; margin: 0 0 16px; border-bottom: 1px solid #e2e8f0; padding-bottom: 10px; }
+        .academic-citation-list { margin: 0; padding-left: 20px; color: #475569; font-size: 9.5pt; line-height: 1.8; }
+        .academic-citation-list li { margin-bottom: 10px; }
+        .academic-citation-list li:last-child { margin-bottom: 0; }
+
         /* ── Clean Static Luxury Contact Card Container ──────────────────────── */
         .retina-luxe-card {
             position: relative;
@@ -265,6 +446,9 @@
             object-fit: cover;
             display: block;
             transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
         }
 
         /* Pure CSS Prismatic Rainbow Edge Border Flare */
@@ -358,14 +542,14 @@
             margin-left: 2px;
         }
 
-        /* ── Liquid Retina Lightbox Engine ───────────────────────────────────── */
+        /* ── Liquid Retina Lightbox Engine & High-Fidelity Description Split ── */
         #retina-lightbox {
             position: fixed;
             inset: 0;
             background: rgba(250, 248, 245, 0);
             backdrop-filter: blur(0px) saturate(100%);
             -webkit-backdrop-filter: blur(0px) saturate(100%);
-            z-index: 10000;
+            z-index: 10020; 
             display: flex;
             align-items: center;
             justify-content: center;
@@ -374,6 +558,7 @@
             transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
                         backdrop-filter 0.5s cubic-bezier(0.16, 1, 0.3, 1),
                         -webkit-backdrop-filter 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: opacity, backdrop-filter;
         }
         #retina-lightbox.active {
             opacity: 1;
@@ -382,28 +567,84 @@
             backdrop-filter: blur(40px) saturate(220%);
             -webkit-backdrop-filter: blur(40px) saturate(220%);
         }
-        .lightbox-container {
-            width: 92%;
-            max-width: 1100px;
-            aspect-ratio: 16 / 9;
-            background: #000;
-            border-radius: 20px;
+        
+        /* Master Split Screen Framework Layout Container */
+        .lightbox-split-vault {
+            width: 94%;
+            max-width: 1400px;
+            background: #ffffff;
+            border-radius: 24px;
             box-shadow: 0 40px 100px rgba(15, 23, 42, 0.22), 0 0 0 1px rgba(15, 23, 42, 0.04);
             overflow: hidden;
+            display: flex;
             transform: scale(0.92) translateY(15px);
             opacity: 0;
             transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+            max-height: 90vh;
+            will-change: transform, opacity;
         }
-        #retina-lightbox.active .lightbox-container {
+        #retina-lightbox.active .lightbox-split-vault {
             transform: scale(1) translateY(0);
             opacity: 1;
         }
-        .lightbox-container iframe {
+        
+        /* Video Aspect Component Side */
+        .lightbox-video-frame {
+            width: 65%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .lightbox-video-frame iframe {
             width: 100%;
             height: 100%;
             border: 0;
             display: block;
         }
+        
+        /* Metadata Architectural Description Component Panel */
+        .lightbox-meta-panel {
+            width: 35%;
+            background: #ffffff;
+            border-left: 1px solid #e2e8f0;
+            padding: 36px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .lightbox-meta-panel h2 {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 16pt;
+            font-weight: 400;
+            color: #0f172a;
+            margin: 0 0 16px;
+            line-height: 1.3;
+            letter-spacing: -0.2px;
+        }
+        .lightbox-meta-divider {
+            height: 1px;
+            background: #e2e8f0;
+            margin: 16px 0;
+            width: 100%;
+        }
+        .lightbox-desc-scrollblock {
+            font-size: 9.5pt;
+            color: #334155;
+            line-height: 1.7;
+            white-space: pre-wrap; /* Keeps custom line-breaks, lists, and spacing immaculate */
+        }
+        .lightbox-desc-scrollblock a {
+            color: #0284c7;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .lightbox-desc-scrollblock a:hover {
+            text-decoration: underline;
+        }
+        
         .lightbox-close {
             position: absolute;
             top: 24px;
@@ -422,7 +663,7 @@
             opacity: 0;
             transform: scale(0.8);
             transition: background 0.2s, transform 0.2s, box-shadow 0.2s, opacity 0.3s ease;
-            z-index: 10001;
+            z-index: 10025;
         }
         #retina-lightbox.active .lightbox-close {
             opacity: 1;
@@ -438,6 +679,12 @@
             .hero-right { width: 45%; }
             .tiny-grid-row { grid-template-columns: repeat(2, 1fr); gap: 20px; }
             .project-row { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .roadmap-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+            
+            /* Rebalance split screen viewports */
+            .lightbox-split-vault { width: 96%; }
+            .lightbox-video-frame { width: 60%; }
+            .lightbox-meta-panel { width: 40%; padding: 24px; }
         }
         
         @media (max-width: 768px) {
@@ -451,7 +698,15 @@
             .snapshot-cell:last-child { text-align: center; align-items: center; }
             .feature-videos-row { flex-direction: column; gap: 32px; }
             .feature-video-col { width: 100%; }
-            .lightbox-close { top: 16px; right: 16px; }
+            .lightbox-close { top: 16px; right: 16px; background: rgba(255, 255, 255, 0.9); }
+            .roadmap-grid { grid-template-columns: 1fr; gap: 24px; }
+            .track-box-grid { grid-template-columns: 1fr; }
+            .roadmap-modal-box { padding: 30px 20px; }
+            
+            /* Responsive layout shift: Stack video player cleanly on top of descriptions */
+            .lightbox-split-vault { flex-direction: column; max-height: 85vh; overflow-y: auto; }
+            .lightbox-video-frame { width: 100%; }
+            .lightbox-meta-panel { width: 100%; border-left: none; border-top: 1px solid #e2e8f0; }
         }
         
         @media (max-width: 480px) {
@@ -463,6 +718,13 @@
             .snapshot-cell { width: 100%; border-right: none; border-bottom: 1px solid #e2e8f0; padding-bottom: 12px; align-items: center; text-align: center; }
             .snapshot-cell:last-child { border-bottom: none; padding-bottom: 0; }
             .custom-footer-bar { flex-direction: column; gap: 10px; text-align: center; }
+            
+            .credential-stamp-bar { padding: 10px 4px; }
+            .badge-stamp-node img { width: 34px; height: 38px; }
+            .stamp-year-label { font-size: 6.5pt; }
+            
+            .track-box-card { flex-direction: column; gap: 16px; align-items: center; }
+            .track-box-thumb-container { width: 100% !important; height: auto !important; } 
         }
     </style>
 </head>
@@ -473,6 +735,7 @@
             <a href="/" class="nav-logo">qxresearch</a>
             <div class="nav-links">
                 <a href="#video-lab">Videos</a>
+                <a href="#architecture-roadmap">Roadmap</a>
                 <a href="#open-source">Open Source</a>
                 <a href="#contact">Contact</a>
             </div>
@@ -506,13 +769,12 @@
             <div class="hero-left">
                 <div class="badge-container">
                     <span class="branding-badge">Independent AI Research Platform</span>
-                    <span class="stanford-badge">3x Code in Place Section Leader</span>
+                    <span class="stanford-badge">3x Stanford Code in Place Section Leader</span>
                 </div>
                 <h1>Dive Deep into Deep Learning</h1>
                 <div class="subtitle">Architecture, Math, and Code</div>
                 <p class="intro-text">
-                    Welcome to qxresearch AI. This platform acts as a high-fidelity systems engineering hub tracking structural AI applications. 
-                    Every walkthrough bridges rigorous core math into completely transparent, open-source code executions—built to provide an ironclad profile background for graduate admissions committees and modern software clients.
+                    qxresearch AI is a high-fidelity systems engineering hub tracking structural AI applications. Every walkthrough bridges rigorous core math into completely transparent, open-source code executions—built to advance clear structural understanding for researchers, developers, and AI engineers alike.
                 </p>
                 <div class="profile-snapshot">
                     <div class="snapshot-cell">
@@ -529,8 +791,10 @@
                     </div>
                 </div>
             </div>
+            
             <div class="hero-right">
                 <div class="mascot-container">
+                    
                     <div class="mascot-viewport-frame">
                         <img class="custom-profile-img" src="images/logo.png" alt="qxresearch Platform Hub">
                         
@@ -539,14 +803,58 @@
                                 <svg viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                             </a>
                             <a href="https://youtube.com/" target="_blank" class="retina-mascot-btn" title="YouTube">
-                                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93 .502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
                             </a>
                             <a href="https://linkedin.com/company/qxresearch" target="_blank" class="retina-mascot-btn" title="LinkedIn">
                                 <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
                             </a>
                         </div>
                     </div>
-                    <div class="mascot-caption">qxresearch Platform Hub</div>
+
+                    <div class="credential-stamp-bar">
+                        
+                        <a href="https://digitalcredential.stanford.edu/check/B506EC9312CFC25A9645B34A9B9A005E1B68099F49F5DBC8B0F28FCD9525C59Cb2Nma3dPOVN6QjQwMW9vNWhpaENsZGNnck5BOFF0d3lqbnZERmpuT0tpVEtiNWZQ" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="badge-stamp-node stanford-node">
+                            <img src="badge.svg" alt="Stanford Section Leader Credential 2023">
+                            <span class="stamp-year-label">CIP 23</span>
+                        </a>
+
+                        <a href="https://github.com/users/xiaowuc2/achievements/pull-shark" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="badge-stamp-node github-node">
+                            <img src="images/pullshark.png" alt="GitHub Pull Shark Achievement Badge">
+                            <span class="stamp-year-label">Pull Shark</span>
+                        </a>
+
+                        <a href="https://digitalcredential.stanford.edu/check/3982BDBD161DEF46611BC710E035563CC42649AC34B858F517E2E111DF99912EWGZlcG0xRTdGclZ2NWVZL2xmU3g3SVpINGdwQzVXYktMY1dlSHVBK0pDeGlveU1t" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="badge-stamp-node stanford-node">
+                            <img src="badge.svg" alt="Stanford Section Leader Credential 2024">
+                            <span class="stamp-year-label">CIP 24</span>
+                        </a>
+
+                        <a href="https://github.com/users/xiaowuc2/achievements/starstruck" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="badge-stamp-node github-node">
+                            <img src="images/starstruck.png" alt="GitHub Starstruck Achievement Badge">
+                            <span class="stamp-year-label">Starstruck</span>
+                        </a>
+
+                        <a href="https://digitalcredential.stanford.edu/check/F934A7045CF27E45B43CD4D0F3725D57236C4907C77BE4719C0DAA4171555F1CZXU5UG1qdWR6ZkZSclg2MVFid0I4dGdxYU9qRTFnaUxUeGVIWmtwUXBHSXh3ZVNs" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="badge-stamp-node stanford-node">
+                            <img src="badge.svg" alt="Stanford Section Leader Credential 2026">
+                            <span class="stamp-year-label">CIP 26</span>
+                        </a>
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -555,7 +863,7 @@
     <section id="video-lab">
         <div class="section-header">
             <h2>Videos & Deep Dives</h2>
-            <p>From-scratch implementation loops inside an integrated custom interface layout</p>
+            <p>From-scratch architectural implementations, rigorous mathematical breakdowns, and optimization profiles.</p>
         </div>
 
         <div class="ambient-aurora-wrapper">
@@ -566,7 +874,7 @@
 
                     <div class="feature-video-col">
                         <div class="big-video-card">
-                            <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                            <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="Transformer Architecture: Under the Hood" onclick="launchRetinaPlayer('beEBeQw5tpc', 'Transformer Architecture: Under the Hood')">
                                 <img src="images/thumbnail1.jpg" alt="Transformer Architecture Walkthrough" loading="lazy" decoding="async">
                                 <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                             </div>
@@ -579,7 +887,7 @@
 
                     <div class="feature-video-col">
                         <div class="big-video-card">
-                            <div class="yt-lazy" data-vid="B0_0gK_CUpM" onclick="launchRetinaPlayer('B0_0gK_CUpM')">
+                            <div class="yt-lazy" data-vid="B0_0gK_CUpM" data-title="10 Projects with 10 Lines of Code" onclick="launchRetinaPlayer('B0_0gK_CUpM', '10 Projects with 10 Lines of Code')">
                                 <img src="images/thumbnail1.jpg" alt="10 Python Projects with 10 Lines of Code" loading="lazy" decoding="async">
                                 <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                             </div>
@@ -598,7 +906,7 @@
 
             <div class="tiny-grid-row">
                 <div class="tiny-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="AdamW Optimizer and Loss Curves Under the Hood" onclick="launchRetinaPlayer('beEBeQw5tpc', 'AdamW Optimizer and Loss Curves Under the Hood')">
                         <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="AdamW Optimizer Video" loading="lazy" decoding="async">
                         <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
@@ -606,7 +914,7 @@
                     <div class="tiny-video-stats">qxresearch AI<br>Rigorous Math Deep Dive</div>
                 </div>
                 <div class="tiny-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="Real-Time Object Tracking & Coordinate Vectorization" onclick="launchRetinaPlayer('beEBeQw5tpc', 'Real-Time Object Tracking & Coordinate Vectorization')">
                         <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Object Tracking Video" loading="lazy" decoding="async">
                         <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
@@ -614,15 +922,15 @@
                     <div class="tiny-video-stats">qxresearch AI<br>Computer Vision Series</div>
                 </div>
                 <div class="tiny-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="Pure Array Calculus Matrix Optimization Engine" onclick="launchRetinaPlayer('beEBeQw5tpc', 'Pure Array Calculus Matrix Optimization Engine')">
                         <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Array Calculus Video" loading="lazy" decoding="async">
                         <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
-                        </div>
+                    </div>
                     <h4 class="tiny-video-title">Pure Array Calculus Matrix Optimization Engine</h4>
                     <div class="tiny-video-stats">qxresearch AI<br>From-Scratch Frameworks</div>
                 </div>
                 <div class="tiny-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="Parallel Computing Loops & Shared GPU Kernels" onclick="launchRetinaPlayer('beEBeQw5tpc', 'Parallel Computing Loops & Shared GPU Kernels')">
                         <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Parallel Computing Video" loading="lazy" decoding="async">
                         <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
@@ -634,7 +942,7 @@
             <div class="tiny-grid-row">
                 <div class="tiny-grid-col">
                     <div class="tiny-video-card">
-                        <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                        <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="Instruct Tuning & Masked Token Loss Arrays" onclick="launchRetinaPlayer('beEBeQw5tpc', 'Instruct Tuning & Masked Token Loss Arrays')">
                             <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Instruct Tuning Video" loading="lazy" decoding="async">
                             <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                         </div>
@@ -643,7 +951,7 @@
                     </div>
                 </div>
                 <div class="tiny-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="Token Streaming Pipes & Live Application Interface" onclick="launchRetinaPlayer('beEBeQw5tpc', 'Token Streaming Pipes & Live Application Interface')">
                         <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Token Streaming Video" loading="lazy" decoding="async">
                         <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
@@ -651,7 +959,7 @@
                     <div class="tiny-video-stats">qxresearch AI<br>Systems Engineering</div>
                 </div>
                 <div class="tiny-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="Understanding Diffusion and Mathematical Noise Loops" onclick="launchRetinaPlayer('beEBeQw5tpc', 'Understanding Diffusion and Mathematical Noise Loops')">
                         <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Diffusion Models Video" loading="lazy" decoding="async">
                         <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
@@ -659,7 +967,7 @@
                     <div class="tiny-video-stats">qxresearch AI<br>Generative Frameworks</div>
                 </div>
                 <div class="tiny-video-card">
-                    <div class="yt-lazy" data-vid="beEBeQw5tpc" onclick="launchRetinaPlayer('beEBeQw5tpc')">
+                    <div class="yt-lazy" data-vid="beEBeQw5tpc" data-title="Vector Storage Implementations and Query Mechanics" onclick="launchRetinaPlayer('beEBeQw5tpc', 'Vector Storage Implementations and Query Mechanics')">
                         <img src="https://i.ytimg.com/vi/beEBeQw5tpc/mqdefault.jpg" alt="Vector Storage Video" loading="lazy" decoding="async">
                         <div class="yt-play-overlay"><div class="yt-play-btn"></div></div>
                     </div>
@@ -668,6 +976,57 @@
                 </div>
             </div>
 
+        </div>
+    </section>
+
+    <section id="architecture-roadmap">
+        <div class="section-header">
+            <h2>Architecture Roadmap</h2>
+            <p>Curriculum matrix map built to bridge absolute mathematical theory into verified code executions.</p>
+        </div>
+
+        <div class="roadmap-grid">
+            <div class="roadmap-card" onclick="openRoadmapModule(1)">
+                <img src="images/thumbnail1.jpg" alt="Module I Poster" class="roadmap-poster" loading="lazy">
+                <div class="roadmap-card-body">
+                    <div>
+                        <span class="roadmap-tag">Module I</span>
+                        <h3 class="roadmap-card-title">Foundations of Optimization & Linear Systems</h3>
+                    </div>
+                    <div class="roadmap-action-label">Explore Tracks</div>
+                </div>
+            </div>
+
+            <div class="roadmap-card" onclick="openRoadmapModule(2)">
+                <img src="images/thumbnail1.jpg" alt="Module II Poster" class="roadmap-poster" loading="lazy">
+                <div class="roadmap-card-body">
+                    <div>
+                        <span class="roadmap-tag">Module II</span>
+                        <h3 class="roadmap-card-title">Spatial & Sequential Architectures</h3>
+                    </div>
+                    <div class="roadmap-action-label">Explore Tracks</div>
+                </div>
+            </div>
+
+            <div class="roadmap-card" onclick="openRoadmapModule(3)">
+                <img src="images/thumbnail1.jpg" alt="Module III Poster" class="roadmap-poster" loading="lazy">
+                <div class="roadmap-card-body">
+                    <div>
+                        <span class="roadmap-tag">Module III</span>
+                        <h3 class="roadmap-card-title">Large-Scale Autoregressive & Generative Models</h3>
+                    </div>
+                    <div class="roadmap-action-label">Explore Tracks</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="academic-citation-box">
+            <h3 class="academic-citation-title">References & Academic Citations</h3>
+            <ul class="academic-citation-list">
+                <li><strong>Theoretical Framework & Core Mathematics:</strong> Inspired by the advanced curriculum and pedagogical architectures of Andrew Ng, DeepLearning.AI.</li>
+                <li><strong>Implementation Engineering & Design Patterns:</strong> Developed upon code synthesis loops patterned after Andrej Karpathy's Neural Networks: Zero to Hero.</li>
+                <li><strong>High-Performance Optimizations & Execution:</strong> Designed, customized, and implemented independently by qxresearch AI.</li>
+            </ul>
         </div>
     </section>
 
@@ -742,43 +1101,232 @@
         </div>
     </section>
 
+    <div id="roadmap-modal-overlay" onclick="closeRoadmapModule()">
+        <button class="roadmap-modal-close" onclick="closeRoadmapModule(); event.stopPropagation();" title="Close Roadmap System">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+        <div class="roadmap-modal-box" onclick="event.stopPropagation();">
+            <div class="roadmap-modal-header">
+                <span id="roadmap-modal-module-tag" class="roadmap-modal-module-tag">Module Matrix</span>
+                <h2 id="roadmap-modal-title" class="roadmap-modal-title">Loading Curriculum Modules...</h2>
+            </div>
+            <div id="track-box-grid" class="track-box-grid">
+            </div>
+        </div>
+    </div>
+
     <div id="retina-lightbox" onclick="closeRetinaPlayer()">
         <button class="lightbox-close" onclick="closeRetinaPlayer(); event.stopPropagation();" title="Close Video">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
         </button>
-        <div class="lightbox-container" onclick="event.stopPropagation();">
-            <div id="lightbox-video-target" style="width:100%; height:100%;"></div>
+        
+        <div class="lightbox-split-vault" onclick="event.stopPropagation();">
+            <div class="lightbox-video-frame">
+                <div id="lightbox-video-target" style="width:100%; height:100%;"></div>
+            </div>
+            
+            <div class="lightbox-meta-panel">
+                <h2 id="lightbox-meta-title">Video Architecture Deep Dive</h2>
+                <div class="lightbox-action-label" style="font-size: 8.5pt; font-family: monospace; color: #64748b; font-weight:600; text-transform: uppercase;">Independent Research Platform</div>
+                <div class="lightbox-meta-divider"></div>
+                <div id="lightbox-meta-desc" class="lightbox-desc-scrollblock">
+                    Loading telemetry data and first-principles descriptions...
+                </div>
+            </div>
         </div>
     </div>
 
     <script>
-        function launchRetinaPlayer(vid) {
+        var videoDescriptionsDatabase = {
+            "beEBeQw5tpc": {
+                title: "Transformer Architecture: Under the Hood",
+                desc: "Deep dive into Transformer Multi-Head Self-Attention Core Mechanics. We break down the mathematical constraints, architectural bottlenecks, and production-grade implementation steps.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/transformer-from-scratch\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/transformer-parameter-tracing\n\nTIMESTAMPS:\n0:00 - Mathematical Foundations & Paper Review\n4:15 - Core Architectural Bottlenecks\n9:30 - Production-Grade Python Implementation\n15:45 - Benchmarking & Memory Optimization\n\nCore tech stack analyzed: Python, PyTorch, CUDA, TensorRT.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "B0_0gK_CUpM": {
+                title: "10 Projects with 10 Lines of Code",
+                desc: "Deep dive into Asynchronous Low-Overhead Python Systems Automations. We break down the structural optimization constraints, high-performance scripting pipelines, and runtime orchestration steps.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/10-lines-python-vault\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/python-automation-efficiency\n\nTIMESTAMPS:\n0:00 - Functional Architecture Blueprinting\n3:20 - Non-Blocking Memory Footprint Design\n7:10 - Production-Grade Code Walkthrough\n12:40 - Evaluation Metrics & Hardware Allocation\n\nCore tech stack analyzed: Python Core, Threading API, Standard I/O Libraries.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M1_T01": {
+                title: "Stochastic Systems and First-Order Optimization Mechanics",
+                desc: "Deep dive into First-Order Vector Calculus Optimization & Gradient Descent Variants. We break down the mathematical loss constraints, vector trajectory convergence bottlenecks, and tensor update implementation steps.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/optimization-matrix-engine\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/gradient-descent-math-derivation\n\nTIMESTAMPS:\n0:00 - Matrix Calculus Foundations & Loss Gradients\n5:10 - Momentum vs. RMSprop Optimization Boundaries\n11:45 - Pure NumPy Matrix Parameter Mapping\n18:20 - Convergence Trajectory Validation & Local Minima Profiling\n\nCore tech stack analyzed: Python, NumPy, Vector Calculus Arrays.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M1_T02": {
+                title: "Convex Optimization & Parametric Binary Classification Boundaries",
+                desc: "Deep dive into Convex Loss Arrays, Sigmoid Jacobian Maps, and BCE Contractions. We break down the binary distribution constraints, log-likelihood gradient mechanics, and raw first-principles engineering steps.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/convex-classification-scratch\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/logistic-regression-jacobian-trace\n\nTIMESTAMPS:\n0:00 - Mathematical Boundary Proofs & Log Loss\n4:55 - Jacobian Vector Contraction Trace\n10:15 - Pure NumPy Backward Pass Implementation\n16:30 - Regularized Logistic Optimization Stability\n\nCore tech stack analyzed: Python Core, NumPy Vector Math.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M1_T03": {
+                title: "Linear Dimensionality Reduction & Spectral Decompositions",
+                desc: "Deep dive into Orthogonal Projections, Spectral Theorem Covariance, and SVD. We break down the eigenvalue feature preservation constraints, spatial variance maximization, and projection implementation steps.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/spectral-pca-decomposition\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/pca-svd-mathematical-equivalence\n\nTIMESTAMPS:\n0:00 - Linear Transformation Basics & Covariance Construction\n5:40 - Characteristic Polynomial Roots & Eigenvalues\n11:15 - Singular Value Decomposition Framework Translation\n17:45 - Low-Rank Matrix Approximation Projections\n\nCore tech stack analyzed: Python, NumPy Vector Spaces, SVD Mechanics.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M1_T04": {
+                title: "Constrained Optimization, Parameter Penalization & Stochastic Regularization",
+                desc: "Deep Dive into Lagrangian Duals, L1/L2 Penalties, and Dynamic Dropout Mask Systems. We break down the bounded loss constraints, weight decay limits, and runtime stochastic drop operations.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/regularization-autograd-bounds\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/l1-l2-sparsity-mathematical-proofs\n\nTIMESTAMPS:\n0:00 - L1/L2 Geometric Constrained Norm Surfaces\n4:20 - Weight Regularization Derivative Updates\n9:15 - Structuring Inverted Dropout Probability Masks\n14:50 - Generalization Limits vs. Parameter Co-adaptation\n\nCore tech stack analyzed: Python, NumPy Arrays, Probability Dist.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M2_T01": {
+                title: "Reverse-Mode Automatic Differentiation & Graph Computational Calculus",
+                desc: "Deep dive into Dynamic Directed Acyclic Graphs (DAG) and Autograd Backpropagation Calculus. We break down node accumulation chains, dynamic multi-dimensional gradient sorting, and edge tracking updates.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/micrograd-autograd-trace\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/reverse-mode-differentiation-calculus\n\nTIMESTAMPS:\n0:00 - Forward Multi-Layer Vector Pass Computations\n5:15 - Topological Sort Logic on Node Arrays\n11:30 - Writing Dynamic Gradient Accumulators From Scratch\n18:40 - Complex Graph Contraction Backpropagation Tests\n\nCore tech stack analyzed: Python, Custom DAG Classes, Autograd Loops.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M2_T02": {
+                title: "Spatial Convolutions, Max Pooling, and Spatial Backpropagation",
+                desc: "Deep dive into Multi-Channel Filters, Tensor Boundary Clipping, and Spatial Convolutional Gradients. We break down the local receptive layer boundaries, tensor tiling limits, and backpropagation maps.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/cnn-tensor-from-scratch\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/convolutional-backpropagation-matrix-math\n\nTIMESTAMPS:\n0:00 - Spatial Convolutional Matrix Contractions\n6:10 - Im2Col High-Performance Vectorization Arrays\n12:35 - Max Pooling Forward/Backward Boolean Coordinates\n19:50 - Pure Math Convolutional Backpropagation Trace\n\nCore tech stack analyzed: Python, PyTorch Matrix operations, NumPy Stride Math.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M2_T03": {
+                title: "Recurrent Temporal Networks & Non-Linear Gated Sequence Calculus",
+                desc: "Deep dive into Backpropagation Through Time (BPTT) and LSTM Cell Non-Linear Memory Units. We break down temporal jacobian limits, hidden cell state vector mappings, and gating update layers.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/temporal-rnn-lstm-scratch\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/vanishing-gradient-bptt-lstm-proof\n\nTIMESTAMPS:\n0:00 - Vanishing Gradient Mechanics in RNN Loops\n4:45 - LSTM Gated Logic Architecture Derivations\n10:20 - Cell State Vector Calculus Updates\n16:15 - Multi-Step BPTT Loop Execution Code\n\nCore tech stack analyzed: Python Core, Tensor Vector Loops, NumPy Math.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M2_T04": {
+                title: "Internal Covariate Shift Reduction & Tensor Distribution Normalization",
+                desc: "Deep dive into Gamma/Beta Affine Transformations and Batch vs. Sequence Layer Normalization Math. We break down sample mean variance tracking bounds, running statisticts pipelines, and normal derivative gradients.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/normalization-autograd-kernels\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/batchnorm-vs-layernorm-exact-gradients\n\nTIMESTAMPS:\n0:00 - Internal Covariate Shift Mathematical Definitions\n3.50 - BatchNorm Vector Gradients Derivatives Extraction\n9:20 - Sequence-Level LayerNorm Dimension Contractions\n15:10 - Running Statistics Syncing Across Parallel Nodes\n\nCore tech stack analyzed: Python, PyTorch Tensor Tiling, Math Blocks.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M3_T01": {
+                title: "Scaled Dot-Product Self-Attention and Autoregressive Transformer Mechanics",
+                desc: "Deep dive into Query-Key-Value Multi-Dimensional Matrix Contractions and Autoregressive Masks. We break down standard token sequence bounds, scaled attention projections, and trigonometric dimensional embeddings.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/transformer-core-attention\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/scaled-dot-product-attention-mechanics\n\nTIMESTAMPS:\n0:00 - Scaled Softmax Dot-Product Attention Foundations\n5:00 - Multi-Head Dimension Splitting & Tensor Reshapes\n10:45 - Autoregressive Upper-Triangular Mask Projections\n16:30 - Rotational & Sinusoidal Positional Embeddings\n\nCore tech stack analyzed: Python, PyTorch Matrix operations, NumPy Linear Math.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M3_T02": {
+                title: "Statistical Tokenization Models & Byte-Level Vocabulary Synthesis",
+                desc: "Deep dive into Byte Pair Encoding (BPE), Statistical Frequency Tree Merging, and Regex Segmentation. We break down dynamic token lookahead tables, text slice transition bounds, and byte fallbacks.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/bpe-tokenizer-zero\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/gpt-tokenizer-bpe-implementation\n\nTIMESTAMPS:\n0:00 - Tokenization Boundaries & Byte Representation Layers\n4:15 - Greedy Statistical Pair Merge Code Execution\n9:30 - Building the Vocabulary Map Tree Structure\n14:40 - Dynamic Out-Of-Vocabulary (OOV) Edge Validations\n\nCore tech stack analyzed: Python, Regex Processing Engines, String Arrays.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M3_T03": {
+                title: "Stochastic Markov Chains & Denoising Diffusion Probabilistic Frameworks",
+                desc: "Deep dive into DDPM Forward Variance Schedules, Loss-Matching Maps, and ResNet U-Net Backbones. We break down stochastic Markov transition laws, reverse noise extraction updates, and image score-matching metrics.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/diffusion-ddpm-scratch\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/deriving-ddpm-probabilistic-diffusion-math\n\nTIMESTAMPS:\n0:00 - Forward Gaussian Noise Injection Processes\n5:45 - Variational Bound Target Loss Formulations\n11:20 - Implementing the Score-Matching U-Net Array\n17:50 - Reverse Markov Sampling Noise Erasure Runs\n\nCore tech stack analyzed: Python, PyTorch GPU Models, CUDA Kernels.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            },
+            "M3_T04": {
+                title: "Hardware-Aware Algorithmic Tiling & High-Performance IO Optimization",
+                desc: "Deep dive into GPU Memory Hierarchies, FlashAttention Block Tiling, and Online Softmax Scaling. We break down HBM vs. SRAM bandwidth limits, static memory tiling profiles, and algorithmic block reductions.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch/flashattention-cuda-tiling\n\nRead our technical breakdown article:\nhttps://qxresearch.org/blog/hardware-aware-attention-optimization-tiling\n\nTIMESTAMPS:\n0:00 - Memory-Bound vs. Compute-Bound Algorithm Proving\n4:30 - Online Softmax Scaling Segment Math Reductions\n9:15 - Block SRAM Tiling Loop Implementations\n16:05 - IO Footprint Reduction Benchmarks vs. Standard Attention\n\nCore tech stack analyzed: Python Core, PyTorch custom CUDA extensions, C++ Memory maps.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights."
+            }
+        };
+
+        var roadmapData = {
+            1: {
+                playlist: "Deep Dive Machine Learning",
+                title: "Foundations of Optimization & Linear Systems",
+                tracks: [
+                    { id: "M1_T01", num: "Track 01", labelCode: "M1 · T01", academic: "Stochastic Systems and First-Order Optimization Mechanics", desc: "A mathematical extraction and implementation of gradient-based optimization. Traces foundational calculus definitions across loss surfaces from raw first principles. Covers Batch, Stochastic (SGD), Momentum, RMSprop, and Adam optimizers by writing vector updates step-by-step in pure NumPy." },
+                    { id: "M1_T02", num: "Track 02", labelCode: "M1 · T02", academic: "Convex Optimization & Parametric Binary Classification Boundaries", desc: "Demystifying classification mechanics through pure linear algebra. Derives the mathematical limits of the Sigmoid activation function and maps the full Jacobian matrix execution for Binary Cross-Entropy loss. Implements the complete forward estimation and backpropagation loops using vector tensor contractions without a single high-level library call." },
+                    { id: "M1_T03", num: "Track 03", labelCode: "M1 · T03", academic: "Linear Dimensionality Reduction & Spectral Decompositions", desc: "An exhaustive mathematical breakdown of high-dimensional data projection. Constructs the data covariance matrix from zero, computes orthogonal basis vectors through characteristic polynomial eigenvalues, and bridges the theory directly into Singular Value Decomposition (SVD). Proves matrix reconstruction fidelity and energy retention profiles." },
+                    { id: "M1_T04", num: "Track 04", labelCode: "M1 · T04", academic: "Constrained Optimization, Parameter Penalization & Stochastic Regularization", desc: "An analytical study of structural model generalization. Computes the Lagrangian dual formulations for Ridge (L2) and Lasso (L1) weight penalties. Codes an inverted dropout layer by designing stochastic dynamic tensor masks from raw probability distributions to prove network resilience against parameter co-adaptation." }
+                ]
+            },
+            2: {
+                playlist: "Deep Dive Deep Learning",
+                title: "Spatial & Sequential Architectures",
+                tracks: [
+                    { id: "M2_T01", num: "Track 01", labelCode: "M2 · T01", academic: "Reverse-Mode Automatic Differentiation & Graph Computational Calculus", desc: "Building an explicit mathematical autograd engine from the ground up. Traces the complete chain rule topology across dynamic directed acyclic graphs (DAG). Implements custom scalar and multi-dimensional tensor nodes containing independent forward math and explicit reverse gradient accumulation." },
+                    { id: "M2_T02", num: "Track 02", labelCode: "M2 · T02", academic: "Spatial Convolutions, Max Pooling, and Spatial Backpropagation", desc: "Bypassing high-level abstractions to construct local feature extraction mechanics. Maps spatial multi-channel filtering, defines explicit padding/stride boundary mechanics, and unpacks the notoriously intricate calculus of convolutional backpropagation. Evaluates how spatial data loops are vectorized for high-performance tensor computing frameworks." },
+                    { id: "M2_T03", num: "Track 03", labelCode: "M2 · T03", academic: "Recurrent Temporal Networks & Non-Linear Gated Sequence Calculus", desc: "An architectural deep dive into temporal data structures and backpropagation through time (BPTT). Solves the mathematical vanishing gradient problem by coding Long Short-Term Memory (LSTM) cells from scratch. Tracks the step-by-step mathematical mechanics of input, forget, output, and cell state gating pipelines." },
+                    { id: "M2_T04", num: "Track 04", labelCode: "M2 · T04", academic: "Internal Covariate Shift Reduction & Tensor Distribution Normalization", desc: "A rigorous mathematical look at structural training stability. Derives the exact calculus gradients flowing through sample means, running variances, and learnable affine transformation parameters (gamma and beta). Code implementations uncover the exact tracking differences between spatial Batch Normalization and sequence Layer Normalization." }
+                ]
+            },
+            3: {
+                playlist: "Deep Dive AI",
+                title: "Large-Scale Autoregressive & Generative Models",
+                tracks: [
+                    { id: "M3_T01", num: "Track 01", labelCode: "M3 · T01", academic: "Scaled Dot-Product Self-Attention and Autoregressive Transformer Mechanics", desc: "Constructing the complete mathematical core of modern Large Language Models. Implements Multi-Head Self-Attention using pure multi-dimensional tensor contractions. Maps out Query, Key, and Value matrix dimension routing, implements casual attention masking for token sequence preservation, and codes trigonometric positional encodings." },
+                    { id: "M3_T02", num: "Track 02", labelCode: "M3 · T02", academic: "Statistical Tokenization Models & Byte-Level Vocabulary Synthesis", desc: "Demystifying the foundational boundary layer where raw text transitions into vector tensors. Implements a Byte Pair Encoding (BPE) text tokenizer from first principles. Structures frequency-pair merge trees, builds discrete vocabulary mappings, and handles complex out-of-vocabulary edge cases with strict byte-level fallbacks." },
+                    { id: "M3_T03", num: "Track 03", labelCode: "M3 · T03", academic: "Stochastic Markov Chains & Denoising Diffusion Probabilistic Frameworks", desc: "An advanced theoretical evaluation of generative vision systems. Derives the forward diffusion Gaussian noise injection processes and maps the grueling reverse-time Markov chain updates. Implements a completely functional U-Net residual backbone to perform iterative score-matching image denoising." },
+                    { id: "M3_T04", num: "Track 04", labelCode: "M3 · T04", academic: "Hardware-Aware Algorithmic Tiling & High-Performance IO Optimization", desc: "Bridging algorithmic abstraction with raw GPU memory hierarchy constraints. Analyzes the fundamental memory-bound bottleneck of HBM vs. SRAM. Codes the mathematical block tiling logic of FlashAttention to eliminate standard O(N^2) spatial memory allocation footprints during long-context processing sequences." }
+                ]
+            }
+        };
+
+        function lockPageScroll() {
+            document.body.classList.add('modal-open');
+        }
+
+        function unlockPageScroll() {
+            document.body.classList.remove('modal-open');
+        }
+
+        function openRoadmapModule(moduleKey) {
+            var module = roadmapData[moduleKey];
+            if (!module) return;
+
+            document.getElementById('roadmap-modal-module-tag').innerText = "Module " + moduleKey + ": " + module.playlist;
+            document.getElementById('roadmap-modal-title').innerText = module.title;
+
+            var gridTarget = document.getElementById('track-box-grid');
+            gridTarget.innerHTML = ''; 
+
+            module.tracks.forEach(function(track) {
+                var card = document.createElement('div');
+                card.className = 'track-box-card';
+                card.setAttribute('onclick', "launchTrackVideo('" + track.id + "', '" + track.academic + "')");
+                
+                card.innerHTML = `
+                    <div class="track-box-thumb-container">
+                        <img src="images/thumbnail1.jpg" alt="Curriculum Core Node Visualizer">
+                        <span class="track-box-matrix-badge">${track.labelCode}</span>
+                        <div class="track-box-play-ico"></div>
+                    </div>
+                    <div class="track-box-content">
+                        <span class="track-box-number">${track.num}</span>
+                        <h4 class="track-box-academic-title">${track.academic}</h4>
+                        <p class="track-box-desc">${track.desc}</p>
+                    </div>
+                `;
+                gridTarget.appendChild(card);
+            });
+
+            document.getElementById('roadmap-modal-overlay').classList.add('active');
+            lockPageScroll();
+        }
+
+        function closeRoadmapModule() {
+            document.getElementById('roadmap-modal-overlay').classList.remove('active');
+            if(!document.getElementById('retina-lightbox').classList.contains('active')) {
+                unlockPageScroll();
+            }
+        }
+
+        function launchTrackVideo(vidId, fallBackTitle) {
+            launchRetinaPlayer(vidId, fallBackTitle);
+        }
+
+        function launchRetinaPlayer(vid, explicitTitle) {
             var target = document.getElementById('lightbox-video-target');
             var lightbox = document.getElementById('retina-lightbox');
+            var titleTarget = document.getElementById('lightbox-meta-title');
+            var descTarget = document.getElementById('lightbox-meta-desc');
             
-            target.innerHTML = '<iframe src="https://www.youtube.com/embed/' + vid + '?autoplay=1&rel=0&controls=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            var embedId = (vid === "M1_T01" || vid === "M1_T02" || vid === "M1_T03" || vid === "M1_T04" || 
+                           vid === "M2_T01" || vid === "M2_T02" || vid === "M2_T03" || vid === "M2_T04" || 
+                           vid === "M3_T01" || vid === "M3_T02" || vid === "M3_T03" || vid === "M3_T04") ? "beEBeQw5tpc" : vid;
+
+            var currentMetaLookup = videoDescriptionsDatabase[vid];
+            
+            if (currentMetaLookup) {
+                titleTarget.innerText = currentMetaLookup.title;
+                descTarget.innerText = currentMetaLookup.desc;
+            } else {
+                titleTarget.innerText = explicitTitle || "Advanced AI Architecture Deep Dive";
+                descTarget.innerText = "Deep dive into advanced AI frameworks. We break down the mathematical constraints, architectural bottlenecks, and production-grade implementation steps.\n\nAccess the full code repository on GitHub:\nhttps://github.com/qxresearch\n\nRead our technical breakdown article:\nhttps://qxresearch.org\n\nTIMESTAMPS:\n0:00 - Mathematical Foundations & Paper Review\n4:15 - Core Architectural Bottlenecks\n9:30 - Production-Grade Python Implementation\n15:45 - Benchmarking & Memory Optimization\n\nCore tech stack analyzed: Python, PyTorch, CUDA, TensorRT.\n\nSubscribe to qxresearch for uncompromised, advanced AI engineering insights.";
+            }
+            
+            target.innerHTML = '<iframe src="https://www.youtube.com/embed/' + embedId + '?autoplay=1&rel=0&controls=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
             
             lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; 
+            lockPageScroll(); 
         }
 
         function closeRetinaPlayer() {
             var lightbox = document.getElementById('retina-lightbox');
             var target = document.getElementById('lightbox-video-target');
             
+            target.innerHTML = '';
             lightbox.classList.remove('active');
-            document.body.style.overflow = ''; 
             
-            setTimeout(function() {
-                if (!lightbox.classList.contains('active')) {
-                    target.innerHTML = '';
-                }
-            }, 500); 
+            if (!document.getElementById('roadmap-modal-overlay').classList.contains('active')) {
+                unlockPageScroll(); 
+            }
         }
 
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
-                closeRetinaPlayer();
+                if (document.getElementById('retina-lightbox').classList.contains('active')) {
+                    closeRetinaPlayer();
+                } else {
+                    closeRoadmapModule();
+                }
             }
         });
     </script>
